@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import menu from './images/menu.png';
 import logo from './images/logo.png';
 import cross from './images/cross.png';
@@ -6,18 +6,22 @@ import { Link } from 'react-router';
 
 import './Nav.css'
 
-class Nav extends Component {
+class Nav extends React.Component {
 
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             isMenuVisible: false
         };
     }
 
     render() {
+        var styles = {
+            position: "fixed"
+        }
+
         return (
-            <div>
+            <div style={styles}>
                 <img src={menu} className="MenuIcon" alt="MenuIcon" onClick={() => this.toggleMenu()} />
                 {this.state.isMenuVisible ?
                     <div className="MenuContainer">
