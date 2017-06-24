@@ -1,7 +1,7 @@
 import React from 'react';
 
 const divStyle = {
-  maxWidth: 350
+  maxWidth: 341
 };
 
 class Title extends React.Component {

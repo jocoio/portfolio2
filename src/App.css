@@ -35,6 +35,14 @@ p {
   transition: all, 150ms;
 }
 
+.landing {
+  height: 100vh;
+  text-align: center;
+}
+.landing>h1 {
+  width: 100%;
+}
+
 .actionButton:hover {
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.35);
 }
