@@ -12,7 +12,7 @@ import meeting from '../images/meeting.png';
 import labs from '../images/labs.png';
 import sclogo from '../images/sclogo.gif';
 
-import { Row, Col } from 'react-flexbox-grid';
+import { Row, Col } from '../grid';
 
 class HomePage extends React.Component {
 
@@ -21,7 +21,7 @@ class HomePage extends React.Component {
             
                 <div>
                     <Row>
-                        <Col xs className="landing">
+                        <Col xsWidth className="landing">
                             <div className="intro">
                                 <h1>Jon Corbett</h1>
                                 <p>Boston based designer, developer, and dog lover</p>

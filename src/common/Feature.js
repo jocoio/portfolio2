@@ -3,8 +3,7 @@ import Title from '../common/Title.js';
 import ContentContainer from '../common/ContentContainer.js';
 import Description from '../common/Description.js';
 import { Link } from 'react-router-dom';
-
-import { Row, Col } from 'react-flexbox-grid';
+import { Row, Col } from '../grid';
 
 class Feature extends React.Component {
 
@@ -20,7 +19,7 @@ class Feature extends React.Component {
 
         return (
             <Row style={styles}>
-                <Col xs={12} sm={4} md={4} lg={4}>
+                <Col xsWidth={12} smWidth={4} mdWidth={4} lgWidth={4}>
                     <Title name={this.props.data.name} />
                     <Description info={this.props.data.info} />
                     <Link className={"actionButton"} 

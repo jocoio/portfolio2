@@ -3,7 +3,7 @@ import menu from './images/menu.png';
 import logo from './images/logo.png';
 import cross from './images/cross.png';
 import { Link } from 'react-router-dom';
-import { Row, Col } from 'react-flexbox-grid';
+import { Row, Col } from './grid';
 
 import './Nav.css'
 

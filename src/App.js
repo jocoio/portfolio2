@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Nav from './Nav.js';
-import { Grid } from 'react-flexbox-grid';
+import { Grid } from './grid';
 
 import './App.css';
 
