@@ -1,36 +1,47 @@
 .MenuIcon {
   max-width: 35px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
+  position: fixed;
+  left: 25px;
+  top: 25px;
+}
+
+.MenuExit {
+  margin: 35px;
+  max-width: 25px;
+  cursor: pointer;
 }
 
 .logo {
-  position: absolute;
+  position: fixed;
   top: 20px;
-  left: 95vw;
+  right: 20px;
   max-width: 50px;
 }
 
 .MenuContainer {
     position: absolute;
     top: 0px;
+    left: 0px;
     background-color: #ffffff;
     height: 100vh;
     box-shadow: 0px 2px 4px 2px #ccc;
-    width: 200px;
 }
 
 .MenuItem {
-    font-family: 'Source Sans Pro';
-    color: #4A4A4A;
+  font-family: 'Source Sans Pro';
+  color: #4A4A4A;
 	text-decoration: none;
 	font-size: 64px;
 	font-weight: bold;
-	padding: 0 0 2px;
-	margin: 15px;
+	padding: 0px;
+	margin: 15px 25px;
 	text-align: left;
 	text-decoration: none !important;
 	cursor: pointer;
 	display: block;
+  transition: all 150ms;
+}
+
+.MenuItem:hover {
+  color: #23966c;
 }
