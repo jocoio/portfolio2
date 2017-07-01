@@ -14,7 +14,7 @@ class ProjectPage extends React.Component {
 
         return (
             <Row>
-                <Col xs={12} sm={4} md={4} lg={4}>
+                <Col xsWidth={12} smWidth={4} mdWidth={4} lgWidth={4}>
                     <Title name={project.name}/>
                     <Description info={project.info}/>
                     <div>{project.category}</div>

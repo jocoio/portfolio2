@@ -1,5 +1,3 @@
-'use strict';
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -37,10 +35,14 @@ var propTypes = {
   smHeight: _types.ColumnSizeType,
   mdHeight: _types.ColumnSizeType,
   lgHeight: _types.ColumnSizeType,
-  xsOffset: _propTypes2.default.number,
-  smOffset: _propTypes2.default.number,
-  mdOffset: _propTypes2.default.number,
-  lgOffset: _propTypes2.default.number,
+  xsXOffset: _propTypes2.default.number,
+  smXOffset: _propTypes2.default.number,
+  mdXOffset: _propTypes2.default.number,
+  lgXOffset: _propTypes2.default.number,
+  xsYOffset: _propTypes2.default.number,
+  smYOffset: _propTypes2.default.number,
+  mdYOffset: _propTypes2.default.number,
+  lgYOffset: _propTypes2.default.number,
   first: _types.ViewportSizeType,
   last: _types.ViewportSizeType,
   className: _propTypes2.default.string,
@@ -57,10 +59,14 @@ var classMap = {
   smHeight: 'col-height-sm',
   mdHeight: 'col-height-md',
   lgHeight: 'col-height-lg',
-  xsOffset: 'col-width-xs-offset',
-  smOffset: 'col-width-sm-offset',
-  mdOffset: 'col-width-md-offset',
-  lgOffset: 'col-width-lg-offset'
+  xsXOffset: 'col-x-xs-offset',
+  smXOffset: 'col-x-sm-offset',
+  mdXOffset: 'col-x-md-offset',
+  lgXOffset: 'col-x-lg-offset',
+  xsYOffset: 'col-y-xs-offset',
+  smYOffset: 'col-y-sm-offset',
+  mdYOffset: 'col-y-md-offset',
+  lgYOffset: 'col-y-lg-offset'
 };
 
 function isInteger(value) {

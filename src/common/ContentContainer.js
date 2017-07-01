@@ -17,7 +17,8 @@ class ContentContainer extends React.Component {
         return (
             <Col xsWidth={this.props.width[3]} smWidth={this.props.width[2]} mdWidth={this.props.width[1]} lgWidth={this.props.width[0]}
                  xsHeight={this.props.height[3]} smHeight={this.props.height[2]} mdHeight={this.props.height[1]} lgHeight={this.props.height[0]}
-                 xsOffset={this.props.x[3]} smOffset={this.props.x[2]} mdOffset={this.props.x[1]} lgOffset={this.props.x[0]} 
+                 xsXOffset={this.props.x[3]} smXOffset={this.props.x[2]} mdXOffset={this.props.x[1]} lgXOffset={this.props.x[0]}
+                 xsYOffset={this.props.y[3]} smYOffset={this.props.y[2]} mdYOffset={this.props.y[1]} lgYOffset={this.props.y[0]} 
                  style={styles}/>
         );
     }

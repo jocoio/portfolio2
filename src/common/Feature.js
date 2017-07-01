@@ -19,7 +19,9 @@ class Feature extends React.Component {
 
         return (
             <Row style={styles}>
-                <Col xsWidth={12} smWidth={4} mdWidth={4} lgWidth={4}>
+                <Col xsWidth={12} smWidth={4} mdWidth={4} lgWidth={4}
+                     xsXOffset={1} smXOffset={1} mdXOffset={1} lgXOffset={0}
+                     xsYOffset={7}>
                     <Title name={this.props.data.name} />
                     <Description info={this.props.data.info} />
                     <Link className={"actionButton"} 
