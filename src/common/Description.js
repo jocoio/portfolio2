@@ -1,7 +1,9 @@
 import React from 'react';
 
 const divStyle = {
-  maxWidth: 250
+  width: 250, 
+  marginBottom: "25px",
+  marginTop: "0px"
 };
 
 class Description extends React.Component {

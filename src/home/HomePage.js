@@ -18,20 +18,19 @@ class HomePage extends React.Component {
 
     render() {
         return (
-            
-                <div>
-                    <Row>
-                        <Col xsWidth className="landing">
-                            <div className="intro">
-                                <h1>Jon Corbett</h1>
-                                <p>Boston based designer, developer, and dog lover</p>
-                            </div>
-                        </Col>
-                    </Row>
-                    <Feature data={features.la} photo1={map} photo2={menu} photo3={icons}/>
-                    <Feature data={features.ed} photo1={slide} photo2={thumb} photo3={gparents}/>
-                    <Feature data={features.scout} photo1={sclogo} photo2={labs} photo3={meeting}/>        
-                </div>
+            <div>
+                <Row>
+                    <Col xsWidth className="landing">
+                        <div className="intro">
+                            <h1>Jon Corbett</h1>
+                            <p>Boston based designer, developer, and dog lover</p>
+                        </div>
+                    </Col>
+                </Row>
+                <Feature data={features.la} photo1={map} photo2={menu} photo3={icons}/>
+                <Feature data={features.ed} photo1={slide} photo2={thumb} photo3={gparents}/>
+                <Feature data={features.scout} photo1={sclogo} photo2={labs} photo3={meeting}/>        
+            </div>
         )
     }
 }

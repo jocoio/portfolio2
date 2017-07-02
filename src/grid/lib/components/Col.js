@@ -42,7 +42,13 @@ var propTypes = {
   xsYOffset: _propTypes2.default.number,
   smYOffset: _propTypes2.default.number,
   mdYOffset: _propTypes2.default.number,
-  lgYOffset: _propTypes2.default.number,
+  lgYOffset: _propTypes2.default.number, 
+  xsZ: _propTypes2.default.number,
+  smZ: _propTypes2.default.number,
+  mdZ: _propTypes2.default.number,
+  lgZ: _propTypes2.default.number,
+  
+
   first: _types.ViewportSizeType,
   last: _types.ViewportSizeType,
   className: _propTypes2.default.string,
@@ -66,7 +72,11 @@ var classMap = {
   xsYOffset: 'col-y-xs-offset',
   smYOffset: 'col-y-sm-offset',
   mdYOffset: 'col-y-md-offset',
-  lgYOffset: 'col-y-lg-offset'
+  lgYOffset: 'col-y-lg-offset',
+  xsZ: 'col-z-xs',
+  smZ: 'col-z-sm',
+  mdZ: 'col-z-md',
+  lgZ: 'col-z-lg',
 };
 
 function isInteger(value) {

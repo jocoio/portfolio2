@@ -19,9 +19,9 @@ class Feature extends React.Component {
 
         return (
             <Row style={styles}>
-                <Col xsWidth={12} smWidth={4} mdWidth={4} lgWidth={4}
+                <Col xsWidth={10} smWidth={4} mdWidth={4} lgWidth={4}
                      xsXOffset={1} smXOffset={1} mdXOffset={1} lgXOffset={0}
-                     xsYOffset={7}>
+                     xsYOffset={2}>
                     <Title name={this.props.data.name} />
                     <Description info={this.props.data.info} />
                     <Link className={"actionButton"} 
@@ -32,9 +32,9 @@ class Feature extends React.Component {
                             }
                     }}>See More</Link>
                 </Col>
-                <ContentContainer x={photo1.x} y={photo1.y} width={photo1.width} height={photo1.height} img={this.props.photo1} size="200%" />
-                <ContentContainer x={photo2.x} y={photo2.y} width={photo2.width} height={photo2.height} img={this.props.photo2} size="100%" />
-                <ContentContainer x={photo3.x} y={photo3.y} width={photo3.width} height={photo3.height} img={this.props.photo3} size="100%" />
+                <ContentContainer x={photo1.x} y={photo1.y} z={photo1.z} width={photo1.width} height={photo1.height} img={this.props.photo1} size="100%" />
+                <ContentContainer x={photo2.x} y={photo2.y} z={photo2.z} width={photo2.width} height={photo2.height} img={this.props.photo2} size="100%" />
+                <ContentContainer x={photo3.x} y={photo3.y} z={photo3.z} width={photo3.width} height={photo3.height} img={this.props.photo3} size="100%" />
             </Row>
         )
     }

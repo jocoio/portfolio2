@@ -1,0 +1,110 @@
+{
+    "design": {
+        "name": "Design",
+        "info": "I picked up design about two years ago, creating snapchat geofilters for fun. However I soon realized how important of a problem solving tool it could be.",
+        "category": ["User Experience", "Brand Identity"],
+        "date": "February 2016",
+        "photo1": {
+            "x": [4, 4, 0, 0],
+            "y": [0, 0, 4, 0],
+            "z": [0, 2, 0, 0],
+            "width": [2, 2, 0, 12],
+            "height": [6, 3, 0, 2]
+        },
+        "photo2": {
+            "x": [7, 5, 6, 0],
+            "y": [0, 0, 0, 0],
+            "z": [0, 0, 0, 0],
+            "width": [2, 2, 6, 0],
+            "height": [6, 10, 9, 0]
+        },
+        "photo3": {
+            "x": [10, 5, 0, 0],
+            "y": [0, 0, 10, 0],
+            "z": [2, 0, 0, 0],
+            "width": [2, 2, 7, 0],
+            "height": [6, 2, 2, 0]
+        }
+    },
+    "dev": {
+        "name": "Code",
+        "info": "I've been coding for about 4 years, mostly for class. It's time-consuming, frustrating, and repetitive, but the small dopamine release from solving challenging problems draws me back like a moth to a flame. These are some of my favorite projects or the past few years.",
+        "category": ["Filmmaking"],
+        "date": "November 2014",        
+        "photo1": {
+            "x": [4, 4, 0, 0],
+            "y": [0, 0, 4, 0],
+            "z": [0, 2, 0, 0],
+            "width": [8, 2, 0, 12],
+            "height": [2, 3, 0, 2]
+        },
+        "photo2": {
+            "x": [4, 5, 6, 0],
+            "y": [2, 0, 0, 0],
+            "z": [0, 0, 0, 0],
+            "width": [8, 8, 6, 0],
+            "height": [2, 10, 9, 0]
+        },
+        "photo3": {
+            "x": [4, 5, 0, 0],
+            "y": [4, 0, 10, 0],
+            "z": [0, 0, 0, 0],
+            "width": [8, 8, 7, 0],
+            "height": [2, 2, 2, 0]
+        }
+    },
+    "photo": {
+        "name": "Photo",
+        "info": "I got my first camera in 2011. None of these photos are from 2011. Trust me, you dont want to see them. I love capturing the beauty of everyday life, and photography is a perfect tool to do so.",
+        "category": ["Wireframming", "UI/UX", "Filmmaking"],
+        "date": "2016-Present",        
+        "photo1": {
+            "x": [4, 4, 0, 0],
+            "y": [0, 0, 4, 0],
+            "z": [0, 2, 0, 0],
+            "width": [2, 2, 0, 12],
+            "height": [6, 3, 0, 2]
+        },
+        "photo2": {
+            "x": [7, 5, 6, 0],
+            "y": [0, 0, 0, 0],
+            "z": [0, 0, 0, 0],
+            "width": [2, 2, 6, 0],
+            "height": [6, 10, 9, 0]
+        },
+        "photo3": {
+            "x": [10, 5, 0, 0],
+            "y": [0, 0, 10, 0],
+            "z": [2, 0, 0, 0],
+            "width": [2, 2, 7, 0],
+            "height": [6, 2, 2, 0]
+        }
+    },
+    "video": {
+        "name": "Video",
+        "info": "I started playing around with video in 2014. I quickly discovered a strong passion for filmmaking, and spent about a year fully dedicated to the craft.",
+        "category": ["Wireframming", "UI/UX", "Filmmaking"],
+        "date": "2016-Present",        
+        "photo1": {
+            "x": [4, 4, 0, 0],
+            "y": [0, 0, 4, 0],
+            "z": [0, 2, 0, 0],
+            "width": [8, 2, 0, 12],
+            "height": [2, 3, 0, 2]
+        },
+        "photo2": {
+            "x": [4, 5, 6, 0],
+            "y": [2, 0, 0, 0],
+            "z": [0, 0, 0, 0],
+            "width": [8, 8, 6, 0],
+            "height": [2, 10, 9, 0]
+        },
+        "photo3": {
+            "x": [4, 5, 0, 0],
+            "y": [4, 0, 10, 0],
+            "z": [0, 0, 0, 0],
+            "width": [8, 8, 7, 0],
+            "height": [2, 2, 2, 0]
+        }
+    }
+}
