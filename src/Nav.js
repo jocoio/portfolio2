@@ -1,7 +1,7 @@
 import React from 'react';
-import menu from './images/menu.png';
-import logo from './images/logo.png';
-import cross from './images/cross.png';
+import menu from './images/nav/menu.png';
+import logo from './images/nav/logo.png';
+import cross from './images/nav/cross.png';
 import { Link } from 'react-router-dom';
 import { Row, Col } from './grid';
 

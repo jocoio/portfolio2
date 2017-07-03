@@ -12,6 +12,7 @@ h1 {
   line-height: 64px;
   margin: 0px;
   color: #4A4A4A;
+  padding-bottom: 10px;
 }
 
 p {
@@ -47,6 +48,23 @@ p {
   left: 50vw;
   top: 50vh;
   transform: translate(-50%, -50%);
+  width: 90vw;
+}
+.landing>.intro>p {
+ color: #8C8C8C;
+}
+.actionCall {
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+.actionCall>p {
+  color: #8C8C8C;
+  font-style: italic;
+}
+.arrow {
+  max-height: 50px;
 }
 
 .actionButton:hover {

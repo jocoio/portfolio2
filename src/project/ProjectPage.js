@@ -8,7 +8,6 @@ class ProjectPage extends React.Component {
     
     render() {
 
-        console.log(this.props.location.state.data);
         var project = this.props.location.state.data;
         var back = this.props.location.state.back;
 
@@ -16,7 +15,9 @@ class ProjectPage extends React.Component {
             <Row>
                 <Col xsWidth={12} smWidth={4} mdWidth={4} lgWidth={4}>
                     <Title name={project.name}/>
-                    <Description info={project.info}/>
+                    <Description info={project.info}
+                                 width={[12, 12, 12, 12]}
+                    />
                     <div>{project.category}</div>
                     <div>{project.date}</div>
                     <Link to={back}>back</Link>

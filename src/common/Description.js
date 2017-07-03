@@ -1,16 +1,19 @@
 import React from 'react';
+import { Col } from '../grid';
 
-const divStyle = {
-  width: 250, 
-  marginBottom: "25px",
-  marginTop: "0px"
-};
 
 class Description extends React.Component {
-    
+
     render() {
+        var divStyle = {
+            marginBottom: "25px",
+            marginTop: "0px",
+        };
         return (
-            <p style={divStyle}>{this.props.info}</p>
+            <Col style={divStyle} 
+                 lgWidth={this.props.width[0]} mdWidth={this.props.width[1]} smWidth={this.props.width[2]} xsWidth={this.props.width[3]}>
+                <p>{this.props.info}</p>
+            </Col>
         );
     }
 }

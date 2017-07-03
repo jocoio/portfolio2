@@ -8,33 +8,45 @@ import { Row, Col } from '../grid';
 class Feature extends React.Component {
 
     render() {
-        var styles = {
+        var rowStyles = {
             height: "100vh",
-            position: "relative"
+            position: "relative",
+            paddingTop: "100px"
+        }
+        var infoStyles = {
+            maxWidth: "250px"
         }
 
-        var photo1 = this.props.data.photo1;
-        var photo2 = this.props.data.photo2;
-        var photo3 = this.props.data.photo3;
+        var content1 = this.props.data.feature1;
+        var content2 = this.props.data.feature2;
+        var content3 = this.props.data.feature3;
+
+        var photo1 = require(`../images/features/${content1.url}`);
+        var photo2 = require(`../images/features/${content2.url}`);
+        var photo3 = require(`../images/features/${content3.url}`);
 
         return (
-            <Row style={styles}>
-                <Col xsWidth={10} smWidth={4} mdWidth={4} lgWidth={4}
+            <Row style={rowStyles}>
+                <Col xsWidth={10} smWidth={4} mdWidth={3} lgWidth={4}
                      xsXOffset={1} smXOffset={1} mdXOffset={1} lgXOffset={0}
-                     xsYOffset={2}>
+                     xsYOffset={3}>
                     <Title name={this.props.data.name} />
-                    <Description info={this.props.data.info} />
+                    <Description style={infoStyles} info={this.props.data.info}
+                                 width={[9, 12, 12, 12]}
+                    />
                     <Link className={"actionButton"} 
-                        to={{ pathname: '/project',
+                        to={{ 
+                            pathname: '/project',
                             state: { 
                                 data : this.props.data,
                                 back : "/"
                             }
-                    }}>See More</Link>
+                        }}>See More
+                    </Link>
                 </Col>
-                <ContentContainer x={photo1.x} y={photo1.y} z={photo1.z} width={photo1.width} height={photo1.height} img={this.props.photo1} size="100%" />
-                <ContentContainer x={photo2.x} y={photo2.y} z={photo2.z} width={photo2.width} height={photo2.height} img={this.props.photo2} size="100%" />
-                <ContentContainer x={photo3.x} y={photo3.y} z={photo3.z} width={photo3.width} height={photo3.height} img={this.props.photo3} size="100%" />
+                <ContentContainer x={content1.x} y={content1.y} z={content1.z} width={content1.width} height={content1.height} img={photo1} size="100%" />
+                <ContentContainer x={content2.x} y={content2.y} z={content2.z} width={content2.width} height={content2.height} img={photo2} size="100%" />
+                <ContentContainer x={content3.x} y={content3.y} z={content3.z} width={content3.width} height={content3.height} img={photo3} size="100%" />
             </Row>
         )
     }

@@ -4,21 +4,24 @@
         "info": "In February 2016 I attended my first hackathon, Hack@Brown. Working with LA locals, we created a curated guide to Los Angeles, and won best user experience out of ~100 teams.",
         "category": ["User Experience", "Brand Identity"],
         "date": "February 2016",
-        "photo1": {
+        "feature1": {
+            "url": "map.png",
             "x": [5, 4, 0, 0],
             "y": [5, 9, 4, 0],
             "z": [0, 2, 0, 0],
             "width": [2, 2, 0, 12],
-            "height": [2, 3, 0, 2]
+            "height": [2, 3, 0, 3]
         },
-        "photo2": {
+        "feature2": {
+            "url": "laMenu.png",
             "x": [4, 5, 6, 0],
             "y": [0, 0, 0, 0],
             "z": [1, 0, 0, 0],
             "width": [6, 6, 6, 0],
             "height": [6, 10, 9, 0]
         },
-        "photo3": {
+        "feature3": {
+            "url": "icons.png",
             "x": [7, 5, 0, 0],
             "y": [3, 11, 10, 0],
             "z": [2, 0, 0, 0],
@@ -31,21 +34,24 @@
         "info": "In 2014 my grandparents, Ed and Laureen, celebrated their 50th wedding anniversary. As a large source of inspiration in my life, I wanted to capture their story. On a cold November day, I sat down with them and did just that.",
         "category": ["Filmmaking"],
         "date": "November 2014",        
-        "photo1": {
+        "feature1": {
+            "url": "slide.png",
             "x": [4, 4, 0, 0],
-            "y": [2, 8, 0, 0],
+            "y": [2, 9, 0, 0],
             "z": [0, 2, 0 ,0],
             "width": [2, 2, 0, 0],
             "height": [2, 3, 0, 0]
         },
-        "photo2": {
+        "feature2": {
+            "url": "thumb.png",
             "x": [5, 5, 0, 0],
-            "y": [0, 0, 9, 0],
+            "y": [0, 0, 10, 0],
             "z": [1, 0, 0, 0],
             "width": [6, 6, 5, 12],
-            "height": [3, 5, 4, 2]
+            "height": [3, 5, 4, 3]
         },
-        "photo3": {
+        "feature3": {
+            "url": "gparents.png",
             "x": [9, 5, 6, 0],
             "y": [2, 6, 0, 0],
             "z": 0,
@@ -58,21 +64,24 @@
         "info": "In January 2016 I joined Northeastern’s on campus, student run design studio, Scout. From there, it’s been a wild ride of hard work, late nights, and lifelong friends. I’ve been lucky enough to wear several different hats while on Scout, and the following is a collection of some of my favorite work.",
         "category": ["Wireframming", "UI/UX", "Filmmaking"],
         "date": "2016-Present",        
-        "photo1": {
+        "feature1": {
+            "url": "sclogo.gif",
             "x": [4, 4, 0, 0],
             "y": [4, 6, 0, 0],
             "z": [0, 2, 0, 0],
             "width": [3, 2, 0, 12],
-            "height": [3, 3, 0, 2]
+            "height": [3, 3, 0, 3]
         },
-        "photo2": {
+        "feature2": {
+            "url": "labs.png",
             "x": [5, 5, 6, 0],
             "y": [0, 0, 0, 0],
             "z": [1, 0, 0, 0],
             "width": [6, 6, 6, 0],
             "height": [5, 7, 8, 0]
         },
-        "photo3": {
+        "feature3": {
+            "url": "meeting.png",
             "x": [9, 5, 0, 0],
             "y": [1, 8, 9, 0],
             "z": [2, 0, 0, 0],

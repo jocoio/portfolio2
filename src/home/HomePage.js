@@ -1,17 +1,7 @@
 import React from 'react';
 import Feature from '../common/Feature.js';
 import features from '../features.json';
-import menu from '../images/laMenu.png';
-import map from '../images/map.png';
-import icons from '../images/icons.png';
-import thumb from '../images/thumb.png';
-import gparents from '../images/gparents.png';
-import slide from '../images/slide.png';
-
-import meeting from '../images/meeting.png';
-import labs from '../images/labs.png';
-import sclogo from '../images/sclogo.gif';
-
+import arrow from '../images/nav/arrow.png';
 import { Row, Col } from '../grid';
 
 class HomePage extends React.Component {
@@ -25,11 +15,15 @@ class HomePage extends React.Component {
                             <h1>Jon Corbett</h1>
                             <p>Boston based designer, developer, and dog lover</p>
                         </div>
+                        <div className="actionCall">
+                            <p>Scroll to see featured work</p>
+                            <img className="arrow" src={arrow} alt="arrow"/>
+                        </div>
                     </Col>
                 </Row>
-                <Feature data={features.la} photo1={map} photo2={menu} photo3={icons}/>
-                <Feature data={features.ed} photo1={slide} photo2={thumb} photo3={gparents}/>
-                <Feature data={features.scout} photo1={sclogo} photo2={labs} photo3={meeting}/>        
+                <Feature data={features.la}/>
+                <Feature data={features.ed}/>
+                <Feature data={features.scout}/>        
             </div>
         )
     }
