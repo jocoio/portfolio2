@@ -9,7 +9,7 @@ class WorkPage extends React.Component {
                 <Work data={works.design}/>
                 <Work data={works.dev}/>
                 <Work data={works.photo}/>
-                <Work data={works.video}/>    
+                <Work id="test" data={works.video}/>    
             </div>    
         )
     }

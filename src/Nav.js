@@ -28,7 +28,7 @@ class Nav extends React.Component {
                 <img src={menu} className="MenuIcon" alt="MenuIcon" onClick={() => this.toggleMenu()} />
 
                 {this.state.isMenuVisible ?
-                    <Col xs={12} sm={4} md={4} lg={3}  className="MenuContainer">
+                    <Col xsWidth={12} smWidth={5} mdWidth={4} lgWidth={3}  className="MenuContainer">
                         <img onClick={() => this.toggleMenu()} className="MenuExit" src={cross} alt="MenuExit"/>
                         <Link className="MenuItem" onClick={() => this.toggleMenu()} to="/">Home</Link>
                         <Link className="MenuItem" onClick={() => this.toggleMenu()} to="/work" >Work</Link>

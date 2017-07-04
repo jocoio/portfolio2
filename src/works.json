@@ -3,118 +3,140 @@
         "name": "Design",
         "info": "I picked up design about two years ago, creating snapchat geofilters for fun. However I soon realized how important of a problem solving tool it could be.",
         "work1": {
+            "name": "Hello LA",
+            "info": "In February 2016 I attended my first hackathon, Hack@Brown. Working with LA locals, we created a curated guide to Los Angeles, and won best user experience out of ~100 teams.",
+            "category": ["User Experience", "Brand Identity"],
             "url": "map.png",
             "x": [4, 4, 6, 1],
             "y": [0, 0, 0, 0],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
-            "height": [6, 10, 4, 1]
+            "height": [10, 10, 4, 3]
         },
         "work2": {
+            "name": "Scout Site",
+            "info": "During spring of 2016 I joined Scout studio as a designer, and worked on a team tasked with redesigning and creating Scout's website. We started with a brand dive, assessing the current state of Scout and its collateral, and from there moved onto sketching, wireframing, high fidelity mockups, and eventually coding.",
+            "category": ["Wireframming", "UI/UX"],
             "url": "labs.png",
             "x": [7, 7, 6, 1],
-            "y": [0, 0, 5, 1],
+            "y": [0, 0, 5, 4],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
-            "height": [6, 10, 4, 1]
+            "height": [10, 10, 4, 3]
         },
         "work3": {
+            "name": "MyHousing",
+            "info": "In spring 2016 I took the class design: process, context, and systems. This introductory course explored the core ideas of design thinking and user-focused design. For our final project we were tasked with finding an frustrating user experience we've encountered while at NU, and try to design a smarter solution to it.",
+            "category": ["User Experience", "Design Thinking"],
             "url": "housing.png",
             "x": [10, 10, 6, 1],
-            "y": [0, 0, 10, 2],
+            "y": [0, 0, 10, 8],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
-            "height": [6, 10, 4, 1]
+            "height": [10, 10, 4, 3]
         }
     },
     "dev": {
         "name": "Code",
-        "info": "I've been coding for about 4 years, mostly for class. It's time-consuming, frustrating, and repetitive, but the small dopamine release from solving challenging problems draws me back like a moth to a flame. These are some of my favorite projects or the past few years.",
-        "category": ["Filmmaking"],
-        "date": "November 2014",        
+        "info": "I've been coding for about 4 years, mostly for class. It's time-consuming, frustrating, and repetitive, but the small dopamine release from solving challenging problems draws me back like a moth to a flame. These are some of my favorite projects or the past few years.",     
         "work1": {
-            "url": "housing.png",
+            "name": "Signature Generator",
+            "category": ["Web development"],
+            "url": "gradient.png",
             "x": [4, 4, 6, 1],
             "y": [0, 0, 0, 0],
             "z": [0, 0, 0, 0],
             "width": [8, 8, 6, 10],
-            "height": [2, 3, 4, 1]
+            "height": [3, 3, 4, 3]
         },
         "work2": {
-            "url": "labs.png",
+            "name": "Portfolio",
+            "category": ["Web development"],
+            "url": "joco.png",
             "x": [4, 4, 6, 1],
-            "y": [2, 4, 5, 1],
+            "y": [4, 4, 5, 4],
             "z": [0, 0, 0, 0],
             "width": [8, 8, 6, 10],
-            "height": [2, 3, 4, 1]
+            "height": [3, 3, 4, 3]
         },
         "work3": {
-            "url": "housing.png",
+            "name": "Music Editor",
+            "info": "",
+            "category": ["Object Oriented Design"],
+            "url": "music.png",
             "x": [4, 4, 6, 1],
-            "y": [4, 8, 10, 2],
+            "y": [8, 8, 10, 8],
             "z": [0, 0, 0, 0],
             "width": [8, 8, 6, 10],
-            "height": [2, 3, 4, 1]
+            "height": [3, 3, 4, 3]
         }
     },
     "photo": {
         "name": "Photo",
-        "info": "I got my first camera in 2011. None of these photos are from 2011. Trust me, you dont want to see them. I love capturing the beauty of everyday life, and photography is a perfect tool to do so.",
-        "category": ["Wireframming", "UI/UX", "Filmmaking"],
-        "date": "2016-Present",        
+        "info": "I got my first camera in 2011. None of these photos are from 2011. Trust me, you dont want to see them. I love capturing the beauty of everyday life, and photography is a perfect tool to do so.",      
         "work1": {
+            "name": "Film",
+            "category": ["Landscape photography", "Portrait photography"],
             "url": "chloe.png",
             "x": [4, 4, 6, 1],
             "y": [0, 0, 0, 0],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
-            "height": [6, 10, 4, 1]
+            "height": [10, 10, 4, 3]
         },
         "work2": {
+            "name": "50mm",
+            "category": ["Landscape photography", "Portrait photography"],
             "url": "bos.jpg",
             "x": [7, 7, 6, 1],
-            "y": [0, 0, 5, 1],
+            "y": [0, 0, 5, 4],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
-            "height": [6, 10, 4, 1]
+            "height": [10, 10, 4, 3]
         },
         "work3": {
+            "name": "Mobile",
+            "category": ["Landscape photography", "Portrait photography"],
             "url": "purple.jpg",
             "x": [10, 10, 6, 1],
-            "y": [0, 0, 10, 2],
+            "y": [0, 0, 10, 8],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
-            "height": [6, 10, 4, 1]
+            "height": [10, 10, 4, 3]
         }
     },
     "video": {
         "name": "Video",
-        "info": "I started playing around with video in 2014. I quickly discovered a strong passion for filmmaking, and spent about a year fully dedicated to the craft.",
-        "category": ["Wireframming", "UI/UX", "Filmmaking"],
-        "date": "2016-Present",        
+        "info": "I started playing around with video in 2014. I quickly discovered a strong passion for filmmaking, and spent about a year fully dedicated to the craft.",      
         "work1": {
-            "url": "housing.png",
+            "name": "50 Years",
+            "category": ["Filmmaking"],
+            "url": "gramps.png",
             "x": [4, 4, 6, 1],
             "y": [0, 0, 0, 0],
             "z": [0, 0, 0, 0],
             "width": [8, 8, 6, 10],
-            "height": [2, 3, 4, 1]
+            "height": [3, 3, 4, 3]
         },
         "work2": {
-            "url": "labs.png",
+            "name": "This is Boston",
+            "category": ["Filmmaking"],
+            "url": "bos.png",
             "x": [4, 4, 6, 1],
-            "y": [2, 4, 5, 1],
+            "y": [4, 4, 5, 4],
             "z": [0, 0, 0, 0],
             "width": [8, 8, 6, 10],
-            "height": [2, 3, 4, 1]
+            "height": [3, 3, 4, 3]
         },
         "work3": {
-            "url": "housing.png",
+            "name": "NYC 2015",
+            "category": ["Filmmaking"],
+            "url": "nyc.png",
             "x": [4, 4, 6, 1],
-            "y": [4, 8, 10, 2],
+            "y": [8, 8, 10, 8],
             "z": [0, 0, 0, 0],
             "width": [8, 8, 6, 10],
-            "height": [2, 3, 4, 1]
+            "height": [3, 3, 4, 3]
         }
     }
 }
