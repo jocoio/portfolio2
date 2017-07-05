@@ -9,8 +9,8 @@ class HomePage extends React.Component {
     render() {
         return (
             <div>
-                <Row>
-                    <Col xsWidth className="landing">
+                <Row className="landing">
+                    <Col xsWidth >
                         <div className="intro">
                             <h1>Jon Corbett</h1>
                             <p>Boston based designer, developer, and dog lover</p>

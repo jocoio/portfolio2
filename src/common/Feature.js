@@ -2,14 +2,13 @@ import React from 'react';
 import Title from '../common/Title.js';
 import ContentContainer from '../common/ContentContainer.js';
 import Description from '../common/Description.js';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import { Row, Col } from '../grid';
 
 class Feature extends React.Component {
 
     render() {
         var rowStyles = {
-            height: "100vh",
             position: "relative",
             paddingTop: "80px"
         }
@@ -28,11 +27,11 @@ class Feature extends React.Component {
         return (
             <Row style={rowStyles}>
                 <Col xsWidth={10} smWidth={4} mdWidth={3} lgWidth={4}
-                     xsXOffset={1} smXOffset={1} mdXOffset={1} lgXOffset={0}
-                     xsYOffset={2}>
+                     xsXOffset={1} smXOffset={1} mdXOffset={0} lgXOffset={0}
+                     xsYOffset={9}>
                     <Title name={this.props.data.name} />
                     <Description style={infoStyles} info={this.props.data.info}
-                                 width={[9, 12, 12, 12]}
+                                 width={[3, 3, 4, 12]}
                     />
                     <Link className={"actionButton"} 
                         to={{ 

@@ -6,7 +6,6 @@
 }
 
 .MenuExit {
-  margin: 35px;
   max-width: 25px;
   cursor: pointer;
 }
@@ -28,20 +27,78 @@
 }
 
 .MenuItem {
-  font-family: 'Source Sans Pro';
-  color: #4A4A4A;
-	text-decoration: none;
-	font-size: 64px;
-	font-weight: bold;
-	padding: 0px;
-	margin: 15px 25px;
-	text-align: left;
-	text-decoration: none !important;
-	cursor: pointer;
-	display: block;
-  transition: all 150ms;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    color: #4A4A4A;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px;
+    cursor: pointer;
+    display: block;
+    transition: all 150ms;
 }
 
 .MenuItem:hover {
   color: #23966c;
+}
+
+/* lg */
+@media only screen and (min-width: 1440px) {
+  .MenuExit {
+    margin-left: 85px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .MenuItem {
+    font-size: 64px;
+    margin: 25px 85px;
+    text-align: left;
+  }
+}
+
+
+/* md */
+@media only screen and (max-width: 1439px) {
+  .MenuExit {
+    margin-left: 73px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .MenuItem {
+    font-size: 58px;
+    margin: 25px 73px;
+    text-align: left;
+  }
+}
+
+/* sm */
+@media only screen and (max-width: 1023px) {
+  .MenuExit {
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .MenuItem {
+    font-size: 52px;
+    margin: 25px 50px;
+    text-align: left;
+  }
+}
+
+/* xs */
+@media only screen and (max-width: 767px) {
+  .MenuExit {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+  .MenuItem {
+    font-size: 52px;
+    margin: 25px 50px;
+    text-align: center;
+  }
 }

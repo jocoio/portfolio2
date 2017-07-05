@@ -19,7 +19,8 @@ class Nav extends React.Component {
     render() {
         var styles = {
             position: "fixed",
-            zIndex : "2"
+            zIndex : "1",
+            height: "100px"
         }
 
         return (
@@ -28,9 +29,10 @@ class Nav extends React.Component {
                 <img src={menu} className="MenuIcon" alt="MenuIcon" onClick={() => this.toggleMenu()} />
 
                 {this.state.isMenuVisible ?
-                    <Col xsWidth={12} smWidth={5} mdWidth={4} lgWidth={3}  className="MenuContainer">
+                    <Col className="MenuContainer"
+                        lgWidth={5} mdWidth={5} smWidth={5} xsWidth={12}>
                         <img onClick={() => this.toggleMenu()} className="MenuExit" src={cross} alt="MenuExit"/>
-                        <Link className="MenuItem" onClick={() => this.toggleMenu()} to="/">Home</Link>
+                        <Link className="MenuItem" onClick={() => this.toggleMenu()} to="/">Featured</Link>
                         <Link className="MenuItem" onClick={() => this.toggleMenu()} to="/work" >Work</Link>
                         <Link className="MenuItem" onClick={() => this.toggleMenu()} to="/about">About</Link>
                     </Col>

@@ -6,69 +6,100 @@
             "name": "Hello LA",
             "info": "In February 2016 I attended my first hackathon, Hack@Brown. Working with LA locals, we created a curated guide to Los Angeles, and won best user experience out of ~100 teams.",
             "category": ["User Experience", "Brand Identity"],
+            "date": "February 2016",
+            "label": "Hello LA",
             "url": "map.png",
             "x": [4, 4, 6, 1],
             "y": [0, 0, 0, 0],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
-            "height": [10, 10, 4, 3]
+            "height": [10, 10, 4, 3],
+            "content": [
+                "colors.gif",
+                "colors.gif"
+            ]
         },
         "work2": {
             "name": "Scout Site",
             "info": "During spring of 2016 I joined Scout studio as a designer, and worked on a team tasked with redesigning and creating Scout's website. We started with a brand dive, assessing the current state of Scout and its collateral, and from there moved onto sketching, wireframing, high fidelity mockups, and eventually coding.",
             "category": ["Wireframming", "UI/UX"],
+            "date": "Spring 2016",
+            "label": "Scout Site",
             "url": "labs.png",
             "x": [7, 7, 6, 1],
             "y": [0, 0, 5, 4],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
-            "height": [10, 10, 4, 3]
+            "height": [10, 10, 4, 3],
+            "content": [
+                
+            ]
         },
         "work3": {
             "name": "MyHousing",
             "info": "In spring 2016 I took the class design: process, context, and systems. This introductory course explored the core ideas of design thinking and user-focused design. For our final project we were tasked with finding an frustrating user experience we've encountered while at NU, and try to design a smarter solution to it.",
             "category": ["User Experience", "Design Thinking"],
+            "date": "Spring 2016",
+            "label": "MyHousing",
             "url": "housing.png",
             "x": [10, 10, 6, 1],
             "y": [0, 0, 10, 8],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
-            "height": [10, 10, 4, 3]
+            "height": [10, 10, 4, 3],
+            "content": [
+                
+            ]
         }
     },
     "dev": {
         "name": "Code",
         "info": "I've been coding for about 4 years, mostly for class. It's time-consuming, frustrating, and repetitive, but the small dopamine release from solving challenging problems draws me back like a moth to a flame. These are some of my favorite projects or the past few years.",     
         "work1": {
-            "name": "Signature Generator",
+            "name": "Email Signature Generator",
             "category": ["Web development"],
+            "date": "Spring 2017",
+            "label": "Signature Generator",
             "url": "gradient.png",
             "x": [4, 4, 6, 1],
             "y": [0, 0, 0, 0],
             "z": [0, 0, 0, 0],
             "width": [8, 8, 6, 10],
-            "height": [3, 3, 4, 3]
+            "height": [3, 3, 4, 3],
+            "content": [
+                
+            ]
         },
         "work2": {
-            "name": "Portfolio",
+            "name": "Portfolio Site",
             "category": ["Web development"],
+            "date": "Summer 2017",
+            "label": "Portfolio",
             "url": "joco.png",
             "x": [4, 4, 6, 1],
             "y": [4, 4, 5, 4],
             "z": [0, 0, 0, 0],
             "width": [8, 8, 6, 10],
-            "height": [3, 3, 4, 3]
+            "height": [3, 3, 4, 3],
+            "content": [
+                
+            ]
         },
         "work3": {
             "name": "Music Editor",
-            "info": "",
+            "info": "Music editor was the final project for CS3500 (Object Oriented Design). It works with java's MIDI library to add, remove, and edit notes of a song.This project was almost completely open-ended, with only some core restraints. This project emphasized the importance of adaptable design, and making a program that could grow and change without needing complete restructuring.",
             "category": ["Object Oriented Design"],
+            "date": "Summer 2016",
+            "label": "Music Editor",
             "url": "music.png",
             "x": [4, 4, 6, 1],
             "y": [8, 8, 10, 8],
             "z": [0, 0, 0, 0],
             "width": [8, 8, 6, 10],
-            "height": [3, 3, 4, 3]
+            "height": [3, 3, 4, 3],
+            "content": [
+                
+            ]
         }
     },
     "photo": {
@@ -77,40 +108,58 @@
         "work1": {
             "name": "Film",
             "category": ["Landscape photography", "Portrait photography"],
+            "date": "Sometimes",
+            "label": "Film",
             "url": "chloe.png",
             "x": [4, 4, 6, 1],
             "y": [0, 0, 0, 0],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
-            "height": [10, 10, 4, 3]
+            "height": [10, 10, 4, 3],
+            "content": [
+                
+            ]
         },
         "work2": {
             "name": "50mm",
             "category": ["Landscape photography", "Portrait photography"],
+            "date": "Occasionally",
+            "label": "50mm",
             "url": "bos.jpg",
             "x": [7, 7, 6, 1],
             "y": [0, 0, 5, 4],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
-            "height": [10, 10, 4, 3]
+            "height": [10, 10, 4, 3],
+            "content": [
+                
+            ]
         },
         "work3": {
             "name": "Mobile",
             "category": ["Landscape photography", "Portrait photography"],
+            "date": "Constantly",
             "url": "purple.jpg",
+            "label": "Mobile",
             "x": [10, 10, 6, 1],
             "y": [0, 0, 10, 8],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
-            "height": [10, 10, 4, 3]
+            "height": [10, 10, 4, 3],
+            "content": [
+                
+            ]
         }
     },
     "video": {
         "name": "Video",
         "info": "I started playing around with video in 2014. I quickly discovered a strong passion for filmmaking, and spent about a year fully dedicated to the craft.",      
         "work1": {
-            "name": "50 Years",
+            "name": "50 Years: Ed and Laureen",
+            "info": "In 2014 my grandparents, Ed and Laureen, celebrated their 50th wedding anniversary. As a large source of inspiration in my life, I wanted to capture their story. On a cold November day, I sat down with them and did just that.",
             "category": ["Filmmaking"],
+            "date": "Fall 2014",
+            "label": "50 Years",
             "url": "gramps.png",
             "x": [4, 4, 6, 1],
             "y": [0, 0, 0, 0],
@@ -121,22 +170,32 @@
         "work2": {
             "name": "This is Boston",
             "category": ["Filmmaking"],
+            "date": "Fall 2014",
+            "label": "This is Boston",
             "url": "bos.png",
             "x": [4, 4, 6, 1],
             "y": [4, 4, 5, 4],
             "z": [0, 0, 0, 0],
             "width": [8, 8, 6, 10],
-            "height": [3, 3, 4, 3]
+            "height": [3, 3, 4, 3],
+            "content": [
+                
+            ]
         },
         "work3": {
             "name": "NYC 2015",
             "category": ["Filmmaking"],
+            "date": "Fall 2015",
+            "label": "NYC 2015",
             "url": "nyc.png",
             "x": [4, 4, 6, 1],
             "y": [8, 8, 10, 8],
             "z": [0, 0, 0, 0],
             "width": [8, 8, 6, 10],
-            "height": [3, 3, 4, 3]
+            "height": [3, 3, 4, 3],
+            "content": [
+                
+            ]
         }
     }
 }

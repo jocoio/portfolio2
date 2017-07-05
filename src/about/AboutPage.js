@@ -4,6 +4,7 @@ import Description from  '../common/Description.js';
 import ContentContainer from '../common/ContentContainer.js';
 import { Row, Col } from '../grid';
 import me from '../images/about/me.png';
+import resume from '../images/about/resume.pdf';
 
 class AboutPage extends React.Component {
     
@@ -13,21 +14,34 @@ class AboutPage extends React.Component {
             position: "relative",
             paddingTop: "80px"
         }
+
+        var intro= [
+            "I'm Jon, a Boston-based designer and developer with a soft spot for beautiful logos, well-documented code, and golden retreivers.",
+            "I'm a Texan at heart, but am currently braving the elements at Northeastern University, majoring in Computer Science and Design. I love exploring the intersection of creativity and technology, and using design thinking to solve challenging problems.",
+            "Okay, thanks for stopping by!"
+        ]
+
         return (
+            
             <Row style={styles}>
-                <Col xsWidth={10} smWidth={4} mdWidth={4} lgWidth={4}
+                <Col xsWidth={10} smWidth={5} mdWidth={4} lgWidth={4}
                      xsXOffset={1} smXOffset={1} mdXOffset={1} lgXOffset={0}
-                     lgYOffset={0} mdYOffset={0} smYOffset={0} xsYOffset={3}>
+                     lgYOffset={0} mdYOffset={0} smYOffset={0} xsYOffset={9}>
                     <Title name="Hi There!"/>
-                    <Description info="I'm Jon, a Boston-based designer and developer with a soft spot for beautiful logos, well-documented code, and golden retreivers. I'm a Texan at heart, but am currently braving the elements at Northeastern University, majoring in Computer Science and Graphic Design. I love exploring the interseciton of creativity and technology, and using design thinking to solve challenging problems. If you want to reach out about employment, or to just say hello, feel free to get in touch !Okay, thanks for stopping by! Feel free to grab a resume on your way out!"
-                                 width={[12, 12, 12, 12]}
+                    <Description info={intro}
+                                 width={[4, 4, 4, 12]}
                     />
+                    <h3>Email</h3>
+                    <a href="mailto:hello@joco.io?Subject=Hi there!">hello@joco.io</a>
+                    <h3>Resume</h3>
+                    <a href={resume}>View Resume</a>
+                    
                 </Col>
-                <ContentContainer x={[7, 7, 7, 0]} 
+                <ContentContainer x={[7, 7, 6, 0]} 
                                   y={[0, 0, 0, 0]} 
                                   z={[0, 0, 0, 0]} 
-                                  width={[4, 4, 4, 12]} 
-                                  height={[10, 10, 10, 3]} 
+                                  width={[4, 4, 5, 12]} 
+                                  height={[10, 10, 10, 10]} 
                                   img={me} 
                                   size="100%"
                 />
