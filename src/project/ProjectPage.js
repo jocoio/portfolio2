@@ -25,7 +25,7 @@ class ProjectPage extends React.Component {
                         width={[3, 3, 3, 12]}
                     />
                     <h3>Category</h3>
-                    
+
                     {project.category.map(function (listValue) {
                         return <p>{listValue}</p>;
                     })}
@@ -35,22 +35,58 @@ class ProjectPage extends React.Component {
                         <img className="backCross" src={cross} alt="cross" />
                     </Link>
                 </Col>
-            
 
-                <Col lgWidth={7} mdWidth={7} smWidth={5} xsWidth={12}
-                     lgXOffset={5} mdXOffset={5} smXOffset={6} xsXOffset={0}
-                     lgYOffset={0} mdYOffset={0} smYOffset={0} xsYOffset={11}
-                     >
-                    {/*{project.content.map(function (listValue) {
-                        console.log(listValue);
-                        var photo1 = require(`../images/work/design/helloLA/${listValue}`);
-                        return (
+
+                <Col className="projectContent" lgWidth={7} mdWidth={7} smWidth={5} xsWidth={12}
+                    lgXOffset={5} mdXOffset={5} smXOffset={6} xsXOffset={0}
+                    lgYOffset={0} mdYOffset={0} smYOffset={0} xsYOffset={13}
+                >
+                    {project.content.map(function (content) {
+                        // Photo + caption
+                        if (content.length === 2 ) {
+                            var photoUrl= content[0];
+                            var photo = require(`../images/${photoUrl}`);
+                            return (
+                                <div>
+                                    <img className="projectImage" src={photo} alt="content" />
+                                    <p className="projectImageCaption">{content[1]}</p>
+                                    <br/><br/>
+                                </div>
+                            );
                             
-                            <img className="projectImage" src={photo1}/>
-                        );
-                    })}*/}
-                    
-
+                        }
+                        // Video
+                        else if (content.substr(0, 24) === "//www.youtube.com/embed/") {
+                            return (
+                                <div className="videoWrapper">
+                                    <iframe width="1920" height="1080" src={content} title="video" frameBorder="0" allowFullScreen/>
+                                </div>
+                            )
+                        }
+                        // Photo
+                        else if (content.substr(content.length - 3) === "gif" || 
+                                 content.substr(content.length - 3) === "png" || 
+                                 content.substr(content.length - 3) === "jpg")
+                        {
+                            photo = require(`../images/${content}`);
+                            return (
+                                <div>
+                                    <img className="projectImage" src={photo} alt="content" />
+                                </div>
+                            );
+                        }
+                        // Title
+                        else if (content.length < 50) {
+                            return (
+                                <div className="projectContentTitle">
+                                    <h2>{content}</h2>
+                                    <br/>
+                                </div>
+                            )
+                        }
+                        // Text
+                        else return <div><p>{content}</p></div>;
+                    })}
                 </Col>
             </Row>
 

@@ -38,7 +38,7 @@ class Feature extends React.Component {
                             pathname: '/project',
                             state: { 
                                 data : this.props.data,
-                                back : "/#test"
+                                back : "/"
                             }
                         }}>See More
                     </Link>

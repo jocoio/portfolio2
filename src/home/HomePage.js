@@ -9,6 +9,9 @@ class HomePage extends React.Component {
     render() {
         return (
             <div>
+                <div className="warning">
+                    <p>This new site is currently under development, but is already feeling better than the previous version, so I'm releasing this a bit early. There's not much content, but feel free to drag the window around and watch things resize! That's about it at the moment! Okay thanks for stopping by! </p>
+                </div>
                 <Row className="landing">
                     <Col xsWidth >
                         <div className="intro">
@@ -17,13 +20,13 @@ class HomePage extends React.Component {
                         </div>
                         <div className="actionCall">
                             <p>Scroll to see featured work</p>
-                            <img className="arrow" src={arrow} alt="arrow"/>
+                            <img className="arrow" src={arrow} alt="arrow" />
                         </div>
                     </Col>
                 </Row>
-                <Feature data={features.la}/>
-                <Feature data={features.ed}/>
-                <Feature data={features.scout}/>        
+                <Feature data={features.la} />
+                <Feature data={features.ed} />
+                <Feature data={features.scout} />
             </div>
         )
     }

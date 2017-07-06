@@ -27,7 +27,21 @@
             "z": [2, 0, 0, 0],
             "width": [6, 7, 8, 0],
             "height": [2, 2, 2, 0]
-        }
+        },
+        "content": [
+            "work/design/helloLA/home.png",
+            "Brainstorming",
+            ["work/design/helloLA/team1.jpg", "The idea behind Hello LA was a local's guide to Los Angeles, as Ashley and Rishab were both LA natives. They were looking for designers and we were looking for developers, and Evan was looking for a group! Once we settled on an idea, we quickly got to work brainstorming the branding, categories, and rough layout of the website."],
+            "Icons",
+            ["work/design/helloLA/icons.png", "One of my responsibilities was creating the corresponding icons for each category of locations on the website. We wanted the icons to be inviting, simple, and usable on a wide range of sizes."],
+            "Map",
+            ["work/design/helloLA/maps.png", "My labor of love for this project was the vector outline of Los Angeles on the background of the home page. From 1am to 3am, I traced every line on a Google map screenshot of downtown LA using Adobe Illustrator. It was a tedious process, but I knew that it would be a great backdrop for the landing page. And it helped solidify the brand identity of our project."],
+            "User Interface",
+            ["work/design/helloLA/ui.png", "My other contribution to this project was the user interface. Once we planned out the initial structure of the site, I wanted the homepage to showcase the variety and fast paced energy of Los Angeles. From there I developed the idea of the rotating background color, and the changing call to action. The wheel of choices can be controlled by the arrow keys, but it also moves on its own. I think this personal touch drew people in, and made the interface very user-friendly."],
+            "A match made in Providence",
+            "This was my first hackathon, and I couldn't have asked for a better one. Hello LA won best user experience, and we got to present our product during the closing ceremony. It was an eye-opening experience, getting to see how a product comes together from start to finish. I feel unbelievably lucky we found such amazing and accommodating developers, who took every wild idea Vanessa and I had, and ran with it with enthusiasm. It gave me a new-found appreciation for every team member and their job, and I can't wait for my next opportunity to work in a team like that again.",
+            "work/design/helloLA/team2.jpg"
+        ]
     },
     "ed": {
         "name": "50 Years: Ed and Laureen",
@@ -57,7 +71,10 @@
             "z": 0,
             "width": [3, 7, 6, 0],
             "height": [8, 7, 11, 0]
-        }
+        },
+        "content":[
+            "//www.youtube.com/embed/6SgCcd_sWrs?showinfo=0"
+        ]
     },
     "scout": {
         "name": "Scout",
@@ -87,6 +104,20 @@
             "z": [2, 0, 0, 0],
             "width": [4, 7, 7, 0],
             "height": [4, 3, 4, 0]
-        }
+        },
+        "content": [
+            "work/design/scout/home.png",
+            "Sketches",
+            ["work/design/scout/board.jpg", "Once we mapped out the skeleton of the site, we divided up the pages between each team member, and created rough paper sketches of what we envisioned those pages would look like. It was useful to be able to start away from the computer, and quantify our ideas without any technological constraints."],
+            "Wireframes",
+            ["work/design/scout/wireframe.png", "After finalizing our sketches, we moved onto the computer and translated our drawings to wireframes using sketch. It was collectively our first times using sketch, so there was definitely a learning curve. However when paired with Invision, it became a powerful tool to convey what we wanted the user experience to be."],
+            "High Fidelity Mockups",
+            ["work/design/scout/mockup.png", "The next step in our process was creating high fidelity mockups of our wireframes. This step really quantified our designs, and took them from more abstract ideas to actual products. This was also an important step, as we got feedback from the developers on what was possible or within their scope. These constraints helped us create designs that were realistic and could be translated to code."],
+            "Iteration",
+            ["work/design/scout/iteration.png", "We worked on an agile system, with weekly check-ins and critique. It was really helpful to get together and see everyone's progress, as everyone was working on different pages and we wanted to ensure a cohesive style while also providing our personal touches."],
+            "Where the magic happens",
+            "Once the designs were completed, we handed them of to the amazing developers who turned our designs into an actual product, which is an unbelievable gratifying experience. I always leave projects like this with a newfound respect for the every aspects of this process, and how hard work and teamwork can create powerful results.",
+            "work/design/scout/team.jpg"
+        ]
     }
 }

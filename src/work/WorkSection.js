@@ -26,7 +26,7 @@ class WorkSection extends React.Component {
             <Row style={styles}>
                 <Col xsWidth={10} smWidth={4} mdWidth={3} lgWidth={3}
                      xsXOffset={1} smXOffset={1} mdXOffset={0} lgXOffset={0}
-                     xsYOffset={10}>
+                     xsYOffset={0}>
                     <Title name={this.props.data.name} />
                     <Description info={this.props.data.info}
                                  width={[3, 3, 4, 12]}

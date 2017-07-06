@@ -1,3 +1,22 @@
+.warning {
+	background: #fd746c;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #ff9068, #fd746c);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #ff9068, #fd746c);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100vw;
+  left: 0;
+  margin: 0;
+  position: absolute;
+}
+.warning>p {
+	font-size: 14px;
+	color: white;
+  text-align: center;
+}
+
+
 html {
   font-family: 'Source Code Pro', monospace, sans-serif, Helvetica;
   color: #4A4A4A;
@@ -16,8 +35,16 @@ h1 {
   padding-bottom: 10px;
 }
 
+h2 {
+  font-family: 'Source sans pro', Helvetica, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 5px;
+  font-style: bold;
+}
+
 h3 {
-  font-family: 'Source sans pro', monospace;
+  font-family: 'Source sans pro', Helvetica, sans-serif;
   font-size: 20px;
   line-height: 20px;
   margin-bottom: 5px;
@@ -108,6 +135,9 @@ a {
   box-shadow: 3px 0 5px -2px rgba(0,0,0,0.35);
   height: 100vh;
 }
+.projectContentTitle {
+  /*height: 45px;*/
+}
 
 .container {
   margin: auto;
@@ -125,7 +155,6 @@ a {
   bottom: 15%;
 }
 
-
 .row {
   margin-left: auto;
   margin-right: auto;
@@ -133,6 +162,22 @@ a {
 
 .projectImage {
   width: 100%;
+  padding: 10px 0;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 50%;
+	/* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 /* lg */
@@ -140,6 +185,9 @@ a {
   .row {
     max-width: 1020px;
     height: 100vh;
+  }
+  .warning>p {
+    padding: 30px 80px;
   }
 }
 
@@ -153,6 +201,9 @@ a {
   h1 {
     font-size: 48px;
     line-height: 48px;
+  }
+  .warning>p {
+    padding: 30px 80px;
   }
 }
 
@@ -194,6 +245,13 @@ a {
 
 /* xs */
 @media only screen and (max-width: 767px) {
+    .warning>p {
+    font-size: 12px;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 90%;
+  }
   .landing {
     height: 100vh !important;
     text-align: center;
@@ -204,12 +262,15 @@ a {
     padding-top: 15px;
     padding-bottom: 10px;
   }
+  h2 {
+    font-size: 36px;
+  }
   h3 {
     font-size: 20px;
   }
 
   p {
-    width: 100% !important;
+    width: 100%;
   }
 
   .row {
@@ -230,6 +291,12 @@ a {
     padding-top: 80px;
     box-shadow: none;
     height: auto;
+  }
+
+  .projectContent>div>p,h2 {
+    position: relative;
+    left: 8.3333%;
+    width: 83.3333%;
   }
 
   .backCross {
