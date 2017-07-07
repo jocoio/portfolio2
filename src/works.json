@@ -25,7 +25,7 @@
                 "User Interface",
                 ["design/helloLA/ui.png", "My other contribution to this project was the user interface. Once we planned out the initial structure of the site, I wanted the homepage to showcase the variety and fast paced energy of Los Angeles. From there I developed the idea of the rotating background color, and the changing call to action. The wheel of choices can be controlled by the arrow keys, but it also moves on its own. I think this personal touch drew people in, and made the interface very user-friendly."],
                 "A match made in Providence",
-                "This was my first hackathon, and I couldn't have asked for a better one. Hello LA won best user experience, and we got to present our product during the closing ceremony. It was an eye-opening experience, getting to see how a product comes together from start to finish. I feel unbelievably lucky we found such amazing and accommodating developers, who took every wild idea Vanessa and I had, and ran with it with enthusiasm. It gave me a new-found appreciation for every team member and their job, and I can't wait for my next opportunity to work in a team like that again.",
+                "This was my first hackathon, and I couldn't have asked for a better one. Hello LA won best user experience, and we got to present our product during the closing ceremony. It was an eye-opening experience, getting to see how a product comes together from start to finish. I feel unbelievably lucky we found such amazing and accommodating developers, who took every wild idea Vanessa and I had, and ran with it with enthusiasm. It gave me a new found appreciation for every team member and their job, and I can't wait for my next opportunity to work in a team like that again.",
                 "design/helloLA/team2.jpg"
             ]
         },
@@ -88,6 +88,7 @@
         "info": "I've been coding for about 4 years, mostly for class. It's time-consuming, frustrating, and repetitive, but the small dopamine release from solving challenging problems draws me back like a moth to a flame.",     
         "work1": {
             "name": "Email Signature Generator",
+            "info": "During my first co-op at John Hancock, I was responsible for creating an email signature generator tool. I was creative freedom to design and develop this product on my own as a side project, and ended up building it using Angular2.",
             "category": ["Web development"],
             "date": "Spring 2017",
             "label": "Signature Generator",
@@ -98,11 +99,12 @@
             "width": [8, 8, 6, 10],
             "height": [3, 3, 4, 3],
             "content": [
-                
+                ["dev/signatureGenerator/generator.png", "The final UI of the signature generator tool"]
             ]
         },
         "work2": {
             "name": "Portfolio Site",
+            "info": "I built my first website last summer, with no prior web dev experience. It was functional, but after learning about web frameworks, I wanted to rebuild my site from the ground up. I built this site using React, with a custom flexbox css grid to help the positioning of the react components on the screen. It's still very much a work in progress, but I look forward to polishing and improving it.",
             "category": ["Web development"],
             "date": "Summer 2017",
             "label": "Portfolio",
@@ -113,7 +115,7 @@
             "width": [8, 8, 6, 10],
             "height": [3, 3, 4, 3],
             "content": [
-                
+                ["dev/portfolio/home.png", "Designs for the home page. With 4 screen sizes to design for, about 40 different screen mockups were created."]
             ]
         },
         "work3": {
