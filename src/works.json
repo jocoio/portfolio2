@@ -8,25 +8,25 @@
             "category": ["User Experience", "Brand Identity"],
             "date": "February 2016",
             "label": "Hello LA",
-            "url": "map.png",
+            "url": "design/helloLA/map.png",
             "x": [4, 4, 6, 1],
             "y": [0, 0, 0, 8],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
             "height": [10, 10, 4, 3],
             "content": [
-                "work/design/helloLA/home.png",
+                "design/helloLA/home.png",
                 "Brainstorming",
-                ["work/design/helloLA/team1.jpg", "The idea behind Hello LA was a local's guide to Los Angeles, as Ashley and Rishab were both LA natives. They were looking for designers and we were looking for developers, and Evan was looking for a group! Once we settled on an idea, we quickly got to work brainstorming the branding, categories, and rough layout of the website."],
+                ["design/helloLA/team1.jpg", "The idea behind Hello LA was a local's guide to Los Angeles, as Ashley and Rishab were both LA natives. They were looking for designers and we were looking for developers, and Evan was looking for a group! Once we settled on an idea, we quickly got to work brainstorming the branding, categories, and rough layout of the website."],
                 "Icons",
-                ["work/design/helloLA/icons.png", "One of my responsibilities was creating the corresponding icons for each category of locations on the website. We wanted the icons to be inviting, simple, and usable on a wide range of sizes."],
+                ["design/helloLA/icons.png", "One of my responsibilities was creating the corresponding icons for each category of locations on the website. We wanted the icons to be inviting, simple, and usable on a wide range of sizes."],
                 "Map",
-                ["work/design/helloLA/maps.png", "My labor of love for this project was the vector outline of Los Angeles on the background of the home page. From 1am to 3am, I traced every line on a Google map screenshot of downtown LA using Adobe Illustrator. It was a tedious process, but I knew that it would be a great backdrop for the landing page. And it helped solidify the brand identity of our project."],
+                ["design/helloLA/maps.png", "My labor of love for this project was the vector outline of Los Angeles on the background of the home page. From 1am to 3am, I traced every line on a Google map screenshot of downtown LA using Adobe Illustrator. It was a tedious process, but I knew that it would be a great backdrop for the landing page. And it helped solidify the brand identity of our project."],
                 "User Interface",
-                ["work/design/helloLA/ui.png", "My other contribution to this project was the user interface. Once we planned out the initial structure of the site, I wanted the homepage to showcase the variety and fast paced energy of Los Angeles. From there I developed the idea of the rotating background color, and the changing call to action. The wheel of choices can be controlled by the arrow keys, but it also moves on its own. I think this personal touch drew people in, and made the interface very user-friendly."],
+                ["design/helloLA/ui.png", "My other contribution to this project was the user interface. Once we planned out the initial structure of the site, I wanted the homepage to showcase the variety and fast paced energy of Los Angeles. From there I developed the idea of the rotating background color, and the changing call to action. The wheel of choices can be controlled by the arrow keys, but it also moves on its own. I think this personal touch drew people in, and made the interface very user-friendly."],
                 "A match made in Providence",
                 "This was my first hackathon, and I couldn't have asked for a better one. Hello LA won best user experience, and we got to present our product during the closing ceremony. It was an eye-opening experience, getting to see how a product comes together from start to finish. I feel unbelievably lucky we found such amazing and accommodating developers, who took every wild idea Vanessa and I had, and ran with it with enthusiasm. It gave me a new-found appreciation for every team member and their job, and I can't wait for my next opportunity to work in a team like that again.",
-                "work/design/helloLA/team2.jpg"
+                "design/helloLA/team2.jpg"
             ]
         },
         "work2": {
@@ -35,25 +35,25 @@
             "category": ["Wireframing", "UI/UX"],
             "date": "Spring 2016",
             "label": "Scout Site",
-            "url": "labs.png",
+            "url": "design/scout/labs.png",
             "x": [7, 7, 6, 1],
             "y": [0, 0, 5, 12],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
             "height": [10, 10, 4, 3],
             "content": [
-                "work/design/scout/home.png",
+                "design/scout/home.png",
                 "Sketches",
-                ["work/design/scout/board.jpg", "Once we mapped out the skeleton of the site, we divided up the pages between each team member, and created rough paper sketches of what we envisioned those pages would look like. It was useful to be able to start away from the computer, and quantify our ideas without any technological constraints."],
+                ["design/scout/board.jpg", "Once we mapped out the skeleton of the site, we divided up the pages between each team member, and created rough paper sketches of what we envisioned those pages would look like. It was useful to be able to start away from the computer, and quantify our ideas without any technological constraints."],
                 "Wireframes",
-                ["work/design/scout/wireframe.png", "After finalizing our sketches, we moved onto the computer and translated our drawings to wireframes using sketch. It was collectively our first times using sketch, so there was definitely a learning curve. However when paired with Invision, it became a powerful tool to convey what we wanted the user experience to be."],
+                ["design/scout/wireframe.png", "After finalizing our sketches, we moved onto the computer and translated our drawings to wireframes using sketch. It was collectively our first times using sketch, so there was definitely a learning curve. However when paired with Invision, it became a powerful tool to convey what we wanted the user experience to be."],
                 "High Fidelity Mockups",
-                ["work/design/scout/mockup.png", "The next step in our process was creating high fidelity mockups of our wireframes. This step really quantified our designs, and took them from more abstract ideas to actual products. This was also an important step, as we got feedback from the developers on what was possible or within their scope. These constraints helped us create designs that were realistic and could be translated to code."],
+                ["design/scout/mockup.png", "The next step in our process was creating high fidelity mockups of our wireframes. This step really quantified our designs, and took them from more abstract ideas to actual products. This was also an important step, as we got feedback from the developers on what was possible or within their scope. These constraints helped us create designs that were realistic and could be translated to code."],
                 "Iteration",
-                ["work/design/scout/iteration.png", "We worked on an agile system, with weekly check-ins and critique. It was really helpful to get together and see everyone's progress, as everyone was working on different pages and we wanted to ensure a cohesive style while also providing our personal touches."],
+                ["design/scout/iteration.png", "We worked on an agile system, with weekly check-ins and critique. It was really helpful to get together and see everyone's progress, as everyone was working on different pages and we wanted to ensure a cohesive style while also providing our personal touches."],
                 "Where the magic happens",
                 "Once the designs were completed, we handed them of to the amazing developers who turned our designs into an actual product, which is an unbelievable gratifying experience. I always leave projects like this with a newfound respect for every aspect of this process, and how hard work and teamwork can create powerful results.",
-                "work/design/scout/team.jpg"
+                "design/scout/team.jpg"
             ]
         },
         "work3": {
@@ -62,24 +62,24 @@
             "category": ["User Experience", "Design Thinking"],
             "date": "Spring 2016",
             "label": "MyHousing",
-            "url": "housing.png",
+            "url": "design/myHousing/housing.png",
             "x": [10, 10, 6, 1],
             "y": [0, 0, 10, 16],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
             "height": [10, 10, 4, 3],
             "content": [
-                "work/design/myHousing/home.png",
+                "design/myHousing/home.png",
                 "Brainstorming",
                 "To start the process, we brainstormed some problems that we had encountered during our time at Northeastern. This ranged from school resource sites like myNeu to more abstract concepts like how students chose to spend their money around campus. We settled on the process of selecting housing for the fall, as all 3 of us have had a frustrating experience trying to navigate through the confusing process.",
                 "Interviews and User Stories",
-                ["work/design/myHousing/user1.png", "Once we decided on our topic for the project, we dived into research, interviewing students about their experience with housing. This was done by sending out a google form to students of Northeastern's Facebook group. With the collected data we analyzed pain points, common issues that students had while using the current housing application. We then made each of these issues a user story, to flesh out and give character to the problems, in order to better understand how to empathize and solve the issue."],
+                ["design/myHousing/user1.png", "Once we decided on our topic for the project, we dived into research, interviewing students about their experience with housing. This was done by sending out a google form to students of Northeastern's Facebook group. With the collected data we analyzed pain points, common issues that students had while using the current housing application. We then made each of these issues a user story, to flesh out and give character to the problems, in order to better understand how to empathize and solve the issue."],
                 "Sketching and Wireframing",
-                "work/design/myHousing/sketch.png",
-                ["work/design/myHousing/low.png", "After finalizing our sketches, we moved onto the computer and translated our drawings to wireframes using sketch. It was collectively our first times using sketch, so there was definitely a learning curve. However when paired with Invision, it became a powerful tool to convey what we wanted the user experience to be."],
+                "design/myHousing/sketch.png",
+                ["design/myHousing/low.png", "After finalizing our sketches, we moved onto the computer and translated our drawings to wireframes using sketch. It was collectively our first times using sketch, so there was definitely a learning curve. However when paired with Invision, it became a powerful tool to convey what we wanted the user experience to be."],
                 "High Fidelity",
                 "The final step of the project was adding onboarding screens for finding roommates, and converting our wireframes into high fidelity mockups with the use of sketch and invision. In the end we were happy with the result, and thought it was a great way to see a project from start to finish, guided by a user-focused design process. In the future we hope to bring this app to life, ideally with the help of Northeastern's assistance.",
-                "work/design/myHousing/high.png"
+                "design/myHousing/high.png"
             ]
         }
     },
@@ -91,7 +91,7 @@
             "category": ["Web development"],
             "date": "Spring 2017",
             "label": "Signature Generator",
-            "url": "gradient.png",
+            "url": "dev/signatureGenerator/gradient.png",
             "x": [4, 4, 6, 1],
             "y": [0, 0, 0, 8],
             "z": [0, 0, 0, 0],
@@ -106,7 +106,7 @@
             "category": ["Web development"],
             "date": "Summer 2017",
             "label": "Portfolio",
-            "url": "joco.png",
+            "url": "dev/portfolio/joco.png",
             "x": [4, 4, 6, 1],
             "y": [4, 4, 5, 12],
             "z": [0, 0, 0, 0],
@@ -122,14 +122,14 @@
             "category": ["Object Oriented Design"],
             "date": "Summer 2016",
             "label": "Music Editor",
-            "url": "music.png",
+            "url": "dev/musicEditor/music.png",
             "x": [4, 4, 6, 1],
             "y": [8, 8, 10, 16],
             "z": [0, 0, 0, 0],
             "width": [8, 8, 6, 10],
             "height": [3, 3, 4, 3],
             "content": [
-                ["work/dev/musicEditor/music.jpg", "The UI of our final product"]
+                ["dev/musicEditor/music.jpg", "The UI of our final product"]
             ]
         }
     },
@@ -142,22 +142,22 @@
             "category": ["Landscape photography", "Portrait photography"],
             "date": "Sometimes",
             "label": "Film",
-            "url": "chloe.png",
+            "url": "photo/film/chloe.png",
             "x": [4, 4, 6, 1],
             "y": [0, 0, 0, 8],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
             "height": [10, 10, 4, 3],
             "content": [
-                ["work/photo/film/central.jpg", "NYC, 2016"],                
-                ["work/photo/film/park.jpg", "Barcelona, 2016"],
-                ["work/photo/film/boats.jpg", "Madrid, 2016"],
-                ["work/photo/film/point.jpg", "Poblet, 2016"],
-                ["work/photo/film/flowers.jpg", "Long Island, 2017"],
-                ["work/photo/film/boy.jpg", "Barcelona, 2016"],
-                ["work/photo/film/charles.jpg", "Boston, 2017"],
-                ["work/photo/film/train.jpg", "Madrid, 2016"],
-                ["work/photo/film/jeff.jpg", "Boston, 2017"]        
+                ["photo/film/central.jpg", "NYC, 2016"],                
+                ["photo/film/park.jpg", "Barcelona, 2016"],
+                ["photo/film/boats.jpg", "Madrid, 2016"],
+                ["photo/film/point.jpg", "Poblet, 2016"],
+                ["photo/film/flowers.jpg", "Long Island, 2017"],
+                ["photo/film/boy.jpg", "Barcelona, 2016"],
+                ["photo/film/charles.jpg", "Boston, 2017"],
+                ["photo/film/train.jpg", "Madrid, 2016"],
+                ["photo/film/jeff.jpg", "Boston, 2017"]        
             ]
         },
         "work2": {
@@ -166,22 +166,22 @@
             "category": ["Landscape photography", "Portrait photography"],
             "date": "Occasionally",
             "label": "50mm",
-            "url": "bos.jpg",
+            "url": "photo/50mm/garden.jpg",
             "x": [7, 7, 6, 1],
             "y": [0, 0, 5, 12],
             "z": [0, 0, 0, 0],
             "width": [2, 2, 6, 10],
             "height": [10, 10, 4, 3],
             "content": [
-                ["work/photo/50mm/assault.jpg", "Honolulu, 2016"],
-                ["work/photo/50mm/penguin.jpg", "Mystic, 2015"],
-                ["work/photo/50mm/rhody.jpg", "Newport, 2015"],
-                ["work/photo/50mm/alex.jpg", "Newport, 2015"],
-                ["work/photo/50mm/mozart.jpg", "Boston, 2014"],  
-                ["work/photo/50mm/hawaii.jpg", "Honolulu, 2016"],
-                ["work/photo/50mm/garden.jpg", "Boston, 2014"],
-                ["work/photo/50mm/flag.jpg", "Boston, 2014"],
-                ["work/photo/50mm/block.jpg", "Block Island, 2016"]        
+                ["photo/50mm/assault.jpg", "Honolulu, 2016"],
+                ["photo/50mm/penguin.jpg", "Mystic, 2015"],
+                ["photo/50mm/rhody.jpg", "Newport, 2015"],
+                ["photo/50mm/alex.jpg", "Newport, 2015"],
+                ["photo/50mm/mozart.jpg", "Boston, 2014"],  
+                ["photo/50mm/hawaii.jpg", "Honolulu, 2016"],
+                ["photo/50mm/garden.jpg", "Boston, 2014"],
+                ["photo/50mm/flag.jpg", "Boston, 2014"],
+                ["photo/50mm/block.jpg", "Block Island, 2016"]        
             ]
         },
         "work3": {
@@ -189,7 +189,7 @@
             "info": "I always have my phone on me, and as a result it's become my primary camera by default. Some of my favorite pictures I've taken have been on my phone; here are of few of them.",
             "category": ["Landscape photography", "Portrait photography"],
             "date": "Constantly",
-            "url": "purple.jpg",
+            "url": "photo/mobile/purple.jpg",
             "label": "Mobile",
             "x": [10, 10, 6, 1],
             "y": [0, 0, 10, 16],
@@ -197,15 +197,15 @@
             "width": [2, 2, 6, 10],
             "height": [10, 10, 4, 3],
             "content": [
-                ["work/photo/mobile/purple.jpg", "Boston, 2017"],
-                ["work/photo/mobile/jenna.jpg", "Portsmouth, 2015"],
-                ["work/photo/mobile/zoe.jpg", "NYC, 2015"],
-                ["work/photo/mobile/jhandy.jpg", "Boston, 2017"],
-                ["work/photo/mobile/fenway.jpg", "Boston, 2016"],
-                ["work/photo/mobile/beach.jpg", "Ocean City, 2015"],
-                ["work/photo/mobile/air.jpg", "Barcelona, 2016"],
-                ["work/photo/mobile/bu.jpg", "Boston, 2017"],
-                ["work/photo/mobile/bpl.jpg", "Boston, 2017"]
+                ["photo/mobile/purple.jpg", "Boston, 2017"],
+                ["photo/mobile/jenna.jpg", "Portsmouth, 2015"],
+                ["photo/mobile/zoe.jpg", "NYC, 2015"],
+                ["photo/mobile/jhandy.jpg", "Boston, 2017"],
+                ["photo/mobile/fenway.jpg", "Boston, 2016"],
+                ["photo/mobile/beach.jpg", "Ocean City, 2015"],
+                ["photo/mobile/air.jpg", "Barcelona, 2016"],
+                ["photo/mobile/bu.jpg", "Boston, 2017"],
+                ["photo/mobile/bpl.jpg", "Boston, 2017"]
 
             ]
         }
@@ -219,7 +219,7 @@
             "category": ["Filmmaking"],
             "date": "Fall 2014",
             "label": "50 Years",
-            "url": "gramps.png",
+            "url": "video/50Years/gramps.png",
             "x": [4, 4, 6, 1],
             "y": [0, 0, 0, 8],
             "z": [0, 0, 0, 0],
@@ -227,9 +227,9 @@
             "height": [3, 3, 4, 3],
             "content": [
                 "//www.youtube.com/embed/6SgCcd_sWrs?showinfo=0",
-                ["work/video/50Years/lawn.jpg", "Ed & Laureen's home in Saugus, MA"],
-                ["work/video/50Years/force.jpg", "One of Ed's photo albums documenting his time in the Air Force"],
-                ["work/video/50Years/tools.jpg", "Ed's basement toolbench, stocked with more types of screws and nails than you can imagine"]               
+                ["video/50Years/lawn.jpg", "Ed & Laureen's home in Saugus, MA"],
+                ["video/50Years/force.jpg", "One of Ed's photo albums documenting his time in the Air Force"],
+                ["video/50Years/tools.jpg", "Ed's basement toolbench, stocked with more types of screws and nails than you can imagine"]               
             ]
         },
         "work2": {
@@ -238,7 +238,7 @@
             "category": ["Filmmaking"],
             "date": "Fall 2014",
             "label": "This is Boston",
-            "url": "bos.png",
+            "url": "video/boston/bos.png",
             "x": [4, 4, 6, 1],
             "y": [4, 4, 5, 12],
             "z": [0, 0, 0, 0],
@@ -254,7 +254,7 @@
             "category": ["Filmmaking"],
             "date": "Fall 2015",
             "label": "NYC 2015",
-            "url": "nyc.png",
+            "url": "video/nyc2015/nyc.png",
             "x": [4, 4, 6, 1],
             "y": [8, 8, 10, 16],
             "z": [0, 0, 0, 0],

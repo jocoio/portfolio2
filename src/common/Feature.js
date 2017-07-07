@@ -20,9 +20,9 @@ class Feature extends React.Component {
         var content2 = this.props.data.feature2;
         var content3 = this.props.data.feature3;
 
-        var photo1 = require(`../images/features/${content1.url}`);
-        var photo2 = require(`../images/features/${content2.url}`);
-        var photo3 = require(`../images/features/${content3.url}`);
+        var photo1 = require(`../images/projects/${content1.url}`);
+        var photo2 = require(`../images/projects/${content2.url}`);
+        var photo3 = require(`../images/projects/${content3.url}`);
 
         return (
             <Row style={rowStyles}>

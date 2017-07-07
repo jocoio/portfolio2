@@ -3,7 +3,7 @@ import Title from '.././common/Title.js';
 import Description from  '../common/Description.js';
 import ContentContainer from '../common/ContentContainer.js';
 import { Row, Col } from '../grid';
-import me from '../images/about/me.png';
+import me from '../images/about/me.jpg';
 import resume from '../images/about/resume.pdf';
 
 class AboutPage extends React.Component {

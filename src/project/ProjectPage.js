@@ -45,12 +45,13 @@ class ProjectPage extends React.Component {
                         // Photo + caption
                         if (content.length === 2 ) {
                             var photoUrl= content[0];
-                            var photo = require(`../images/${photoUrl}`);
+                            var photo = require(`../images/projects/${photoUrl}`);
                             return (
                                 <div>
+                                    <br/>
                                     <img className="projectImage" src={photo} alt="content" />
                                     <p className="projectImageCaption">{content[1]}</p>
-                                    <br/><br/>
+                                    <br/>
                                 </div>
                             );
                             
@@ -59,7 +60,9 @@ class ProjectPage extends React.Component {
                         else if (content.substr(0, 24) === "//www.youtube.com/embed/") {
                             return (
                                 <div className="videoWrapper">
+                                    <br/>
                                     <iframe width="1920" height="1080" src={content} title="video" frameBorder="0" allowFullScreen/>
+                                    <br/>
                                 </div>
                             )
                         }
@@ -68,10 +71,12 @@ class ProjectPage extends React.Component {
                                  content.substr(content.length - 3) === "png" || 
                                  content.substr(content.length - 3) === "jpg")
                         {
-                            photo = require(`../images/${content}`);
+                            photo = require(`../images/projects/${content}`);
                             return (
                                 <div>
+                                    <br/>
                                     <img className="projectImage" src={photo} alt="content" />
+                                    <br/>
                                 </div>
                             );
                         }
@@ -85,7 +90,11 @@ class ProjectPage extends React.Component {
                             )
                         }
                         // Text
-                        else return <div><p>{content}</p></div>;
+                        else return (
+                            <div>
+                                <p>{content}</p>
+                                <br/>
+                            </div>);
                     })}
                 </Col>
             </Row>

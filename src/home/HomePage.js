@@ -10,7 +10,7 @@ class HomePage extends React.Component {
         return (
             <div>
                 <div className="warning">
-                    <p>This new site is currently under development, but is already feeling better than the previous version, so I'm releasing this a bit early. There's not much content, but feel free to drag the window around and watch things resize! That's about it at the moment! Okay thanks for stopping by! </p>
+                    <p>This new site is currently under development, but is already feeling better than the previous version, so I'm releasing this a bit early. Feel free to drag the window around and watch things resize! Okay thanks for stopping by! </p>
                 </div>
                 <Row className="landing">
                     <Col xsWidth >
