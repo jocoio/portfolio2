@@ -39,7 +39,7 @@ class ProjectPage extends React.Component {
 
                 <Col className="projectContent" lgWidth={7} mdWidth={7} smWidth={5} xsWidth={12}
                     lgXOffset={5} mdXOffset={5} smXOffset={6} xsXOffset={0}
-                    lgYOffset={0} mdYOffset={0} smYOffset={0} xsYOffset={13}
+                    lgYOffset={0} mdYOffset={0} smYOffset={0} xsYOffset={15}
                 >
                     {project.content.map(function (content) {
                         // Photo + caption

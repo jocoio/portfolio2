@@ -16,7 +16,6 @@
   text-align: center;
 }
 
-
 html {
   font-family: 'Source Code Pro', monospace, sans-serif, Helvetica;
   color: #4A4A4A;
@@ -86,7 +85,7 @@ a {
 .backCross {
   max-width: 25px;
   border-radius: 50px;
-
+  z-index: 2;
   position: absolute;
   right: -25px;
   top: 60%;
@@ -171,6 +170,7 @@ a {
 	/* 16:9 */
 	padding-top: 25px;
 	height: 0;
+  margin-bottom: 30px;
 }
 .videoWrapper iframe {
 	position: absolute;

@@ -32,7 +32,7 @@
         "work2": {
             "name": "Scout Site",
             "info": "During spring of 2016 I joined Scout studio as a designer, and worked on a team tasked with redesigning and creating Scout's website. We started with a brand dive, assessing the current state of Scout and its collateral, and from there moved onto sketching, wireframing, high fidelity mockups, and eventually coding.",
-            "category": ["Wireframming", "UI/UX"],
+            "category": ["Wireframing", "UI/UX"],
             "date": "Spring 2016",
             "label": "Scout Site",
             "url": "labs.png",
@@ -52,13 +52,13 @@
                 "Iteration",
                 ["work/design/scout/iteration.png", "We worked on an agile system, with weekly check-ins and critique. It was really helpful to get together and see everyone's progress, as everyone was working on different pages and we wanted to ensure a cohesive style while also providing our personal touches."],
                 "Where the magic happens",
-                "Once the designs were completed, we handed them of to the amazing developers who turned our designs into an actual product, which is an unbelievable gratifying experience. I always leave projects like this with a newfound respect for the every aspects of this process, and how hard work and teamwork can create powerful results.",
+                "Once the designs were completed, we handed them of to the amazing developers who turned our designs into an actual product, which is an unbelievable gratifying experience. I always leave projects like this with a newfound respect for every aspect of this process, and how hard work and teamwork can create powerful results.",
                 "work/design/scout/team.jpg"
             ]
         },
         "work3": {
             "name": "MyHousing",
-            "info": "In spring 2016 I took the class design: process, context, and systems. This introductory course explored the core ideas of design thinking and user-focused design. For our final project we were tasked with finding an frustrating user experience we've encountered while at NU, and try to design a smarter solution to it.",
+            "info": "In spring 2016 I took the class design: process, context, and systems. This introductory course explored the core ideas of design thinking and user-focused design. For our final project we were tasked with finding a frustrating user experience we've encountered while at NU, and try to design a smarter solution to it.",
             "category": ["User Experience", "Design Thinking"],
             "date": "Spring 2016",
             "label": "MyHousing",
@@ -74,11 +74,11 @@
                 "To start the process, we brainstormed some problems that we had encountered during our time at Northeastern. This ranged from school resource sites like myNeu to more abstract concepts like how students chose to spend their money around campus. We settled on the process of selecting housing for the fall, as all 3 of us have had a frustrating experience trying to navigate through the confusing process.",
                 "Interviews and User Stories",
                 ["work/design/myHousing/user1.png", "Once we decided on our topic for the project, we dived into research, interviewing students about their experience with housing. This was done by sending out a google form to students of Northeastern's Facebook group. With the collected data we analyzed pain points, common issues that students had while using the current housing application. We then made each of these issues a user story, to flesh out and give character to the problems, in order to better understand how to empathize and solve the issue."],
-                "Sketching and Wireframming",
+                "Sketching and Wireframing",
                 "work/design/myHousing/sketch.png",
                 ["work/design/myHousing/low.png", "After finalizing our sketches, we moved onto the computer and translated our drawings to wireframes using sketch. It was collectively our first times using sketch, so there was definitely a learning curve. However when paired with Invision, it became a powerful tool to convey what we wanted the user experience to be."],
                 "High Fidelity",
-                "The final step of the project was adding onboarding screens for finding roomates, and converting our wireframes into high fidelty mockups with the use of sketch and invision. In the end we were happy with the result, and thought it was a great way to see a project from start to finish, guided by a user-focused design process. In the future we hope to bring this app to life, ideally with the help of Northeastern's assistance.",
+                "The final step of the project was adding onboarding screens for finding roommates, and converting our wireframes into high fidelity mockups with the use of sketch and invision. In the end we were happy with the result, and thought it was a great way to see a project from start to finish, guided by a user-focused design process. In the future we hope to bring this app to life, ideally with the help of Northeastern's assistance.",
                 "work/design/myHousing/high.png"
             ]
         }
@@ -129,7 +129,7 @@
             "width": [8, 8, 6, 10],
             "height": [3, 3, 4, 3],
             "content": [
-                
+                ["work/dev/musicEditor/music.jpg", "The UI of our final product"]
             ]
         }
     },
@@ -138,6 +138,7 @@
         "info": "I got my first camera in 2011. None of these photos are from 2011. Trust me, you don't want to see them. I love capturing the beauty of everyday life, and photography is a perfect tool to do so.",      
         "work1": {
             "name": "Film",
+            "info" : "I grabbed my first film camera last year from an eBay auction, and fell in love with the medium immediately. It forced me to slow down and analyze every shot, and I think it really helped me improve as a photographer.",
             "category": ["Landscape photography", "Portrait photography"],
             "date": "Sometimes",
             "label": "Film",
@@ -148,11 +149,20 @@
             "width": [2, 2, 6, 10],
             "height": [10, 10, 4, 3],
             "content": [
-                
+                ["work/photo/film/central.jpg", "NYC, 2016"],                
+                ["work/photo/film/park.jpg", "Barcelona, 2016"],
+                ["work/photo/film/boats.jpg", "Madrid, 2016"],
+                ["work/photo/film/point.jpg", "Poblet, 2016"],
+                ["work/photo/film/flowers.jpg", "Long Island, 2017"],
+                ["work/photo/film/boy.jpg", "Barcelona, 2016"],
+                ["work/photo/film/charles.jpg", "Boston, 2017"],
+                ["work/photo/film/train.jpg", "Madrid, 2016"],
+                ["work/photo/film/jeff.jpg", "Boston, 2017"]        
             ]
         },
         "work2": {
             "name": "50mm",
+            "info": "I got my first nifty 50 three years ago, and it's been my go to lens ever since. To this day I'm impressed at the quality you can get from such an inexpensive lens.",
             "category": ["Landscape photography", "Portrait photography"],
             "date": "Occasionally",
             "label": "50mm",
@@ -163,11 +173,20 @@
             "width": [2, 2, 6, 10],
             "height": [10, 10, 4, 3],
             "content": [
-                
+                ["work/photo/50mm/assault.jpg", "Honolulu, 2016"],
+                ["work/photo/50mm/penguin.jpg", "Mystic, 2015"],
+                ["work/photo/50mm/rhody.jpg", "Newport, 2015"],
+                ["work/photo/50mm/alex.jpg", "Newport, 2015"],
+                ["work/photo/50mm/mozart.jpg", "Boston, 2014"],  
+                ["work/photo/50mm/hawaii.jpg", "Honolulu, 2016"],
+                ["work/photo/50mm/garden.jpg", "Boston, 2014"],
+                ["work/photo/50mm/flag.jpg", "Boston, 2014"],
+                ["work/photo/50mm/block.jpg", "Block Island, 2016"]        
             ]
         },
         "work3": {
             "name": "Mobile",
+            "info": "I always have my phone on me, and as a result it's become my primary camera by default. Some of my favorite pictures I've taken have been on my phone; here are of few of them.",
             "category": ["Landscape photography", "Portrait photography"],
             "date": "Constantly",
             "url": "purple.jpg",
@@ -178,7 +197,16 @@
             "width": [2, 2, 6, 10],
             "height": [10, 10, 4, 3],
             "content": [
-                
+                ["work/photo/mobile/purple.jpg", "Boston, 2017"],
+                ["work/photo/mobile/jenna.jpg", "Portsmouth, 2015"],
+                ["work/photo/mobile/zoe.jpg", "NYC, 2015"],
+                ["work/photo/mobile/jhandy.jpg", "Boston, 2017"],
+                ["work/photo/mobile/fenway.jpg", "Boston, 2016"],
+                ["work/photo/mobile/beach.jpg", "Ocean City, 2015"],
+                ["work/photo/mobile/air.jpg", "Barcelona, 2016"],
+                ["work/photo/mobile/bu.jpg", "Boston, 2017"],
+                ["work/photo/mobile/bpl.jpg", "Boston, 2017"]
+
             ]
         }
     },
@@ -187,7 +215,7 @@
         "info": "I started playing around with video in 2014. I quickly discovered a strong passion for filmmaking, and spent about a year fully dedicated to the craft.",      
         "work1": {
             "name": "50 Years: Ed and Laureen",
-            "info": "In 2014 my grandparents, Ed and Laureen, celebrated their 50th wedding anniversary. As a large source of inspiration in my life, I wanted to capture their story. On a cold November day, I sat down with them and did just that.",
+            "info": "In 2014 my grandparents, Ed and Laureen, celebrated their 50th wedding anniversary. I had never done a documentary style video before, but was eager to try. It was great getting to learn their story, and this is hands down my favorite piece of content I've created, across all mediums.",
             "category": ["Filmmaking"],
             "date": "Fall 2014",
             "label": "50 Years",
@@ -198,11 +226,15 @@
             "width": [8, 8, 6, 10],
             "height": [3, 3, 4, 3],
             "content": [
-                "//www.youtube.com/embed/6SgCcd_sWrs?showinfo=0"
+                "//www.youtube.com/embed/6SgCcd_sWrs?showinfo=0",
+                ["work/video/50Years/lawn.jpg", "Ed & Laureen's home in Saugus, MA"],
+                ["work/video/50Years/force.jpg", "One of Ed's photo albums documenting his time in the Air Force"],
+                ["work/video/50Years/tools.jpg", "Ed's basement toolbench, stocked with more types of screws and nails than you can imagine"]               
             ]
         },
         "work2": {
             "name": "This is Boston",
+            "info": "I started college in Boston in 2014. I immediately fell in love with the city, and wanted to capture it somehow. This one of the first location-based videos I did, and also one of the first higher-production videos I made, in terms of time and effort.",
             "category": ["Filmmaking"],
             "date": "Fall 2014",
             "label": "This is Boston",
@@ -218,6 +250,7 @@
         },
         "work3": {
             "name": "NYC 2015",
+            "info": "In the fall of 2015 I visited my friend Zoe in Brooklyn, and we took a day trip to NYC to be typical tourists. For the video I didn't include music, and instead wanted to use the natural sounds of the city to guide the narrative.",
             "category": ["Filmmaking"],
             "date": "Fall 2015",
             "label": "NYC 2015",

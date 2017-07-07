@@ -12,7 +12,6 @@ class App extends Component {
         <Grid>
           <Nav />
           <Routes />
-          {/*{this.props.children}*/}
         </Grid>
       </div>
     );

@@ -12,7 +12,7 @@ class AboutPage extends React.Component {
         var styles = {
             height: "100vh",
             position: "relative",
-            paddingTop: "80px"
+            paddingTop: "80px",
         }
 
         var intro= [
@@ -22,11 +22,11 @@ class AboutPage extends React.Component {
         ]
 
         return (
-            
+            <div>
             <Row style={styles}>
                 <Col xsWidth={10} smWidth={5} mdWidth={4} lgWidth={4}
                      xsXOffset={1} smXOffset={1} mdXOffset={1} lgXOffset={0}
-                     lgYOffset={0} mdYOffset={0} smYOffset={0} xsYOffset={9}>
+                     lgYOffset={0} mdYOffset={0} smYOffset={0} xsYOffset={11}>
                     <Title name="Hi There!"/>
                     <Description info={intro}
                                  width={[4, 4, 4, 12]}
@@ -47,6 +47,8 @@ class AboutPage extends React.Component {
                 />
                 
             </Row>
+            <div className="footer"/>
+            </div>
         )
     }
 }

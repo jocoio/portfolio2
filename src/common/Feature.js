@@ -28,7 +28,7 @@ class Feature extends React.Component {
             <Row style={rowStyles}>
                 <Col xsWidth={10} smWidth={4} mdWidth={3} lgWidth={4}
                      xsXOffset={1} smXOffset={1} mdXOffset={0} lgXOffset={0}
-                     xsYOffset={9}>
+                     xsYOffset={10}>
                     <Title name={this.props.data.name} />
                     <Description style={infoStyles} info={this.props.data.info}
                                  width={[3, 3, 4, 12]}
