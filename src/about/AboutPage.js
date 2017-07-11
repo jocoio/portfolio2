@@ -5,6 +5,7 @@ import ContentContainer from '../common/ContentContainer.js';
 import { Row, Col } from '../grid';
 import me from '../images/about/me.jpg';
 import resume from '../images/about/resume.pdf';
+import './AboutPage.css';
 
 class AboutPage extends React.Component {
     

@@ -1,10 +1,9 @@
 import React from 'react';
-import menu from './images/nav/menu.png';
-import logo from './images/nav/logo.png';
+import menu from './images/nav/menu.svg';
+import logo from './images/nav/logo.svg';
 import cross from './images/nav/cross.png';
 import { Link } from 'react-router-dom';
 import { Row, Col } from './grid';
-
 import './Nav.css'
 
 class Nav extends React.Component {

@@ -1,8 +1,8 @@
 .MenuIcon {
-  max-width: 35px;
+  max-width: 40px;
   position: fixed;
-  left: 25px;
-  top: 25px;
+  left: 20px;
+  top: 20px;
 }
 
 .MenuExit {

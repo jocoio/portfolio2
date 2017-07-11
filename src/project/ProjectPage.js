@@ -4,6 +4,7 @@ import Description from '.././common/Description.js';
 import cross from '../images/nav/cross.png';
 import { Link } from 'react-router-dom';
 import { Row, Col } from '../grid';
+import './ProjectPage.css';
 
 
 class ProjectPage extends React.Component {

@@ -3,6 +3,7 @@ import Feature from '../common/Feature.js';
 import features from '../features.json';
 import arrow from '../images/nav/arrow.png';
 import { Row, Col } from '../grid';
+import './HomePage.css';
 
 class HomePage extends React.Component {
 
