@@ -1,3 +1,22 @@
+.example-enter {
+  top: 0;
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 150ms ease-out;
+}
+
 html {
   font-family: 'Source Code Pro', monospace, sans-serif, Helvetica;
   color: #4A4A4A;

@@ -58,7 +58,7 @@
 
 /* sm */
 @media only screen and (max-width: 1023px) {
-  .landing {
+  .row.landing {
     height: 100vh;
     text-align: center;
   }

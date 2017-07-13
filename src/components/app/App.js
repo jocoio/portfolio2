@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Nav from './Nav.js';
-import Routes from './routes.js';
-import { Grid } from './grid';
+import Nav from '../nav/Nav.js';
+import Routes from '../utils/routes.js';
+import { Grid } from '../grid';
 import './App.css';
 
 class App extends Component {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from '../common/Title.js';
-import ContentContainer from '../common/ContentContainer.js';
-import Description from '../common/Description.js';
+import ContentContainer from './ContentContainer.js';
+import Description from './Description.js';
 import { Link } from 'react-router-dom';
 import { Row, Col } from '../grid';
 
@@ -20,9 +20,9 @@ class Feature extends React.Component {
         var content2 = this.props.data.feature2;
         var content3 = this.props.data.feature3;
 
-        var photo1 = require(`../images/projects/${content1.url}`);
-        var photo2 = require(`../images/projects/${content2.url}`);
-        var photo3 = require(`../images/projects/${content3.url}`);
+        var photo1 = require(`../../images/projects/${content1.url}`);
+        var photo2 = require(`../../images/projects/${content2.url}`);
+        var photo3 = require(`../../images/projects/${content3.url}`);
 
         return (
             <Row style={rowStyles}>

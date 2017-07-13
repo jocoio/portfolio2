@@ -18,9 +18,9 @@ class WorkSection extends React.Component {
         var content2 = this.props.data.work2;
         var content3 = this.props.data.work3;
 
-        var photo1 = require(`../images/projects/${content1.url}`);
-        var photo2 = require(`../images/projects/${content2.url}`);
-        var photo3 = require(`../images/projects/${content3.url}`);
+        var photo1 = require(`../../images/projects/${content1.url}`);
+        var photo2 = require(`../../images/projects/${content2.url}`);
+        var photo3 = require(`../../images/projects/${content3.url}`);
 
         return (
             <Row style={styles}>

@@ -10,6 +10,11 @@
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.35);
   background-color: #ffffff;
 }
+.backCross:hover {
+  	transform: scale(1.04, 1.04);
+    transform-origin: center;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.35);
+}
 
 .projectInfo {
   position: fixed;

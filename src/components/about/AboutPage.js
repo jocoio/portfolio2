@@ -3,11 +3,14 @@ import Title from '.././common/Title.js';
 import Description from  '../common/Description.js';
 import ContentContainer from '../common/ContentContainer.js';
 import { Row, Col } from '../grid';
-import me from '../images/about/me.jpg';
-import resume from '../images/about/resume.pdf';
+import me from '../../images/about/me.jpg';
+import resume from '../../images/about/resume.pdf';
 import './AboutPage.css';
 
 class AboutPage extends React.Component {
+    componentDidUpdate() {
+        window.scrollTo(0, 0);
+    }
     
     render() {
         var styles = {

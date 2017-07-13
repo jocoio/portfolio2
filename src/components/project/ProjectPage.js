@@ -1,13 +1,17 @@
 import React from 'react';
-import Title from '.././common/Title.js';
-import Description from '.././common/Description.js';
-import cross from '../images/nav/cross.png';
+import Title from '../common/Title.js';
+import Description from '../common/Description.js';
+import cross from '../../images/nav/cross.png';
 import { Link } from 'react-router-dom';
 import { Row, Col } from '../grid';
 import './ProjectPage.css';
 
 
 class ProjectPage extends React.Component {
+    
+    componentWillUpdate() {
+        window.scrollTo(0, 0);
+    }
 
     render() {
         var project = this.props.location.state.data;
@@ -46,7 +50,7 @@ class ProjectPage extends React.Component {
                         // Photo + caption
                         if (content.length === 2 ) {
                             var photoUrl= content[0];
-                            var photo = require(`../images/projects/${photoUrl}`);
+                            var photo = require(`../../images/projects/${photoUrl}`);
                             return (
                                 <div>
                                     <br/>
@@ -72,7 +76,7 @@ class ProjectPage extends React.Component {
                                  content.substr(content.length - 3) === "png" || 
                                  content.substr(content.length - 3) === "jpg")
                         {
-                            photo = require(`../images/projects/${content}`);
+                            photo = require(`../../images/projects/${content}`);
                             return (
                                 <div>
                                     <br/>
