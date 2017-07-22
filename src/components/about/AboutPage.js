@@ -8,13 +8,12 @@ import resume from '../../images/about/resume.pdf';
 import './AboutPage.css';
 
 class AboutPage extends React.Component {
-    componentDidUpdate() {
+    componentWillUnmount() {
         window.scrollTo(0, 0);
     }
     
     render() {
         var styles = {
-            height: "100vh",
             position: "relative",
             paddingTop: "80px",
         }

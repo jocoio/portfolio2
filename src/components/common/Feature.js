@@ -10,7 +10,6 @@ class Feature extends React.Component {
     render() {
         var rowStyles = {
             position: "relative",
-            paddingTop: "80px"
         }
         var infoStyles = {
             maxWidth: "250px"

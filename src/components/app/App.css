@@ -1,11 +1,11 @@
 .example-enter {
-  top: 0;
   opacity: 0.01;
 }
 
 .example-enter.example-enter-active {
   opacity: 1;
   transition: opacity 500ms ease-in-out;
+  -webkit-transition: opacity 500ms ease-in-out;
 }
 
 .example-leave {
@@ -14,7 +14,8 @@
 
 .example-leave.example-leave-active {
   opacity: 0.01;
-  transition: opacity 150ms ease-out;
+  transition: opacity 50ms ease-out;
+  -webkit-transition: opacity 50ms ease-out;
 }
 
 html {
@@ -92,6 +93,10 @@ a {
   padding: 0;
 }
 
+.footer {
+    height: 75px;
+}
+
 /* lg */
 @media only screen and (min-width: 1440px) {
   .row {
@@ -104,7 +109,7 @@ a {
 @media only screen and (max-width: 1439px) {
   .row {
     max-width: 876px;
-    height: 110vh;
+    height: 110vh; 
   }
   h1 {
     font-size: 48px;
@@ -116,7 +121,7 @@ a {
 @media only screen and (max-width: 1023px) {
   .row {
     width: 768px;
-    height: 80vh;
+    height: 80vh; 
   }
 
   .container {
@@ -132,6 +137,12 @@ a {
 
 /* xs */
 @media only screen and (max-width: 767px) {
+  
+  .row {
+    width: 100vw;
+    height: 100vh;
+  }
+
   h1 {
     font-size: 48px;
     line-height: 48px;
@@ -148,11 +159,6 @@ a {
 
   p {
     width: 100%;
-  }
-
-  .row {
-    width: 100vw;
-    height: 100vh;
   }
 
   .actionButton {

@@ -7,6 +7,10 @@ import './HomePage.css';
 
 class HomePage extends React.Component {
 
+    componentWillUnmount() {
+        window.scrollTo(0, 0);
+    }
+    
     render() {
         return (
             <div>
@@ -24,7 +28,7 @@ class HomePage extends React.Component {
                 </Row>
                 <Feature data={features.la} />
                 <Feature data={features.ed} />
-                <Feature data={features.scout} />
+                <Feature data={features.scout} />       
             </div>
         )
     }

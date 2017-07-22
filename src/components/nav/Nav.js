@@ -1,19 +1,10 @@
 import React from 'react';
-import menu from '../../images/nav/menu.svg';
 import logo from '../../images/nav/logo.svg';
-import cross from '../../images/nav/cross.png';
 import { Link } from 'react-router-dom';
-import { Row, Col } from '../grid';
+import { Row } from '../grid';
 import './Nav.css'
 
-class Nav extends React.Component {
-
-    constructor() {
-        super();
-        this.state = {
-            isMenuVisible: false
-        };
-    }
+export default class Nav extends React.Component {
 
     render() {
         var styles = {
@@ -24,29 +15,18 @@ class Nav extends React.Component {
 
         return (
             <Row style={styles}>
-                
-                <img src={menu} className="MenuIcon" alt="MenuIcon" onClick={() => this.toggleMenu()} />
-
-                {this.state.isMenuVisible ?
-                    <Col className="MenuContainer"
-                        lgWidth={5} mdWidth={5} smWidth={5} xsWidth={12}>
-                        <img onClick={() => this.toggleMenu()} className="MenuExit" src={cross} alt="MenuExit"/>
-                        <Link className="MenuItem" onClick={() => this.toggleMenu()} to="/">Featured</Link>
-                        <Link className="MenuItem" onClick={() => this.toggleMenu()} to="/work" >Work</Link>
-                        <Link className="MenuItem" onClick={() => this.toggleMenu()} to="/about">About</Link>
-                    </Col>
-                    : null}
+                <div className="MenuContainer"
+                        lgWidth={3} mdWidth={3} smWidth={12} xsWidth={12}>
+                        <Link className="MenuItem" to="/work" >Work</Link>
+                        <Link className="MenuItem" to="/about">About</Link>
+                </div>
         
                 <Link to="/">
                     <img className="logo" src={logo} alt="logo" />
                 </Link>
-            </Row>
+                <div className="blurBar"/>
+                <p className="version">v0.6.1</p>
+            </Row> 
         );
     }
-
-    toggleMenu() {
-        this.setState({ isMenuVisible: !this.state.isMenuVisible });
-    }
 }
-
-export default Nav;

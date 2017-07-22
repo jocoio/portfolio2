@@ -16,7 +16,7 @@ export default class Routes extends React.Component {
 					<CSSTransitionGroup
 						transitionName="example"
 						transitionEnterTimeout={500}
-						transitionLeaveTimeout={150}
+						transitionLeaveTimeout={50}
 					>
 						<Route location={location} key={location.key}>
 							<Switch>

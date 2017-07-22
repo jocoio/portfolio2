@@ -33,7 +33,7 @@ class WorkSection extends React.Component {
                     />
                 </Col>
 
-                <Link to={{
+                <Link className="workProject" to={{
                     pathname: '/project',
                     state: {
                         data: content1,
@@ -43,7 +43,7 @@ class WorkSection extends React.Component {
                     <ContentContainer x={content1.x} y={content1.y} z={content1.z} width={content1.width} height={content1.height} img={photo1} label={content1.label} size="100%" />
                 </Link>
 
-                <Link to={{
+                <Link className="workProject" to={{
                     pathname: '/project',
                     state: {
                         data: content2,
@@ -52,7 +52,7 @@ class WorkSection extends React.Component {
                 }}>
                     <ContentContainer x={content2.x} y={content2.y} z={content2.z} width={content2.width} height={content2.height} img={photo2} label={content2.label} size="100%" />
                 </Link>  
-                <Link to={{
+                <Link className="workProject" to={{
                     pathname: '/project',
                     state: {
                         data: content3,
