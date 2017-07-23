@@ -51,4 +51,9 @@
         height: 100vh !important;
         text-align: center;
     }
+    
+    .keyFeature {
+      border-radius: 0px !important;
+      box-shadow: none !important;
+    }
 }

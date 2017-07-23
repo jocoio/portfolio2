@@ -49,20 +49,20 @@
         "category": ["Filmmaking"],
         "date": "November 2014",        
         "feature1": {
-            "url": "video/50Years/slide.png",
-            "x": [4, 4, 0, 0],
-            "y": [4, 9, 0, 0],
-            "z": [0, 2, 0 ,0],
-            "width": [2, 2, 0, 0],
-            "height": [3, 3, 0, 0]
-        },
-        "feature2": {
             "url": "video/50Years/thumb.png",
             "x": [5, 5, 0, 0],
             "y": [0, 0, 10, 0],
             "z": [1, 0, 0, 0],
             "width": [6, 7, 5, 12],
             "height": [5, 5, 3, 10]
+        },
+        "feature2": {
+            "url": "video/50Years/slide.png",
+            "x": [4, 4, 0, 0],
+            "y": [4, 9, 0, 0],
+            "z": [0, 2, 0 ,0],
+            "width": [2, 2, 0, 0],
+            "height": [3, 3, 0, 0]
         },
         "feature3": {
             "url": "video/50Years/gparents.png",
@@ -84,21 +84,21 @@
         "info": "In January 2016 I joined Northeastern’s on campus, student run design studio, Scout. From there, it’s been a wild ride of hard work, late nights, and lifelong friends. I’ve been lucky enough to wear several different hats while on Scout, and the following is a collection of some of my favorite work.",
         "category": ["Wireframming", "UI/UX", "Filmmaking, Animation"],
         "date": "2016-Present",        
-        "feature1": {
-            "url": "design/scout/sclogo.gif",
-            "x": [4, 4, 0, 0],
-            "y": [6, 6, 0, 0],
-            "z": [0, 2, 0, 0],
-            "width": [3, 2, 0, 0],
-            "height": [5, 3, 0, 0]
-        },
-        "feature2": {
+                "feature1": {
             "url": "design/scout/labsMenu.png",
             "x": [5, 5, 6, 0],
             "y": [0, 0, 0, 0],
             "z": [1, 0, 0, 0],
             "width": [6, 7, 6, 12],
             "height": [8, 7, 8, 10]
+        },
+        "feature2": {
+            "url": "design/scout/sclogo.gif",
+            "x": [4, 4, 0, 0],
+            "y": [6, 6, 0, 0],
+            "z": [0, 2, 0, 0],
+            "width": [3, 2, 0, 0],
+            "height": [5, 3, 0, 0]
         },
         "feature3": {
             "url": "design/scout/meeting.png",

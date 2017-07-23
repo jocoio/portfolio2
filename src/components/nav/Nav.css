@@ -43,6 +43,7 @@
 }
 
 .version {
+  font-size: 12px;
   height: 100px;
   position: fixed;
   right: 80px;
@@ -119,5 +120,13 @@
   }
   .blurBar {
     height: 70px
+  }
+  .version {
+    position: fixed;
+    right: 70px;
+    top: 25px;
+    z-index: 2;
+    width: auto;
+    height: auto;
   }
 }

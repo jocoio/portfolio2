@@ -15,17 +15,16 @@ export default class Nav extends React.Component {
 
         return (
             <Row style={styles}>
-                <div className="MenuContainer"
-                        lgWidth={3} mdWidth={3} smWidth={12} xsWidth={12}>
-                        <Link className="MenuItem" to="/work" >Work</Link>
-                        <Link className="MenuItem" to="/about">About</Link>
+                <div className="MenuContainer">
+                    <Link className="MenuItem" to="/work" >Work</Link>
+                    <Link className="MenuItem" to="/about">About</Link>
                 </div>
         
                 <Link to="/">
                     <img className="logo" src={logo} alt="logo" />
                 </Link>
                 <div className="blurBar"/>
-                <p className="version">v0.6.1</p>
+                <p><a className="version" href="https://github.com/jocoio/joco">v0.6.2</a></p>
             </Row> 
         );
     }
