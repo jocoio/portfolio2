@@ -24,7 +24,7 @@ export default class Nav extends React.Component {
                     <img className="logo" src={logo} alt="logo" />
                 </Link>
                 <div className="blurBar"/>
-                <p><a className="version" href="https://github.com/jocoio/joco">v0.6.2</a></p>
+                <p><a className="version" href="https://github.com/jocoio/joco">v0.6.3</a></p>
             </Row> 
         );
     }

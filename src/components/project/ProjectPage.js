@@ -54,7 +54,6 @@ class ProjectPage extends React.Component {
                                 var photo = require(`../../images/projects/${photoUrl}`);
                                 return (
                                     <div>
-                                        <br />
                                         <img className="projectImage" src={photo} alt="content" />
                                         <p className="projectImageCaption">{content[1]}</p>
                                         <br />

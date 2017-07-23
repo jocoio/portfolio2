@@ -1,13 +1,19 @@
-    .contentLabel {
-    position:absolute;
-    left: -15px;
-    color: #ffffff;
-    background-color: #333333;
-    display: inline-block;
-    padding: 8px 15px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.35);
-    bottom: 15%;
-    }
+.contentLabel {
+  position:absolute;
+  left: -15px;
+  color: #ffffff;
+  background-color: #333333;
+  display: inline-block;
+  padding: 8px 15px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.35);
+  bottom: 15%;
+}
+
+.workProject:hover {
+  transform: scaleZ(1.04);
+  transform-origin: center;
+
+}
 
 /* lg */
 @media only screen and (min-width: 1440px) {

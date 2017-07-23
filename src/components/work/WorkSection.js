@@ -33,33 +33,33 @@ class WorkSection extends React.Component {
                     />
                 </Col>
 
-                <Link className="workProject" to={{
+                <Link to={{
                     pathname: '/project',
                     state: {
                         data: content1,
                         back: "/work"
                     }
                 }}>
-                    <ContentContainer x={content1.x} y={content1.y} z={content1.z} width={content1.width} height={content1.height} img={photo1} label={content1.label} size="100%" />
+                    <ContentContainer x={content1.x} y={content1.y} z={content1.z} width={content1.width} height={content1.height} img={photo1} label={content1.label} size="100%" className="workProject" />
                 </Link>
 
-                <Link className="workProject" to={{
+                <Link to={{
                     pathname: '/project',
                     state: {
                         data: content2,
                         back: "/work"
                     }
                 }}>
-                    <ContentContainer x={content2.x} y={content2.y} z={content2.z} width={content2.width} height={content2.height} img={photo2} label={content2.label} size="100%" />
+                    <ContentContainer x={content2.x} y={content2.y} z={content2.z} width={content2.width} height={content2.height} img={photo2} label={content2.label} size="100%" className="workProject" />
                 </Link>  
-                <Link className="workProject" to={{
+                <Link to={{
                     pathname: '/project',
                     state: {
                         data: content3,
                         back: "/work"
                     }
                 }}>
-                    <ContentContainer x={content3.x} y={content3.y} z={content3.z} width={content3.width} height={content3.height} img={photo3} label={content3.label} size="100%" />
+                    <ContentContainer x={content3.x} y={content3.y} z={content3.z} width={content3.width} height={content3.height} img={photo3} label={content3.label} size="100%" className="workProject" />
                 </Link>             
             </Row>
         )
