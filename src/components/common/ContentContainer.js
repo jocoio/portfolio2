@@ -9,8 +9,7 @@ class ContentContainer extends React.Component {
             borderRadius: "2px",
             background: "url(" + this.props.img + ") no-repeat center center",
             backgroundSize: "cover",
-            position: "absolute",
-            left: "0px"
+            position: "absolute"
         }
         var label;
 

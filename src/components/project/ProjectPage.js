@@ -3,7 +3,7 @@ import Title from '../common/Title.js';
 import Description from '../common/Description.js';
 import cross from '../../images/nav/cross.png';
 import { Link } from 'react-router-dom';
-import { Col } from '../grid';
+import { Col, Row } from '../grid';
 import './ProjectPage.css';
 
 
@@ -18,14 +18,14 @@ class ProjectPage extends React.Component {
         var back = this.props.location.state.back;
 
         var rowStyles = {
-            paddingTop: "80px"
+            paddingTop: "80px",
+            position: "relative"
         }
         return (
             <div>
-                <div className="body" style={rowStyles}>
+                <Row style={rowStyles}>
                     <Col className="projectInfo"
-                        lgWidth={4} mdWidth={4} smWidth={4} xsWidth={10}
-                        lgXOffset={0} mdXOffset={0} smXOffset={1} xsXOffset={1}>
+                        lgWidth={4} mdWidth={4} smWidth={4} xsWidth={10} xsXOffset={1}>
                         <Title name={project.name} />
                         <Description info={project.info}
                             width={[3, 3, 3, 12]}
@@ -43,8 +43,8 @@ class ProjectPage extends React.Component {
                     </Col>
 
 
-                    <Col className="projectContent" lgWidth={7} mdWidth={7} smWidth={5} xsWidth={12}
-                        lgXOffset={5} mdXOffset={5} smXOffset={6} xsXOffset={0}
+                    <Col className="projectContent" lgWidth={7} mdWidth={7} smWidth={7} xsWidth={12}
+                        lgXOffset={5} mdXOffset={5} smXOffset={5} xsXOffset={0}
                         lgYOffset={0} mdYOffset={0} smYOffset={0} xsYOffset={15}
                     >
                         {project.content.map(function (content) {
@@ -102,7 +102,7 @@ class ProjectPage extends React.Component {
                         })}
                     </Col>
 
-                </div>
+                </Row>
                 <div className="footer" />
             </div>
         )
