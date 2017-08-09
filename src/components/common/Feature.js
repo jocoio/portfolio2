@@ -9,8 +9,13 @@ class Feature extends React.Component {
 
     render() {
         var rowStyles = {
-            position: "relative",
+            position: "relative"
         }
+
+        var colStyles = {
+            position: "absolute"
+        }
+
         var infoStyles = {
             maxWidth: "250px"
         }
@@ -27,7 +32,8 @@ class Feature extends React.Component {
             <Row style={rowStyles}>
                 <Col xsWidth={10} smWidth={4} mdWidth={3} lgWidth={4}
                      xsXOffset={1} smXOffset={1} mdXOffset={0} lgXOffset={0}
-                     xsYOffset={10}>
+                     xsYOffset={10}
+                     style={colStyles}>
                     <Title name={this.props.data.name} />
                     <Description style={infoStyles} info={this.props.data.info}
                                  width={[3, 3, 4, 12]}

@@ -15,7 +15,7 @@ class HomePage extends React.Component {
         return (
             <div>
                 <Row className="landing">
-                    <Col xsWidth >
+                    <Col xsWidth>
                         <div className="intro">
                             <h1>Jon Corbett</h1>
                             <p>Boston based designer, developer, and dog lover</p>
