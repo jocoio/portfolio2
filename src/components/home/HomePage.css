@@ -12,29 +12,67 @@
 .intro>p {
  color: #8C8C8C;
 }
-.actionCall {
+
+.icon-scroll,
+.icon-scroll:before {
   position: absolute;
-  left: 50vw;
-  transform: translateX(-50%);
-  bottom: 30px;
+  left: 48%;
+  bottom: 20px;
 }
-.actionCall>p {
-  color: #8C8C8C;
-  font-style: italic;
-}
-.arrow {
-  max-height: 50px;
-  padding-top: 10px;
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
 }
 
 /* lg */
 @media only screen and (min-width: 1440px) {
 
+  .icon-scroll {
+    width: 70px;
+    height: 60px;
+    box-shadow: inset 0 0 0 1px #000000;
+    border-radius: 4px;
+  }
+  .icon-scroll:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #000000;
+    margin-left: -4px;
+    top: 45px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+  }
 }
 
 /* md */
 @media only screen and (max-width: 1439px) {
-
+  .icon-scroll {
+    width: 70px;
+    height: 60px;
+    box-shadow: inset 0 0 0 1px #000000;
+    border-radius: 4px;
+  }
+  .icon-scroll:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #000000;
+    margin-left: -4px;
+    top: 45px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+  }
 }
 
 /* sm */
@@ -42,6 +80,25 @@
   .row.landing {
     height: 100vh;
     text-align: center;
+  }
+
+  .icon-scroll {
+    width: 50px;
+    height: 70px;
+    box-shadow: inset 0 0 0 1px #000000;
+    border-radius: 4px;
+  }
+  .icon-scroll:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #000000;
+    margin-left: -4px;
+    top: 45px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
   }
 }
 
@@ -55,5 +112,23 @@
     .keyFeature {
       border-radius: 0px !important;
       box-shadow: none !important;
+    }
+
+    .icon-scroll {
+      width: 40px;
+      height: 70px;
+      border-radius: 4px;
+    }
+    .icon-scroll:before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #000000;
+      margin-left: -4px;
+      top: 45px;
+      border-radius: 4px;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-name: scroll;
     }
 }

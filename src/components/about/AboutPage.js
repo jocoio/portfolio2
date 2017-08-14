@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '.././common/Title.js';
 import Description from '../common/Description.js';
 import ContentContainer from '../common/ContentContainer.js';
-import { Col } from '../grid';
+import { Col, Row } from '../grid';
 import me from '../../images/about/me.jpg';
 import resume from '../../images/about/resume.pdf';
 import './AboutPage.css';
@@ -25,11 +25,12 @@ class AboutPage extends React.Component {
         ]
 
         return (
-            <div>
-                <div className="body" style={styles}>
+            <Row>
+                <div style={styles}>
                     <Col xsWidth={10} smWidth={5} mdWidth={4} lgWidth={4}
-                        xsXOffset={1} smXOffset={1} mdXOffset={1} lgXOffset={0}
-                        lgYOffset={0} mdYOffset={0} smYOffset={0} xsYOffset={11}>
+                        lgXOffset={0} mdXOffset={1} smXOffset={1} xsXOffset={1} 
+                        lgYOffset={0} mdYOffset={0} smYOffset={0} xsYOffset={11}
+                        className="content">
                         <Title name="Hi There!" />
                         <Description info={intro}
                             width={[4, 4, 4, 12]}
@@ -38,7 +39,6 @@ class AboutPage extends React.Component {
                         <a href="mailto:hello@joco.io?Subject=Hi there!">hello@joco.io</a>
                         <h3>Resume</h3>
                         <a href={resume}>View Resume</a>
-
                     </Col>
 
                     <ContentContainer x={[7, 7, 6, 0]}
@@ -51,8 +51,8 @@ class AboutPage extends React.Component {
                         className="aboutPhoto"
                     />
                 </div>
-                <div className="footer" />
-            </div>
+                <div className="footer"/>
+            </Row>
         )
     }
 }

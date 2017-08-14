@@ -8,11 +8,14 @@
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.35);
   bottom: 15%;
 }
+.workProject {
+  transform: scaleZ(2.04);
+}
+
 
 .workProject:hover {
   transform: scaleZ(1.04);
   transform-origin: center;
-
 }
 
 /* lg */

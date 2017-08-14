@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../images/nav/logo.svg';
 import { Link } from 'react-router-dom';
 import { Row } from '../grid';
-import './Nav.css'
+import './Nav.css';
 
 export default class Nav extends React.Component {
 
@@ -10,7 +10,8 @@ export default class Nav extends React.Component {
         var styles = {
             position: "fixed",
             zIndex : "1",
-            height: "100px"
+            height: "75px",
+            width: "100vw"
         }
 
         return (
@@ -24,7 +25,7 @@ export default class Nav extends React.Component {
                     <img className="logo" src={logo} alt="logo" />
                 </Link>
                 <div className="blurBar"/>
-                <p><a className="version" href="https://github.com/jocoio/joco">v0.6.4</a></p>
+                <p><a className="version" href="https://github.com/jocoio/joco">v0.7</a></p>
             </Row> 
         );
     }

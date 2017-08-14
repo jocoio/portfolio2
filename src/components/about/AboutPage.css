@@ -3,6 +3,13 @@
     box-shadow: none !important;
     border-radius: 0px !important;
 }
+.content {
+    position: relative;
+}
+
+a:hover {
+    color: #23966c;
+}
 
 /* lg */
 @media only screen and (min-width: 1440px) {

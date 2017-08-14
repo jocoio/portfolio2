@@ -34,7 +34,7 @@
 .blurBar {
   width: 100vw;
   position: fixed;
-  height: 80px;
+  height: 75px;
   background-color: #ffffff;
   z-index: 1;
   position: fixed;
@@ -97,8 +97,6 @@
 
 /* xs */
 @media only screen and (max-width: 767px) {
-  
-  
   .logo {
   max-width: 40px; 
   right: 15px 
@@ -118,7 +116,7 @@
     padding: 0 10px;
   }
   .blurBar {
-    height: 70px
+    height: 75px
   }
   .version {
     position: fixed;
