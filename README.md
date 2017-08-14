@@ -6,6 +6,10 @@ Hi there! This is the repo for my portfolio site. Please hire me.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+### Prerequisites
+
+This project is managed using npm, install that if you don't have it
+
 ### Installing
 
 First clone/download this repo, then
