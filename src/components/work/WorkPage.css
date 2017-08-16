@@ -1,3 +1,8 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 .contentLabel {
   position:absolute;
   left: -15px;
@@ -7,15 +12,7 @@
   padding: 8px 15px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.35);
   bottom: 15%;
-}
-.workProject {
-  transform: scaleZ(2.04);
-}
-
-
-.workProject:hover {
-  transform: scaleZ(1.04);
-  transform-origin: center;
+	z-index: 2;
 }
 
 /* lg */
@@ -32,20 +29,32 @@
 @media only screen and (max-width: 1023px) {
   .contentLabel {
     margin: 0;
-    position: absolute;
-	  top: 50%;
-	  left: 50%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
     bottom: auto;
-	  transform: translate(-50%, -50%);
     color: #ffffff;
     background-color: transparent;
     text-shadow: 0px 3px 6px rgba(0,0,0,0.35);
     box-shadow: none;
     white-space: nowrap;
-  }
+	}
 }
 
 /* xs */
 @media only screen and (max-width: 767px) {
-
+  .contentLabel {
+    margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+    bottom: auto;
+    color: #ffffff;
+    background-color: transparent;
+    text-shadow: 0px 3px 6px rgba(0,0,0,0.35);
+    box-shadow: none;
+    white-space: nowrap;
+	}
 }

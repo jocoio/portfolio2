@@ -7,6 +7,7 @@ import "../../../node_modules/animate.css/animate.min.css";
 import './HomePage.css';
 
 
+
 class HomePage extends React.Component {
 
     componentWillUnmount() {
@@ -16,7 +17,7 @@ class HomePage extends React.Component {
     render() {
         return (
             <div>
-                
+
                 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                     <Row className="landing">
                         <Col xsWidth>
@@ -25,20 +26,19 @@ class HomePage extends React.Component {
                                 <p>Boston based designer, developer, and dog lover</p>
                             </div>
 
-                            <div className="icon-scroll"/>
+                            <div className="icon-scroll" />
                         </Col>
                     </Row>
                 </ScrollAnimation>
-                
-                    
+
                 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                <Feature data={features.la} />
+                    <Feature data={features.la} />
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                <Feature data={features.ed} />
+                    <Feature data={features.ed} />
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                <Feature data={features.scout} />
+                    <Feature data={features.scout} />
                 </ScrollAnimation>
 
             </div>
