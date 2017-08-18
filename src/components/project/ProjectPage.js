@@ -87,10 +87,7 @@ class ProjectPage extends React.Component {
                             // Title
                             else if (content.length < 50) {
                                 return (
-                                    <div className="projectContentTitle">
-                                        <h2>{content}</h2>
-                                        <br />
-                                    </div>
+                                    <h2 className="projectContentTitle">{content}</h2>
                                 )
                             }
                             // Text
@@ -101,7 +98,6 @@ class ProjectPage extends React.Component {
                                 </div>);
                         })}
                     </Col>
-
                 </Row>
                 <div className="footer" />
             </div>

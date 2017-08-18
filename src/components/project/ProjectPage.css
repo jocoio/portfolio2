@@ -2,6 +2,11 @@
   position: absolute;
 }
 
+.projectContentTitle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 .backCross {
   max-width: 25px;
   border-radius: 50px;
@@ -22,8 +27,14 @@
 
 .projectInfo {
   position: fixed;
-  top: 80px;
+  top: 0px;
+  padding-top: 100px;
   height: 100vh;
+}
+
+.projectInfo>h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .videoWrapper {
@@ -58,6 +69,21 @@
   .body {
     max-width: 1020px;
   }
+  .projectInfo {
+    border-right: 1px;
+    border-width: 0px 1px 0px 0px;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 100%, 0 0, from(#4a4a4a), to(#ffffff)) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(bottom, #4a4a4a, #ffffff) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(bottom, #4a4a4a, #ffffff) 1 100%;  
+    -o-border-image:
+      -o-linear-gradient(bottom, #4a4a4a, #ffffff) 1 100%;
+    border-image:
+      linear-gradient(to top, #4a4a4a, #ffffff) 1 100%;
+  }
 }
 
 /* md */
@@ -65,12 +91,44 @@
   .body {
     max-width: 876px;
   }
+
+  .projectInfo {
+    border-right: 1px;
+    border-width: 0px 1px 0px 0px;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 100%, 0 0, from(#4a4a4a), to(#ffffff)) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(bottom, #4a4a4a, #ffffff) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(bottom, #4a4a4a, #ffffff) 1 100%;  
+    -o-border-image:
+      -o-linear-gradient(bottom, #4a4a4a, #ffffff) 1 100%;
+    border-image:
+      linear-gradient(to top, #4a4a4a, #ffffff) 1 100%;
+  }
 }
 
 /* sm */
 @media only screen and (max-width: 1023px) {
   .body {
     width: 768px;
+  }
+
+  .projectInfo {
+    border-right: 1px;
+    border-width: 0px 1px 0px 0px;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 100%, 0 0, from(#4a4a4a), to(#ffffff)) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(bottom, #4a4a4a, #ffffff) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(bottom, #4a4a4a, #ffffff) 1 100%;  
+    -o-border-image:
+      -o-linear-gradient(bottom, #4a4a4a, #ffffff) 1 100%;
+    border-image:
+      linear-gradient(to top, #4a4a4a, #ffffff) 1 100%;
   }
 }
 
@@ -99,6 +157,7 @@
         padding-top: 80px;
         box-shadow: none;
         height: auto;
+        border: none;
     }
 
     .projectContent>div>p,h2 {

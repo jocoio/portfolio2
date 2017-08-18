@@ -6,8 +6,6 @@ import { Row, Col } from '../grid';
 
 export default class WorkSection extends React.Component {
 
-    
-
     render() {
         var styles = {
             height: "100vh",

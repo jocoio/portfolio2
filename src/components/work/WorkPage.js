@@ -15,7 +15,7 @@ class WorkPage extends React.Component {
 
     componentDidMount() {
         //Only run the tilt animation on desktops
-        if ($('body').width() > 768) {
+        if ($('body').width() >= 1024) {
             this.initTilt();
         }
     }
