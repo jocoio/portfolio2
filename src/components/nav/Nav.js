@@ -15,7 +15,7 @@ export default class Nav extends React.Component {
         }
 
         return (
-            <Row style={styles}>
+            <Row style={styles} className="menu">
                 <div className="MenuContainer">
                     <Link className="MenuItem" to="/work" >Work</Link>
                     <Link className="MenuItem" to="/about">About</Link>

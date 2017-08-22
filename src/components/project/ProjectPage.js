@@ -97,9 +97,9 @@ class ProjectPage extends React.Component {
                                     <br />
                                 </div>);
                         })}
+                        <div className="footer" />
                     </Col>
-                </Row>
-                <div className="footer" />
+                </Row>  
             </div>
         )
     }

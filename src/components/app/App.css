@@ -69,13 +69,13 @@ a {
   color: #ffffff;
 }
 
-.container {
-  margin: auto;
-  padding: 0;
+.container { 
+  margin: 0;
+  width: 100vw;
 }
 
 .footer {
-    height: 75px;
+  height: 75px;
 }
 
 /* lg */

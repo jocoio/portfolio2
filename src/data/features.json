@@ -2,7 +2,7 @@
     "la": {
         "name": "Hello LA",
         "info": "In February 2016 I attended my first hackathon, Hack@Brown. Working with LA locals, we created a curated guide to Los Angeles, and won best user experience out of ~100 teams.",
-        "category": ["User Experience", "Brand Identity"],
+        "category": ["User Experience", "Brand Identity", "User Interface"],
         "date": "February 2016",
         "feature1": {
             "url": "design/helloLA/map.png",
@@ -74,7 +74,7 @@
         },
         "content": [
             "//www.youtube.com/embed/6SgCcd_sWrs?showinfo=0",
-            "Love",
+            "Photos",
             ["video/50Years/lawn.jpg", "Ed & Laureen's home in Saugus, MA"],
             ["video/50Years/force.jpg", "One of Ed's photo albums documenting his time in the Air Force"],
             ["video/50Years/tools.jpg", "Ed's basement toolbench"]               

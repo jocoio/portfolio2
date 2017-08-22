@@ -10,7 +10,7 @@ class Feature extends React.Component {
     render() {
         var rowStyles = {
             position: "relative",
-            marginTop: "50px"
+            marginTop: "100px"
         }
 
         var colStyles = {

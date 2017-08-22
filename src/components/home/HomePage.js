@@ -1,13 +1,13 @@
 import React from 'react';
 import Feature from '../common/Feature.js';
 import features from '../../data/features.json';
-import { Row, Col } from '../grid';
+import { Col } from '../grid';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "../../../node_modules/animate.css/animate.min.css";
 import './HomePage.css';
 import { TweenLite, Expo } from 'gsap';
 import $ from 'jquery';
-
+import { Link } from 'react-router-dom';
 
 class HomePage extends React.Component {
 
@@ -16,13 +16,16 @@ class HomePage extends React.Component {
         if ($('body').width() >= 1024) {
             this.initTilt();
         }
+    }   
+
+    componentWillUnmount() {
+        window.scrollTo(0, 0);
     }
 
     initTilt() {
 
         var feature = $('.featureRow'), img1, img2, img3;
         var sxPos, syPos;
-        
 
         feature.mousemove(function (e) {
 
@@ -63,24 +66,8 @@ class HomePage extends React.Component {
 
         feature.mouseleave(function (e) {
 
-            //Image 1
-            TweenLite.to(img1, .25, {
-                rotationY: 0,
-                rotationX: 0,
-                transformPerspective: 9999,
-                transformOrigin: "center center -200",
-                ease: Expo.easeOut
-            });
-            //Image 2
-            TweenLite.to(img2, .25, {
-                rotationY: 0,
-                rotationX: 0,
-                transformPerspective: 9999,
-                transformOrigin: "center center -200",
-                ease: Expo.easeOut
-            });
-            //Image 3
-            TweenLite.to(img3, .25, {
+            //All images
+            TweenLite.to([img1, img2, img3], .25, {
                 rotationY: 0,
                 rotationX: 0,
                 transformPerspective: 9999,
@@ -89,24 +76,23 @@ class HomePage extends React.Component {
             });
         });
     };
-    componentWillUnmount() {
-        window.scrollTo(0, 0);
-    }
 
     render() {
         return (
-            <div>
+            <div className="home">
                 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                    <Row className="landing">
+                    <div className="landing">
                         <Col xsWidth>
                             <div className="intro">
                                 <h1>Jon Corbett</h1>
                                 <p>Boston based designer, developer, and dog lover</p>
                             </div>
-
-                            <div className="icon-scroll" />
+                            <div className="actionCall">
+                                <p>Scroll to see featured work</p>
+                                <div className="icon-scroll" />
+                            </div>
                         </Col>
-                    </Row>
+                    </div>
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
@@ -118,6 +104,12 @@ class HomePage extends React.Component {
                 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                     <Feature data={features.scout} />
                 </ScrollAnimation>
+
+                <div className="footer">
+                    <Link className={"actionButton"}
+                        to={{pathname: '/work',}}>View all projects
+                    </Link>
+                </div>
             </div>
         )
     }
