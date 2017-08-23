@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../images/nav/logo.svg';
-import { Link } from 'react-router-dom';
+import { NavLink as Link } from 'react-router-dom';
 import { Row } from '../grid';
 import './Nav.css';
 
@@ -17,8 +17,8 @@ export default class Nav extends React.Component {
         return (
             <Row style={styles} className="menu">
                 <div className="MenuContainer">
-                    <Link className="MenuItem" to="/work" >Work</Link>
-                    <Link className="MenuItem" to="/about">About</Link>
+                    <Link className="MenuItem" activeClassName="activeMenuItem" to="/work" >Work</Link>
+                    <Link className="MenuItem" activeClassName="activeMenuItem" to="/about">About</Link>
                 </div>
         
                 <Link to="/">

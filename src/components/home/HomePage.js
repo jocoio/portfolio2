@@ -8,9 +8,10 @@ import './HomePage.css';
 import { TweenLite, Expo } from 'gsap';
 import $ from 'jquery';
 import { Link } from 'react-router-dom';
+import Letter from './Letter';
 
 class HomePage extends React.Component {
-
+    
     componentDidMount() {
         //Only run the tilt animation on desktops
         if ($('body').width() >= 1024) {
@@ -77,11 +78,50 @@ class HomePage extends React.Component {
         });
     };
 
+    renderPattern() {
+        var pPoints = [];
+        var letterStart = 0;
+        var letter = letterStart;
+        var jDegree = 45;
+        var cDegree = 45;
+        for(var y = 0; y < window.innerHeight / 40; y++) {
+            for (var x = 0; x <= window.innerWidth / 40; x++) {
+                if (((y % 2 === 0) && (x % 2 === 0)) || ((y % 2 === 1) && (x % 2 === 1))) {
+                    if (letter === 0) {
+                        pPoints.push([x * 40, y * 40, letter, jDegree]);
+                        jDegree = (jDegree + 180) % 360;
+                    }
+                    else if (letter === 2) {
+                        pPoints.push([x * 40, y * 40, letter, cDegree]);
+                        cDegree += 180;
+                    }
+                    else {
+                        pPoints.push([x * 40, y * 40, letter, 0]);
+                    }
+                    
+                    letter = (letter + 1) % 4;
+                }
+            }
+            letterStart = (letterStart + (((y + 1) % 2) + 1)) % 4;
+            console.log(letterStart);
+            letter = letterStart;
+            cDegree += 270;
+            jDegree += 270;
+        }
+        return pPoints;
+    }
+
     render() {
+        var pattern = this.renderPattern();
         return (
             <div className="home">
                 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                     <div className="landing">
+                        <div className="pattern">
+                            {pattern.map(function (data) {
+                                return <Letter data={data}/>;
+                            })}
+                        </div>
                         <Col xsWidth>
                             <div className="intro">
                                 <h1>Jon Corbett</h1>

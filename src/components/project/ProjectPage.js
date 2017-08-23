@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import { Col, Row } from '../grid';
 import './ProjectPage.css';
 
-
 class ProjectPage extends React.Component {
 
     componentWillUnmount() {
@@ -42,7 +41,6 @@ class ProjectPage extends React.Component {
                         </Link>
                     </Col>
 
-
                     <Col className="projectContent" lgWidth={7} mdWidth={7} smWidth={7} xsWidth={12}
                         lgXOffset={5} mdXOffset={5} smXOffset={5} xsXOffset={0}
                         lgYOffset={0} mdYOffset={0} smYOffset={0} xsYOffset={15}
@@ -56,18 +54,17 @@ class ProjectPage extends React.Component {
                                     <div>
                                         <img className="projectImage" src={photo} alt="content" />
                                         <p className="projectImageCaption">{content[1]}</p>
-                                        <br />
+                                        <br/>
                                     </div>
                                 );
-
                             }
                             // Video
                             else if (content.substr(0, 24) === "//www.youtube.com/embed/") {
                                 return (
                                     <div className="videoWrapper">
-                                        <br />
+                                        <br/>
                                         <iframe width="1920" height="1080" src={content} title="video" frameBorder="0" allowFullScreen />
-                                        <br />
+                                        <br/>
                                     </div>
                                 )
                             }

@@ -14,20 +14,23 @@
   100%{background-position:0% 9%}
 }
 
-
 .landing {
   height: 100vh;
   width: 100vw !important;
   text-align: center;
 
-  background: linear-gradient(130deg, #23966c, #0f3e2c);
-  background-size: 400% 400%;
+  background: #23966c;
   
-  -webkit-animation: AnimationName 21s ease infinite;
+  /* -webkit-animation: AnimationName 21s ease infinite;
   -moz-animation: AnimationName 21s ease infinite;
-  animation: AnimationName 21s ease infinite;
+  animation: AnimationName 21s ease infinite; */
 
   box-shadow: inset 0 -20px 20px -20px rgba(0,0,0,0.35);
+  text-shadow: 0px 3px 6px rgba(0,0,0,0.35);
+}
+
+.letter:hover {
+  transform: scale(1.5) !important;
 }
 
 .intro {
@@ -40,7 +43,12 @@
 }
 
 .intro>p, .intro>h1 {
- color: #ffffff;
+  color: #ffffff;
+}
+
+.pattern {
+  height: 100vh;
+  overflow: hidden;
 }
   
 .actionCall>p {

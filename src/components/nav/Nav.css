@@ -7,28 +7,33 @@
 }
 
 .MenuContainer {
-    position: fixed;
-    top: 0px;
-    left: 15px;
-    margin: 25px 0px;
-    z-index: 2;
+  position: fixed;
+  top: 0px;
+  left: 15px;
+  margin: 25px 0px;
+  z-index: 2;
 }
 
 .MenuItem {
-    font-family: 'Source Sans Pro';
-    font-weight: bold;
-    color: #4A4A4A;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0px;
-    cursor: pointer;
-    display: block;
-    transition: all 150ms;
-    z-index: 2;
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  color: #4A4A4A;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0px;
+  cursor: pointer;
+  display: block;
+  transition: all 150ms;
+  z-index: 2;
 }
 
 .MenuItem:hover {
   color: #23966c;
+  text-decoration: none;
+}
+
+.activeMenuItem {
+  text-decoration: line-through;
 }
 
 .blurBar {
@@ -116,7 +121,7 @@
     padding: 0 10px;
   }
   .blurBar {
-    height: 75px
+    height: 60px;
   }
   .version {
     position: fixed;
