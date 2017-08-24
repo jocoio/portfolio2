@@ -1,11 +1,9 @@
 import React from 'react';
 import works from '../../data/works.json';
 import WorkSection from './WorkSection.js';
-import './WorkPage.css';
-import ScrollAnimation from 'react-animate-on-scroll';
-import "../../../node_modules/animate.css/animate.min.css";
 import { TweenLite, Expo } from 'gsap';
 import $ from 'jquery';
+import './WorkPage.css';
 
 
 class WorkPage extends React.Component {
@@ -27,7 +25,6 @@ class WorkPage extends React.Component {
 
         project.mousemove(function (e) {
             // x position in div: (e.pageX - $(this).offset().left)
-            console.log("fired");
             sxPos = (((e.pageX - $(this).offset().left) - ($(this).width() / 2)) / $(this).width()) * 10;
             syPos = -(((e.pageY - $(this).offset().top) - ($(this).height() / 2)) / $(this).height()) * 10;
 
@@ -73,20 +70,16 @@ class WorkPage extends React.Component {
     };
 
     render() {
+        var styler = {
+            width: "100%"
+        }
+
         return (
-            <div>
-                <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                    <WorkSection data={works.design} />
-                </ScrollAnimation>
-                <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                    <WorkSection data={works.dev} />
-                </ScrollAnimation>
-                <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                    <WorkSection data={works.photo} />
-                </ScrollAnimation>
-                <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                    <WorkSection data={works.video} />
-                </ScrollAnimation>
+            <div style={styler}>
+                <WorkSection data={works.design} />
+                <WorkSection data={works.dev} />
+                <WorkSection data={works.photo} />
+                <WorkSection data={works.video} />
             </div>
         )
     }

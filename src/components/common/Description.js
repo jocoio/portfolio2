@@ -11,8 +11,8 @@ class Description extends React.Component {
         var text;
 
         if(Array.isArray(this.props.info)) {
-            text=this.props.info.map(function (listValue) {
-                    return <div><p>{listValue}</p><br/></div>;
+            text=this.props.info.map(function (listValue, idx) {
+                    return <div key={idx} ><p>{listValue}</p><br/></div>;
                 });
         }
         else {

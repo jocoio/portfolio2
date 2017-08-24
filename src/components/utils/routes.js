@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { CSSTransitionGroup } from 'react-transition-group';
+import { TransitionGroup } from 'react-transition-group/TransitionGroup';
 import HomePage from '../home/HomePage.js';
 import WorkPage from '../work/WorkPage.js';
 import AboutPage from '../about/AboutPage.js';
@@ -13,21 +13,17 @@ export default class Routes extends React.Component {
 
 			<div>
 				<Route render={({ location }) => (
-					<CSSTransitionGroup
-						transitionName="example"
-						transitionEnterTimeout={500}
-						transitionLeaveTimeout={50}
-					>
-						<Route location={location} key={location.key}>
-							<Switch>
+					<TransitionGroup>
+						
+							<Switch location={location} key={location.key}>
 								<Route exact path="/" component={HomePage} />
 								<Route path="/about" component={AboutPage} />
 								<Route path="/work" component={WorkPage} />
 								<Route path="/project" component={ProjectPage} />
 							</Switch>
-						</Route>
+						
 
-					</CSSTransitionGroup>
+					</TransitionGroup>
 				)}
 				/>
 			</div>

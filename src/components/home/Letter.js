@@ -12,6 +12,7 @@ export default class Letter extends React.Component {
             transform: "rotate(" + this.props.data[3] + "deg)",
             left: this.props.data[0] - 15,
             top: this.props.data[1] - 15,
+            opacity: (this.props.data[0] + this.props.data[1]) / 4000
         }
 
         if (this.props.data[2] === 0) {
