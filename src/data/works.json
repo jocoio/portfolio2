@@ -7,6 +7,7 @@
             "info": "In February 2016 I attended my first hackathon, Hack@Brown. Working with LA locals, we created a curated guide to Los Angeles, and won best user experience out of ~100 teams.",
             "category": ["User Experience", "Brand Identity"],
             "date": "February 2016",
+            "link": "http://hellofromla.com/",
             "label": "Hello LA",
             "url": "design/helloLA/map.png",
             "x": [4, 4, 6, 1],
@@ -15,7 +16,7 @@
             "width": [2, 2, 6, 10],
             "height": [10, 10, 4, 3],
             "content": [
-                "design/helloLA/home.png",
+                "design/helloLA/map.png",
                 "Brainstorming",
                 ["design/helloLA/team1.jpg", "The idea behind Hello LA was a local's guide to Los Angeles, as Ashley and Rishab were both LA natives. They were looking for designers and we were looking for developers, and Evan was looking for a group! Once we settled on an idea, we quickly got to work brainstorming the branding, categories, and rough layout of the website."],
                 "Icons",
@@ -42,7 +43,7 @@
             "width": [2, 2, 6, 10],
             "height": [10, 10, 4, 3],
             "content": [
-                "design/scout/home.png",
+                "design/scout/labs.png",
                 "Sketches",
                 ["design/scout/board.jpg", "Once we mapped out the skeleton of the site, we divided up the pages between each team member, and created rough paper sketches of what we envisioned those pages would look like. It was useful to be able to start away from the computer, and quantify our ideas without any technological constraints."],
                 "Wireframes",
@@ -69,7 +70,7 @@
             "width": [2, 2, 6, 10],
             "height": [10, 10, 4, 3],
             "content": [
-                "design/myHousing/home.png",
+                "design/myHousing/housing.png",
                 "Brainstorming",
                 "To start the process, we brainstormed some problems that we had encountered during our time at Northeastern. This ranged from school resource sites like myNeu to more abstract concepts like how students chose to spend their money around campus. We settled on the process of selecting housing for the fall, as all 3 of us have had a frustrating experience trying to navigate through the confusing process.",
                 "Interviews and User Stories",
@@ -80,14 +81,46 @@
                 "High Fidelity",
                 "The final step of the project was adding onboarding screens for finding roommates, and converting our wireframes into high fidelity mockups with the use of sketch and invision. In the end we were happy with the result, and thought it was a great way to see a project from start to finish, guided by a user-focused design process. In the future we hope to bring this app to life, ideally with the help of Northeastern's assistance.",
                 "design/myHousing/high.png"
-                
             ]
         }
     },
     "dev": {
         "name": "Code",
-        "info": "I've been coding for about 4 years, mostly for class. It's time-consuming, frustrating, and repetitive, but the small dopamine release from solving challenging problems draws me back like a moth to a flame.",     
+        "info": "I started coding in high school, and am closing in on the 5 year mark. It's time-consuming, frustrating, and repetitive, but the reward from challenging myself and solving complex problems is more than worth it.",                                                                                                                                      
         "work1": {
+            "name": "Portfolio Site (this)",
+            "info": "I built my first portfolio last summer, with no prior web dev experience. It was functional, but after learning about web frameworks at my first co-op, I wanted to rebuild my site from the ground up.",
+            "category": ["Web development"],
+            "date": "Summer 2017",
+            "label": "Portfolio",
+            "url": "dev/portfolio/joco.png",
+            "x": [4, 4, 6, 1],
+            "y": [0, 0, 0, 8],
+            "z": [0, 0, 0, 0],
+            "width": [8, 8, 6, 10],
+            "height": [3, 3, 4, 3],
+            "content": [
+                "dev/portfolio/joco.png",
+                "Design",
+                ["dev/portfolio/sketch.jpg", "I started the design process by determining the site layout and the rough navigation of the site. From there I jumped into my sketchbook, brainstorming the look and feel of the new site on paper."],
+                ["dev/portfolio/home.png", "From there, I jumped into sketch, and created low and high fidelity mockups. With 4 screen sizes to design for, about 40 different screen mockups were created in total."],
+                "React",
+                "I chose React because I needed modularity, and React's components was the perfect solution. I got to work with React earlier in the year while on co-op, so luckily I was familiar with the primary concepts. I had ",
+                "Grid System",
+                "dev/portfolio/grid.png",
+                "My grid is a beefed-up version of React-Flexbox-Grid, with added support for y position, z position, and height. Essentially when creating a column or row component, the height, width, etc. props passed correspond to class names (ex. col-x-sm-6), that are applied to the component.",
+                "ContentContainer",
+                "One of the primary components I created for this project is the 'ContentContainer' component. Essentially, it's a photo frame for images that have different dimensions at different screen sizes. It takes in a JSON object through its props, representing layout information: x, y, z, width, and height for each of the 4 screen sizes. It can also be passed a link, making it a clickable link.",
+                "Hover tilt animation",
+                "dev/portfolio/tilt.gif",
+                "The hover tilt effect on the home and work page was created using Green Sock Animation Platform (GSAP) it's a relatively simple animation that tracks the mouse's location once it enters a specified object, and performs a 3D transformation on that object, with slightly different perspectives if the object has layered elements.",
+                "Hero pattern animation",
+                "dev/portfolio/letters.png",
+                "The intro animation on the home page is also powered by GSAP. When the component loads, it determines the number of rows/columns needed based on the size of the window. Then, it creates an array of 'Letter' components, passing in data such as letter type, position, and rotation via props. Once the pattern is created, it animates it in, going in order and staggering each component slightly, resulting in a nice waterfall effect. I also started each letter with no rotation, creating a fun plinko-like effect as they each turn into place."
+                
+            ]
+        },
+        "work2": {
             "name": "Email Signature Generator",
             "info": "During my first co-op at John Hancock, I was responsible for creating an email signature generator tool. I was creative freedom to design and develop this product on my own as a side project, and ended up building it using Angular2.",
             "category": ["Web development"],
@@ -95,28 +128,14 @@
             "label": "Signature Generator",
             "url": "dev/signatureGenerator/gradient.png",
             "x": [4, 4, 6, 1],
-            "y": [0, 0, 0, 8],
-            "z": [0, 0, 0, 0],
-            "width": [8, 8, 6, 10],
-            "height": [3, 3, 4, 3],
-            "content": [
-                ["dev/signatureGenerator/generator.png", "The final UI of the signature generator tool"]
-            ]
-        },
-        "work2": {
-            "name": "Portfolio Site",
-            "info": "I built my first website last summer, with no prior web dev experience. It was functional, but after learning about web frameworks, I wanted to rebuild my site from the ground up. I built this site using React, with a custom flexbox css grid to help the positioning of the react components on the screen. It's still very much a work in progress, but I look forward to polishing and improving it.",
-            "category": ["Web development"],
-            "date": "Summer 2017",
-            "label": "Portfolio",
-            "url": "dev/portfolio/joco.png",
-            "x": [4, 4, 6, 1],
             "y": [4, 4, 5, 12],
             "z": [0, 0, 0, 0],
             "width": [8, 8, 6, 10],
             "height": [3, 3, 4, 3],
             "content": [
-                ["dev/portfolio/home.png", "Designs for the home page. With 4 screen sizes to design for, about 40 different screen mockups were created."]
+                "dev/signatureGenerator/gradient.png",
+                "Final Product",
+                ["dev/signatureGenerator/generator.png", "The final UI of the signature generator tool"]
             ]
         },
         "work3": {
@@ -132,6 +151,7 @@
             "width": [8, 8, 6, 10],
             "height": [3, 3, 4, 3],
             "content": [
+                "dev/musicEditor/music.png",
                 ["dev/musicEditor/music.jpg", "The UI of our final product"]
             ]
         }
@@ -230,9 +250,10 @@
             "height": [3, 3, 4, 3],
             "content": [
                 "//www.youtube.com/embed/6SgCcd_sWrs?showinfo=0",
+                "Photos",
                 ["video/50Years/lawn.jpg", "Ed & Laureen's home in Saugus, MA"],
                 ["video/50Years/force.jpg", "One of Ed's photo albums documenting his time in the Air Force"],
-                ["video/50Years/tools.jpg", "Ed's basement toolbench, stocked with more types of screws and nails than you can imagine"]               
+                ["video/50Years/tools.jpg", "Ed's basement toolbench"]               
             ]
         },
         "work2": {

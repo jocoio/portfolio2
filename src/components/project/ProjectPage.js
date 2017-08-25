@@ -1,7 +1,6 @@
 import React from 'react';
 import Title from '../common/Title.js';
 import Description from '../common/Description.js';
-import cross from '../../images/nav/cross.png';
 import { Link } from 'react-router-dom';
 import { Col, Row } from '../grid';
 import './ProjectPage.css';
@@ -15,6 +14,8 @@ class ProjectPage extends React.Component {
     render() {
         var project = this.props.location.state.data;
         var back = this.props.location.state.back;
+        var linkTitle;
+        var link;
 
         var rowStyles = {
             paddingTop: "80px",
@@ -23,6 +24,12 @@ class ProjectPage extends React.Component {
         var hundo = {
             width: "100%"
         }
+        
+        if (project.link !== undefined) {
+            linkTitle = <h3>Link</h3>;
+            link = <a href={project.link} target="_blank" rel="noopener noreferrer">{project.name}</a>;
+        }
+
         return (
             <div style={hundo}>
                 <Row style={rowStyles}>
@@ -33,15 +40,20 @@ class ProjectPage extends React.Component {
                             width={[3, 3, 3, 12]}
                         />
                         <h3>Category</h3>
-
                         {project.category.map(function (listValue, idx) {
                             return <p key={idx}>{listValue}</p>;
                         })}
+
                         <h3>Date</h3>
                         <p>{project.date}</p>
+                        
+                        {linkTitle}
+                        {link}
+
                         <Link to={back}>
-                            <img className="backCross" src={cross} alt="cross" />
+                            <div className="backCross">×</div>
                         </Link>
+
                     </Col>
 
                     <Col className="projectContent" lgWidth={7} mdWidth={7} smWidth={7} xsWidth={12}

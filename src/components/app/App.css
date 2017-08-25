@@ -4,13 +4,13 @@ html {
 }
 
 .example-enter {
-  opacity: 0.01;
+  opacity: 0;
 }
 
 .example-enter.example-enter-active {
   opacity: 1;
-  transition: opacity 500ms ease-in-out;
-  -webkit-transition: opacity 500ms ease-in-out;
+  transition: opacity 250ms ease-in;
+  -webkit-transition: opacity 250ms ease-in;
 }
 
 .example-leave {
@@ -18,14 +18,14 @@ html {
 }
 
 .example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 50ms ease-out;
-  -webkit-transition: opacity 50ms ease-out;
+  opacity: 0;
+  transition: opacity 250ms ease-out;
+  -webkit-transition: opacity 250ms ease-out;
 }
 
 html {
   font-family: 'Source Code Pro', monospace, sans-serif, Helvetica;
-  color: #4A4A4A;
+  color: #303030;
 }
 
 * {
@@ -35,13 +35,13 @@ html {
 h1, h2, h3 {
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
   margin: 0px;
-  color: #4A4A4A;
+  color: #303030;
 }
 
 p {
   font-family: 'Source Code Pro', monospace;
   font-size: 12px;
-  color: #4A4A4A;
+  color: #303030;
   margin: 0px;
 }
 
@@ -49,7 +49,7 @@ a {
   font-family: 'Source Code Pro', monospace;
   font-size: 16px;
   text-decoration: none;
-  color: #4A4A4A;
+  color: #303030;
 }
 
 .row {
@@ -62,11 +62,11 @@ a {
   font-family: 'Source Code Pro';
   font-size: 14px;
   text-decoration: none;
-  color: #4A4A4A;
+  color: #303030;
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
-  border-color: #4A4A4A;
+  border-color: #303030;
   padding: 7px 30px;
   transition: all, 150ms;
 }

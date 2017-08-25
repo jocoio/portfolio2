@@ -44,7 +44,7 @@ class AboutPage extends React.Component {
                         <h3>Email</h3>
                         <a href="mailto:hello@joco.io?Subject=Hi there!">hello@joco.io</a>
                         <h3>Resume</h3>
-                        <a href={resume}>View Resume</a>
+                        <a href={resume} target="_blank" rel="noopener noreferrer">View Resume</a>
 
                         
                         <div className="socialMedia">
@@ -56,7 +56,7 @@ class AboutPage extends React.Component {
                                 <img id="youtube" src={youtube} alt="youtube" />
 				            </a>
 
-                            <a className="social" href="http://www.github.com/corbettjo" target="_blank" rel="noopener noreferrer">
+                            <a className="social" href="http://www.github.com/jocoio" target="_blank" rel="noopener noreferrer">
                                 <img id="git" src={github} alt="github" />
 				            </a>
                         </div>

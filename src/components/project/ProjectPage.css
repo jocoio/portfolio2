@@ -12,17 +12,21 @@
   border-radius: 50px;
   z-index: 2;
   position: absolute;
-  right: -25px;
-  top: 60%;
-
+  right: -23px;
+  top: 75%;
   padding: 10px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.35);
+  border: 1px solid #444444;
   background-color: #ffffff;
+  color: #444444;
+  font-size: 40px;
+  line-height: 23px;
+
 }
 .backCross:hover {
-  	transform: scale(1.04, 1.04);
-    transform-origin: center;
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.35);
+    background-color: #23966c;
+    border: 1px solid #23966c;
+    color: #ffffff;
+    transform: rotate(180deg);
 }
 
 .projectInfo {
@@ -141,16 +145,8 @@
         transform: translateX(-50%);
     }
     .backCross:hover {
-      position: fixed;
-      top: 90%;
-      left: 50%;
-      
-      transform: scale(1.04, 1.04);
       transform: translateX(-50%);
-      transform-origin: center;
-      box-shadow: 0 4px 4px 0 rgba(0,0,0,0.35);
     }
-
     .projectInfo {
         position: absolute;
         top: 0;
@@ -159,7 +155,6 @@
         height: auto;
         border: none;
     }
-
     .projectContent>div>p,h2 {
         position: relative;
         left: 8.3333%;

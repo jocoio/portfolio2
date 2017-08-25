@@ -169,8 +169,8 @@
         height: 100vh !important;
         text-align: center;
     }
-    
-    .keyFeature {
+
+    .featureRow>.col-width-xs-12 {
       border-radius: 0px !important;
       box-shadow: none !important;
     }

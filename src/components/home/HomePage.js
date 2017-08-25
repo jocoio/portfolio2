@@ -1,7 +1,7 @@
 import React from 'react';
 import Feature from '../common/Feature.js';
 import features from '../../data/features.json';
-import { TweenMax, Expo, TimelineMax } from 'gsap';
+import { TweenMax, Expo } from 'gsap';
 import $ from 'jquery';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
@@ -11,9 +11,7 @@ class HomePage extends React.Component {
 
     componentDidMount() {
         //Only run the tilt animation on desktops
-        if (window.innerWidth >= 1024) {
-            this.initTilt();
-        }
+
         // this.addAnimation(this.createRevealAnim);
     }
     componentWillEnter() {
@@ -87,13 +85,12 @@ class HomePage extends React.Component {
     onRestart = () => this.setState({ animate: false });
 
     render() {
-
+        if (window.innerWidth >= 1024) {
+            this.initTilt();
+        }
         return (
-
             <div className="home">
-
                 <Hero animate={this.state.animate} restart={this.state.restart} onRestart={this.onRestart} />
-
                 <Feature data={features.scout} />
                 <Feature data={features.la} />
                 <Feature data={features.ed} />
@@ -101,7 +98,7 @@ class HomePage extends React.Component {
                 <div className="footer">
                     <Link className={"actionButton"}
                         to={{ pathname: '/work', }}>View all projects
-            </Link>
+                    </Link>
                 </div>
             </div>
         )

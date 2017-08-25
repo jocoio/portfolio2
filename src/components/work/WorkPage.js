@@ -5,17 +5,9 @@ import { TweenLite, Expo } from 'gsap';
 import $ from 'jquery';
 import './WorkPage.css';
 
-
 class WorkPage extends React.Component {
-    componentWillUpdate() {
+    componentWillUnmount() {
         window.scrollTo(0, 0);
-    }
-
-    componentDidMount() {
-        //Only run the tilt animation on desktops
-        if ($('body').width() >= 1024) {
-            this.initTilt();
-        }
     }
 
     initTilt() {
@@ -49,27 +41,23 @@ class WorkPage extends React.Component {
         });
 
         project.mouseleave(function (e) {
-
-            //Image
-            TweenLite.to($(this), .5, {
+            //Image & Label return animation
+            TweenLite.to([$(this), label], .5, {
                 rotationY: 0,
                 rotationX: 0,
                 transformPerspective: 99999,
                 transformOrigin: "center center -200",
                 ease: Expo.easeOut
             });
-            //Label
-            TweenLite.to(label, .5, {
-                rotationY: 0,
-                rotationX: 0,
-                transformPerspective: 99999,
-                transformOrigin: "center center -300",
-                ease: Expo.easeOut
-            });
         });
     };
 
     render() {
+        //Only run the tilt animation on desktops
+        if ($('body').width() >= 1024) {
+            this.initTilt();
+        }
+
         var styler = {
             width: "100%"
         }

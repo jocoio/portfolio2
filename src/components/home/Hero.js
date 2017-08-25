@@ -1,5 +1,5 @@
 import React from 'react';
-import { TweenMax, Linear, TimelineLite } from 'gsap';
+import { TimelineLite } from 'gsap';
 import Letter from './Letter';
 
 export default class Hero extends React.Component {

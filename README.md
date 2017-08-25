@@ -1,6 +1,6 @@
 # joco.io (portfolio)
 
-Hi there! This is the repo for my portfolio site. Please hire me.
+Hi there! This is the repo for my portfolio site. please hire me. pls.
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-This project is managed using npm, install that if you don't have it
+This project is managed using npm, so install that if you don't have it. 
 
 ### Installing
 
@@ -18,7 +18,6 @@ npm install
 ```
 
 And then
-
 ```
 npm run
 ```
@@ -27,7 +26,9 @@ And it should be running on localhost:3000!
 
 ## Built With
 
-* [React](https://facebook.github.io/react/) - The web framework used
+* [React](https://facebook.github.io/react/) - Main framework
+* [GSAP](https://greensock.com/gsap) - Hero intro animation
+* [react-transition-group](https://github.com/reactjs/react-transition-group) - Page transition animation
 
 ## License
 
@@ -35,4 +36,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* We'll get to this in a later version, once we're closer to being finished!
+* [React-Flexbox-Grid] (https://roylee0704.github.io/react-flexbox-grid/) - Base for my customized grid 
