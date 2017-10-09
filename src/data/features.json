@@ -30,8 +30,13 @@
             "height": [4, 3, 4, 0]
         },
         "content": [
+            "Design",
+            "I spent my first semester on the studio team, as part of an internal project to redo Scout's brand and website. It was my first time doing web design, but I was lucky enough to be surrounded by a supporting and helpful team.",
+            ["design/scout/mockup.png", "A large portion of our work was creating high fidelity mockups of the new site. We went through a couple rounds of this process, turning our abstract ideas into actual products. This was an important stage, as we got feedback from the developers on what was possible or within their scope. These constraints helped us create designs that were realistic and could be translated to code."],   
+            ["design/scout/iteration.png", "We worked on an agile system, with weekly check-ins and critique. It was really helpful to get together and see everyone's progress, as everyone was working on different pages and we wanted to ensure a cohesive style while also providing our personal touches."], 
+
             "Animation",
-            "My most recent position was on Scout's marketing team, creating animation content on a weekly basis. This included event promotion, and working to establish a cohesive video/visual identity for Scout.",
+            "For the Fall 2016 semester I joined Scout's marketing team, creating animation content on a weekly basis. This included event promotion, and working to establish a cohesive video/visual identity for Scout.",
             ["design/scout/end.gif", "End slate animation for all scout branded videos"],
             ["design/scout/meet.gif", "Promo video for scout's bi-annual 'Meet Scout' event"],
             ["design/scout/recruit.gif", "Recruitment announcement video"],
@@ -42,12 +47,7 @@
             "//www.youtube.com/embed/cZ-aZiOE0wU?info=0",
             "//www.youtube.com/embed/1Zofl5-7AmA?info=0",
             "//www.youtube.com/embed/3RDTpeBacjg?info=0",
-            "//www.youtube.com/embed/qLgpdSlblUc?info=0",
-            
-            "Design",
-            "I spent my first semester on the studio team, as part of an internal project to redo Scout's brand and website. It was my first time doing web design, but I was lucky enough to be surrounded by a supporting and helpful team.",
-            ["design/scout/mockup.png", "A large portion of our work was creating high fidelity mockups of the new site. We went through a couple rounds of this process, turning our abstract ideas into actual products. This was an important stage, as we got feedback from the developers on what was possible or within their scope. These constraints helped us create designs that were realistic and could be translated to code."],   
-            ["design/scout/iteration.png", "We worked on an agile system, with weekly check-ins and critique. It was really helpful to get together and see everyone's progress, as everyone was working on different pages and we wanted to ensure a cohesive style while also providing our personal touches."]             
+            "//www.youtube.com/embed/qLgpdSlblUc?info=0"
         ]
     },
     "la": {

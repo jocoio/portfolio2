@@ -25,9 +25,9 @@ class AboutPage extends React.Component {
         }
 
         var intro = [
-            "I'm Jon, a Boston-based designer and developer with a soft spot for beautiful logos, well-documented code, and golden retreivers.",
+            "I'm Jon, a Boston-based designer and developer with a soft spot for beautiful logos, well-documented code, and golden retrievers.",
             "I'm a Texan at heart, but am currently braving the elements at Northeastern University, majoring in Computer Science and Design. I love exploring the intersection of creativity and technology, and using design thinking to solve challenging problems.",
-            "Okay, thanks for stopping by!"
+            "Okay, thanks for stopping by! Review us on yelp! Bye!"
         ]
 
         return (

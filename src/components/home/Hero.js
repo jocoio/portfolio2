@@ -54,7 +54,7 @@ export default class Hero extends React.Component {
     componentDidMount() {
         this.heroTL = new TimelineLite({});
         this.heroTL.staggerFrom(this.intro.children, 1, { opacity: 0, transform: "translateY(15px)" }, .5);
-        this.heroTL.staggerFrom(this.pattern.children, 1, { opacity: 0, scale: .3, transform: "rotate(-90deg)" }, .02)
+        this.heroTL.staggerFrom(this.pattern.children, 1, { opacity: 0, scale: .3, transform: "rotate(-90deg)" }, .01)
         this.heroTL.staggerFrom(this.action.children, 1, { opacity: 0, transform: "translate(15px)" }, .2);
         this.heroTL.play();
     }

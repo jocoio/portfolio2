@@ -9,15 +9,6 @@ import Hero from './Hero.js';
 
 class HomePage extends React.Component {
 
-    componentDidMount() {
-        //Only run the tilt animation on desktops
-
-        // this.addAnimation(this.createRevealAnim);
-    }
-    componentWillEnter() {
-        console.log("incoming");
-    }
-
     componentWillUnmount() {
         window.scrollTo(0, 0);
     }
@@ -85,8 +76,8 @@ class HomePage extends React.Component {
     onRestart = () => this.setState({ animate: false });
 
     render() {
-        if (window.innerWidth >= 1024) {
-            this.initTilt();
+        if (window.innerWidth >= 1440) {
+            // this.initTilt();
         }
         return (
             <div className="home">
