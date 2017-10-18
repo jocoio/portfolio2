@@ -5,7 +5,7 @@ import ContentContainer from '../common/ContentContainer.js';
 import { Col, Row } from '../grid';
 
 import me from '../../images/about/me.jpg';
-import resume from '../../images/about/resume.pdf';
+import resume from '../../images/about/Resume.pdf';
 import instagram from '../../images/about/instagram.svg';
 import youtube from '../../images/about/youtube.svg';
 import github from '../../images/about/github.svg';

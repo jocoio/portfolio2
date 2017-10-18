@@ -27,8 +27,9 @@ And it should be running on localhost:3000!
 ## Built With
 
 * [React](https://facebook.github.io/react/) - Main framework
-* [GSAP](https://greensock.com/gsap) - Hero intro animation
-* [react-transition-group](https://github.com/reactjs/react-transition-group) - Page transition animation
+* [GSAP](https://greensock.com/gsap) - Hero intro animation framework
+* [react-transition-group](https://github.com/reactjs/react-transition-group) - Page transition animation library
+* [spa-github-pages](https://github.com/rafrex/spa-github-pages) - Refresh support for gh-pages
 
 ## License
 
@@ -36,4 +37,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* [React-Flexbox-Grid] (https://roylee0704.github.io/react-flexbox-grid/) - Base for my customized grid 
+* [React-Flexbox-Grid](https://roylee0704.github.io/react-flexbox-grid/) - Base for my customized grid 
+
