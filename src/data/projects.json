@@ -1,0 +1,390 @@
+{
+    "results": [
+    {
+        "name": "Scout",
+        "id": "scout",
+        "info": "In January 2016 I joined Northeastern’s on campus, student run design studio, Scout. From there, it’s been a wild ride of hard work, late nights, and lifelong friends. I’ve been lucky enough to wear several different hats while on Scout, and the following is a collection of some of my favorite work.",
+        "category": ["Wireframing", "UI Design", "UX Design", "Filmmaking" , "Animation"],
+        "date": "January 2016 - Present",
+        "link": "http://northeastern.edu/scout",
+        "feature1": {
+            "url": "design/scout/sclogo.gif",
+            "x": [4, 4, 0, 0],
+            "y": [6, 6, 0, 0],
+            "z": [0, 2, 0, 0],
+            "width": [3, 2, 0, 0],
+            "height": [5, 3, 0, 0]
+        },        
+        "feature2": {
+            "url": "design/scout/labsMenu.png",
+            "x": [5, 5, 6, 0],
+            "y": [0, 0, 0, 0],
+            "z": [1, 0, 0, 0],
+            "width": [6, 7, 6, 12],
+            "height": [8, 7, 8, 10]
+        },
+        "feature3": {
+            "url": "design/scout/meeting.png",
+            "x": [8, 5, 0, 0],
+            "y": [3, 8, 9, 0],
+            "z": [2, 0, 0, 0],
+            "width": [4, 7, 7, 0],
+            "height": [4, 3, 4, 0]
+        },
+        "content": [
+            "Design",
+            "I spent my first semester on the studio team, as part of an internal project to redo Scout's brand and website. It was my first time doing web design, but I was lucky enough to be surrounded by a supporting and helpful team.",
+            ["design/scout/mockup.png", "A large portion of our work was creating high fidelity mockups of the new site. We went through a couple rounds of this process, turning our abstract ideas into actual products. This was an important stage, as we got feedback from the developers on what was possible or within their scope. These constraints helped us create designs that were realistic and could be translated to code."],   
+            ["design/scout/iteration.png", "We worked on an agile system, with weekly check-ins and critique. It was really helpful to get together and see everyone's progress, as everyone was working on different pages and we wanted to ensure a cohesive style while also providing our personal touches."], 
+
+            "Animation",
+            "For the Fall 2016 semester I joined Scout's marketing team, creating animation content on a weekly basis. This included event promotion, and working to establish a cohesive video/visual identity for Scout.",
+            ["design/scout/end.gif", "End slate animation for all scout branded videos"],
+            ["design/scout/meet.gif", "Promo video for scout's bi-annual 'Meet Scout' event"],
+            ["design/scout/recruit.gif", "Recruitment announcement video"],
+            ["design/scout/sclogo.gif", "Loading animation concept for Scout's website"],
+
+            "Video ",
+            "While on the marketing team, I also made video content, including event recaps and client spotlights, which showcased the variety of work being done by the various studio teams.",
+            "//www.youtube.com/embed/cZ-aZiOE0wU?info=0",
+            "//www.youtube.com/embed/1Zofl5-7AmA?info=0",
+            "//www.youtube.com/embed/3RDTpeBacjg?info=0",
+            "//www.youtube.com/embed/qLgpdSlblUc?info=0"
+        ]
+    },
+        {
+        "name": "Hello LA",
+        "id": "hellola",
+        "info": "In February 2016 I attended my first hackathon, Hack@Brown. Working with LA locals, we created a curated guide to Los Angeles, and won best user experience out of ~100 teams.",
+        "category": ["User Experience", "Brand Identity"],
+        "date": "February 2016",
+        "link": "http://hellofromla.com/",
+        "feature1": {
+            "url": "design/helloLA/map.png",
+            "x": [5, 4, 0, 0],
+            "y": [6, 9, 4, 0],
+            "z": [0, 2, 0, 0],
+            "width": [2, 2, 0, 12],
+            "height": [5, 3, 0, 10]
+        },
+        "feature2": {
+            "url": "design/helloLA/laMenu.png",
+            "x": [4, 5, 6, 0],
+            "y": [0, 0, 0, 0],
+            "z": [1, 0, 0, 0],
+            "width": [6, 7, 6, 0],
+            "height": [10, 10, 8, 0]
+        },
+        "feature3": {
+            "url": "design/helloLA/icons.png",
+            "x": [6, 5, 0, 0],
+            "y": [4, 11, 10, 0],
+            "z": [2, 0, 0, 0],
+            "width": [6, 7, 8, 0],
+            "height": [2, 2, 2, 0]
+        },
+        "label": "Hello LA",
+        "url": "design/helloLA/map.png",
+        "x": [4, 4, 6, 1],
+        "y": [0, 0, 0, 8],
+        "z": [0, 0, 0, 0],
+        "width": [2, 2, 6, 10],
+        "height": [10, 10, 4, 3],
+        "content": [
+            "design/helloLA/map.png",
+            "Brainstorming",
+            ["design/helloLA/team1.jpg", "The idea behind Hello LA was a local's guide to Los Angeles, as Ashley and Rishab were both LA natives. They were looking for designers and we were looking for developers, and Evan was looking for a group! Once we settled on an idea, we quickly got to work brainstorming the branding, categories, and rough layout of the website."],
+            "Icons",
+            ["design/helloLA/icons.png", "One of my responsibilities was creating the corresponding icons for each category of locations on the website. We wanted the icons to be inviting, simple, and usable on a wide range of sizes."],
+            "Map",
+            ["design/helloLA/maps.png", "My labor of love for this project was the vector outline of Los Angeles on the background of the home page. From 1am to 3am, I traced every line on a Google map screenshot of downtown LA using Adobe Illustrator. It was a tedious process, but I knew that it would be a great backdrop for the landing page. And it helped solidify the brand identity of our project."],
+            "User Interface",
+            ["design/helloLA/ui.png", "My other contribution to this project was the user interface. Once we planned out the initial structure of the site, I wanted the homepage to showcase the variety and fast paced energy of Los Angeles. From there I developed the idea of the rotating background color, and the changing call to action. The wheel of choices can be controlled by the arrow keys, but it also moves on its own. I think this personal touch drew people in, and made the interface very user-friendly."],
+            "A match made in Providence",
+            "This was my first hackathon, and I couldn't have asked for a better one. Hello LA won best user experience, and we got to present our product during the closing ceremony. It was an eye-opening experience, getting to see how a product comes together from start to finish. I feel unbelievably lucky we found such amazing and accommodating developers, who took every wild idea Vanessa and I had, and ran with it with enthusiasm. It gave me a new found appreciation for every team member and their job, and I can't wait for my next opportunity to work in a team like that again.",
+            "design/helloLA/team2.jpg"
+        ]
+    },
+    {
+        "name": "Scout Site",
+        "id": "scoutsite",
+        "info": "During spring of 2016 I joined Scout studio as a designer, and worked on a team tasked with redesigning and creating Scout's website. We started with a brand dive, assessing the current state of Scout and its collateral, and from there moved onto sketching, wireframing, high fidelity mockups, and eventually coding.",
+        "category": ["Wireframing", "UI/UX"],
+        "date": "Spring 2016",
+        "label": "Scout Site",
+        "url": "design/scout/labs.png",
+        "x": [7, 7, 6, 1],
+        "y": [0, 0, 5, 12],
+        "z": [0, 0, 0, 0],
+        "width": [2, 2, 6, 10],
+        "height": [10, 10, 4, 3],
+        "content": [
+            "design/scout/labs.png",
+            "Sketches",
+            ["design/scout/board.jpg", "Once we mapped out the skeleton of the site, we divided up the pages between each team member, and created rough paper sketches of what we envisioned those pages would look like. It was useful to be able to start away from the computer, and quantify our ideas without any technological constraints."],
+            "Wireframes",
+            ["design/scout/wireframe.png", "After finalizing our sketches, we moved onto the computer and translated our drawings to wireframes using sketch. It was collectively our first times using sketch, so there was definitely a learning curve. However when paired with Invision, it became a powerful tool to convey what we wanted the user experience to be."],
+            "High Fidelity Mockups",
+            ["design/scout/mockup.png", "The next step in our process was creating high fidelity mockups of our wireframes. This step really quantified our designs, and took them from more abstract ideas to actual products. This was also an important step, as we got feedback from the developers on what was possible or within their scope. These constraints helped us create designs that were realistic and could be translated to code."],
+            "Iteration",
+            ["design/scout/iteration.png", "We worked on an agile system, with weekly check-ins and critique. It was really helpful to get together and see everyone's progress, as everyone was working on different pages and we wanted to ensure a cohesive style while also providing our personal touches."],
+            "Where the magic happens",
+            "Once the designs were completed, we handed them of to the amazing developers who turned our designs into an actual product, which is an unbelievable gratifying experience. I always leave projects like this with a newfound respect for every aspect of this process, and how hard work and teamwork can create powerful results.",
+            "design/scout/team.jpg"
+        ]
+    },
+    {
+        "name": "MyHousing",
+        "id": "myhousing",
+        "info": "In spring 2016 I took the class design: process, context, and systems. This introductory course explored the core ideas of design thinking and user-focused design. For our final project we were tasked with finding a frustrating user experience we've encountered while at NU, and try to design a smarter solution to it.",
+        "category": ["User Experience", "Design Thinking"],
+        "date": "Spring 2016",
+        "label": "MyHousing",
+        "url": "design/myHousing/housing.png",
+        "x": [10, 10, 6, 1],
+        "y": [0, 0, 10, 16],
+        "z": [0, 0, 0, 0],
+        "width": [2, 2, 6, 10],
+        "height": [10, 10, 4, 3],
+        "content": [
+            "design/myHousing/housing.png",
+            "Brainstorming",
+            "To start the process, we brainstormed some problems that we had encountered during our time at Northeastern. This ranged from school resource sites like myNeu to more abstract concepts like how students chose to spend their money around campus. We settled on the process of selecting housing for the fall, as all 3 of us have had a frustrating experience trying to navigate through the confusing process.",
+            "Interviews and User Stories",
+            ["design/myHousing/user1.png", "Once we decided on our topic for the project, we dived into research, interviewing students about their experience with housing. This was done by sending out a google form to students of Northeastern's Facebook group. With the collected data we analyzed pain points, common issues that students had while using the current housing application. We then made each of these issues a user story, to flesh out and give character to the problems, in order to better understand how to empathize and solve the issue."],
+            "Sketching and Wireframing",
+            "design/myHousing/sketch.png",
+            ["design/myHousing/low.png", "After finalizing our sketches, we moved onto the computer and translated our drawings to wireframes using sketch. It was collectively our first times using sketch, so there was definitely a learning curve. However when paired with Invision, it became a powerful tool to convey what we wanted the user experience to be."],
+            "High Fidelity",
+            "The final step of the project was adding onboarding screens for finding roommates, and converting our wireframes into high fidelity mockups with the use of sketch and invision. In the end we were happy with the result, and thought it was a great way to see a project from start to finish, guided by a user-focused design process. In the future we hope to bring this app to life, ideally with the help of Northeastern's assistance.",
+            "design/myHousing/high.png"
+        ]
+    },
+    {
+        "name": "Portfolio Site (this)",
+        "id": "portfolio",
+        "info": "After learning about web frameworks at my first co-op, I wanted to rebuild my site from the ground up. I built my first portfolio last summer, with no prior web dev experience. It was functional, but definitely time for an upgrade.",
+        "category": ["Web development"],
+        "date": "Summer 2017",
+        "label": "Portfolio",
+        "url": "dev/portfolio/joco.png",
+        "x": [4, 4, 6, 1],
+        "y": [0, 0, 0, 8],
+        "z": [0, 0, 0, 0],
+        "width": [8, 8, 6, 10],
+        "height": [3, 3, 4, 3],
+        "content": [
+            "dev/portfolio/joco.png",
+            "Design",
+            ["dev/portfolio/sketch.jpg", "I started the design process by determining the site layout and the rough navigation of the site. From there I jumped into my sketchbook, brainstorming the look and feel of the new site on paper."],
+            ["dev/portfolio/home.png", "From there, I jumped into sketch, and created low and high fidelity mockups. With 4 screen sizes to design for, about 40 different screen mockups were created in total."],
+            "React",
+            "I chose React because I needed modularity, and React's components was the perfect solution. I got to work with React earlier in the year while on co-op, so luckily I was familiar with the primary concepts. I had ",
+            "Grid System",
+            "dev/portfolio/grid.png",
+            "My grid is a beefed-up version of React-Flexbox-Grid, with added support for y position, z position, and height. Essentially when creating a column or row component, the height, width, etc. props passed correspond to class names (ex. col-x-sm-6), that are applied to the component.",
+            "ContentContainer",
+            "One of the primary components I created for this project is the 'ContentContainer' component. Essentially, it's a photo frame for images that have different dimensions at different screen sizes. It takes in a JSON object through its props, representing layout information: x, y, z, width, and height for each of the 4 screen sizes. It can also be passed a link, making it a clickable link.",
+            "Hover tilt animation",
+            "dev/portfolio/tilt.gif",
+            "The hover tilt effect on the home and work page was created using Green Sock Animation Platform (GSAP) it's a relatively simple animation that tracks the mouse's location once it enters a specified object, and performs a 3D transformation on that object, with slightly different perspectives if the object has layered elements.",
+            "Hero pattern animation",
+            "dev/portfolio/letters.png",
+            "The intro animation on the home page is also powered by GSAP. When the component loads, it determines the number of rows/columns needed based on the size of the window. Then, it creates an array of 'Letter' components, passing in data such as letter type, position, and rotation via props. Once the pattern is created, it animates it in, going in order and staggering each component slightly, resulting in a nice waterfall effect. I also started each letter with no rotation, creating a fun plinko-like effect as they each turn into place."
+            
+        ]
+    },
+    {
+        "name": "Email Signature Generator",
+        "id": "signaturegenerator",
+        "info": "During my first co-op at John Hancock, I was responsible for creating an email signature generator tool. I was creative freedom to design and develop this product on my own as a side project, and ended up building it using Angular2.",
+        "category": ["Web development"],
+        "date": "Spring 2017",
+        "label": "Signature Generator",
+        "url": "dev/signatureGenerator/gradient.png",
+        "x": [4, 4, 6, 1],
+        "y": [4, 4, 5, 12],
+        "z": [0, 0, 0, 0],
+        "width": [8, 8, 6, 10],
+        "height": [3, 3, 4, 3],
+        "content": [
+            "dev/signatureGenerator/gradient.png",
+            "Final Product",
+            ["dev/signatureGenerator/generator.png", "The final UI of the signature generator tool"]
+        ]
+    },
+    {
+        "name": "Music Editor",
+        "id": "musiceditor",
+        "info": "Music editor was the final project for CS3500 (Object Oriented Design). It works with java's MIDI library to add, remove, and edit notes of a song. This project was almost completely open-ended, with only some core restraints. This project emphasized the importance of adaptable design, and making a program that could grow and change without needing complete restructuring.",
+        "category": ["Object Oriented Design"],
+        "date": "Summer 2016",
+        "label": "Music Editor",
+        "url": "dev/musicEditor/music.png",
+        "x": [4, 4, 6, 1],
+        "y": [8, 8, 10, 16],
+        "z": [0, 0, 0, 0],
+        "width": [8, 8, 6, 10],
+        "height": [3, 3, 4, 3],
+        "content": [
+            "dev/musicEditor/music.png",
+            ["dev/musicEditor/music.jpg", "The UI of our final product"]
+        ]
+    },
+    {
+        "name": "Film",
+        "id": "film",
+        "info" : "I grabbed my first film camera last year from an eBay auction, and fell in love with the medium immediately. It forced me to slow down and analyze every shot, and I think it really helped me improve as a photographer.",
+        "category": ["Landscape photography", "Portrait photography"],
+        "date": "Sometimes",
+        "label": "Film",
+        "url": "photo/film/chloe.png",
+        "x": [4, 4, 6, 1],
+        "y": [0, 0, 0, 8],
+        "z": [0, 0, 0, 0],
+        "width": [2, 2, 6, 10],
+        "height": [10, 10, 4, 3],
+        "content": [
+            ["photo/film/central.jpg", "NYC, 2016"],                
+            ["photo/film/park.jpg", "Barcelona, 2016"],
+            ["photo/film/boats.jpg", "Madrid, 2016"],
+            ["photo/film/point.jpg", "Poblet, 2016"],
+            ["photo/film/flowers.jpg", "Long Island, 2017"],
+            ["photo/film/boy.jpg", "Barcelona, 2016"],
+            ["photo/film/charles.jpg", "Boston, 2017"],
+            ["photo/film/train.jpg", "Madrid, 2016"],
+            ["photo/film/jeff.jpg", "Boston, 2017"]        
+        ]
+    },
+    {
+        "name": "50mm",
+        "id": "50mm",
+        "info": "I got my first nifty 50 three years ago, and it's been my go to lens ever since. To this day I'm impressed at the quality you can get from such an inexpensive lens.",
+        "category": ["Landscape photography", "Portrait photography"],
+        "date": "Occasionally",
+        "label": "50mm",
+        "url": "photo/50mm/garden.jpg",
+        "x": [7, 7, 6, 1],
+        "y": [0, 0, 5, 12],
+        "z": [0, 0, 0, 0],
+        "width": [2, 2, 6, 10],
+        "height": [10, 10, 4, 3],
+        "content": [
+            ["photo/50mm/assault.jpg", "Honolulu, 2016"],
+            ["photo/50mm/penguin.jpg", "Mystic, 2015"],
+            ["photo/50mm/rhody.jpg", "Newport, 2015"],
+            ["photo/50mm/alex.jpg", "Newport, 2015"],
+            ["photo/50mm/mozart.jpg", "Boston, 2014"],  
+            ["photo/50mm/hawaii.jpg", "Honolulu, 2016"],
+            ["photo/50mm/garden.jpg", "Boston, 2014"],
+            ["photo/50mm/flag.jpg", "Boston, 2014"],
+            ["photo/50mm/block.jpg", "Block Island, 2016"]        
+        ]
+    },
+    {
+        "name": "Mobile",
+        "id": "mobile",
+        "info": "I always have my phone on me, and as a result it's become my primary camera by default. Some of my favorite pictures I've taken have been on my phone; here are of few of them.",
+        "category": ["Landscape photography", "Portrait photography"],
+        "date": "Constantly",
+        "url": "photo/mobile/purple.jpg",
+        "label": "Mobile",
+        "x": [10, 10, 6, 1],
+        "y": [0, 0, 10, 16],
+        "z": [0, 0, 0, 0],
+        "width": [2, 2, 6, 10],
+        "height": [10, 10, 4, 3],
+        "content": [
+            ["photo/mobile/purple.jpg", "Boston, 2017"],
+            ["photo/mobile/jenna.jpg", "Portsmouth, 2015"],
+            ["photo/mobile/zoe.jpg", "NYC, 2015"],
+            ["photo/mobile/jhandy.jpg", "Boston, 2017"],
+            ["photo/mobile/fenway.jpg", "Boston, 2016"],
+            ["photo/mobile/beach.jpg", "Ocean City, 2015"],
+            ["photo/mobile/air.jpg", "Barcelona, 2016"],
+            ["photo/mobile/bu.jpg", "Boston, 2017"],
+            ["photo/mobile/bpl.jpg", "Boston, 2017"]
+
+        ]
+    },
+    {
+        "name": "50 Years: Ed and Laureen",
+        "id": "50years",
+        "info": "In 2014 my grandparents, Ed and Laureen, celebrated their 50th wedding anniversary. I had never done a documentary style video before, but was eager to try. It was great getting to learn their story, and this is hands down my favorite piece of content I've created, across all mediums.",
+        "category": ["Filmmaking"],
+        "date": "Fall 2014",
+        "label": "50 Years",
+        "feature1": {
+            "url": "video/50Years/slide.png",
+            "x": [4, 4, 0, 0],
+            "y": [4, 9, 0, 0],
+            "z": [0, 2, 0 ,0],
+            "width": [2, 2, 0, 0],
+            "height": [3, 3, 0, 0]
+        },
+        "feature2": {
+            "url": "video/50Years/thumb.png",
+            "x": [5, 5, 0, 0],
+            "y": [0, 0, 10, 0],
+            "z": [1, 0, 0, 0],
+            "width": [6, 7, 5, 12],
+            "height": [5, 5, 3, 10]
+        },
+        "feature3": {
+            "url": "video/50Years/gparents.png",
+            "x": [9, 5, 6, 0],
+            "y": [3, 6, 0, 0],
+            "z": 0,
+            "width": [3, 7, 6, 0],
+            "height": [8, 7, 11, 0]
+        },
+        "url": "video/50Years/gramps.png",
+        "x": [4, 4, 6, 1],
+        "y": [0, 0, 0, 8],
+        "z": [0, 0, 0, 0],
+        "width": [8, 8, 6, 10],
+        "height": [3, 3, 4, 3],
+        "content": [
+            "//www.youtube.com/embed/6SgCcd_sWrs?showinfo=0",
+            "Photos",
+            ["video/50Years/lawn.jpg", "Ed & Laureen's home in Saugus, MA"],
+            ["video/50Years/force.jpg", "One of Ed's photo albums documenting his time in the Air Force"],
+            ["video/50Years/tools.jpg", "Ed's basement toolbench"]               
+        ]
+    },
+    {
+        "name": "This is Boston",
+        "id": "thisisboston",
+        "info": "I started college in Boston in 2014. I immediately fell in love with the city, and wanted to capture it somehow. This one of the first location-based videos I did, and also one of the first higher-production videos I made, in terms of time and effort.",
+        "category": ["Filmmaking"],
+        "date": "Fall 2014",
+        "label": "This is Boston",
+        "url": "video/boston/bos.png",
+        "x": [4, 4, 6, 1],
+        "y": [4, 4, 5, 12],
+        "z": [0, 0, 0, 0],
+        "width": [8, 8, 6, 10],
+        "height": [3, 3, 4, 3],
+        "content": [
+            "//www.youtube.com/embed/PYyz4teTzNc?showinfo=0"
+        ]
+    },
+    {
+        "name": "NYC 2015",
+        "id": "nyc2015",
+        "info": "In the fall of 2015 I visited my friend Zoe in Brooklyn, and we took a day trip to NYC to be typical tourists. For the video I didn't include music, and instead wanted to use the natural sounds of the city to guide the narrative.",
+        "category": ["Filmmaking"],
+        "date": "Fall 2015",
+        "label": "NYC 2015",
+        "url": "video/nyc2015/nyc.png",
+        "x": [4, 4, 6, 1],
+        "y": [8, 8, 10, 16],
+        "z": [0, 0, 0, 0],
+        "width": [8, 8, 6, 10],
+        "height": [3, 3, 4, 3],
+        "content": [
+            "//www.youtube.com/embed/QSz_c_rqfzQ?showinfo=0"
+        ]
+    }
+    ]
+}

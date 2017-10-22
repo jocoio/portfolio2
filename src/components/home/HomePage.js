@@ -1,6 +1,6 @@
 import React from 'react';
 import Feature from '../common/Feature.js';
-import features from '../../data/features.json';
+import projects from '../../data/projects.json';
 import { TweenMax, Expo } from 'gsap';
 import $ from 'jquery';
 import { Link } from 'react-router-dom';
@@ -82,9 +82,9 @@ class HomePage extends React.Component {
         return (
             <div className="home">
                 <Hero animate={this.state.animate} restart={this.state.restart} onRestart={this.onRestart} />
-                <Feature data={features.scout} />
-                <Feature data={features.la} />
-                <Feature data={features.ed} />
+                <Feature data={projects.results[0]} />
+                <Feature data={projects.results[1]} />
+                <Feature data={projects.results[10]} />
 
                 <div className="footer">
                     <Link className={"actionButton"}

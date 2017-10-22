@@ -24,6 +24,7 @@ export default class Routes extends React.Component {
 							<Route path="/about" component={AboutPage} />
 							<Route path="/work" component={WorkPage} />
 							<Route path="/project" component={ProjectPage} />
+							<Route path="/:projectname" component={ProjectPage} />
 							<Route component={Missed} />
 						</Switch>
 					</CSSTransitionGroup>

@@ -19,9 +19,10 @@ class ContentContainer extends React.Component {
         }
         else {
             label = <h3 className="contentLabel">{this.props.label}</h3>;
+            var urlString = this.props.id;
         }
         
-        if (this.props.link === undefined) {
+        if (this.props.id === undefined) {
             return (
                 <Col xsWidth={this.props.width[3]} smWidth={this.props.width[2]} mdWidth={this.props.width[1]} lgWidth={this.props.width[0]}
                     xsHeight={this.props.height[3]} smHeight={this.props.height[2]} mdHeight={this.props.height[1]} lgHeight={this.props.height[0]}
@@ -37,9 +38,8 @@ class ContentContainer extends React.Component {
         else {
             return (
                 <Link to={{
-                    pathname: '/project',
+                    pathname: `/${urlString}`,
                     state: {
-                        data: this.props.link,
                         back: "/work"
                     }}}>
                 <Col xsWidth={this.props.width[3]} smWidth={this.props.width[2]} mdWidth={this.props.width[1]} lgWidth={this.props.width[0]}

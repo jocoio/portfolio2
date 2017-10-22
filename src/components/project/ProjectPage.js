@@ -4,6 +4,7 @@ import Description from '../common/Description.js';
 import { Link } from 'react-router-dom';
 import { Col, Row } from '../grid';
 import './ProjectPage.css';
+import projects from '../../data/projects.json';
 
 class ProjectPage extends React.Component {
 
@@ -12,11 +13,6 @@ class ProjectPage extends React.Component {
     }
 
     render() {
-        var project = this.props.location.state.data;
-        var back = this.props.location.state.back;
-        var linkTitle;
-        var link;
-
         var rowStyles = {
             paddingTop: "80px",
             position: "relative"
@@ -24,12 +20,21 @@ class ProjectPage extends React.Component {
         var hundo = {
             width: "100%"
         }
+
+        var linkTitle, link, back;
+        var id = this.props.match.params.projectname; 
+        var project = projects.results.find(item => item.id === id);
         
         if (project.link !== undefined) {
             linkTitle = <h3>Link</h3>;
             link = <a href={project.link} target="_blank" rel="noopener noreferrer">{project.name}</a>;
         }
 
+        if(this.props.location.state !== undefined) {
+            back = this.props.location.state.back;
+        }
+        else back = "/";
+        
         return (
             <div style={hundo}>
                 <Row style={rowStyles}>

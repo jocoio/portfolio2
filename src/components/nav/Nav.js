@@ -10,7 +10,7 @@ export default class Nav extends React.Component {
         var styles = {
             position: "fixed",
             zIndex : "1",
-            height: "75px",
+            height: "70px",
             width: "100vw"
         }
 
@@ -25,8 +25,7 @@ export default class Nav extends React.Component {
                     <img className="logo" src={logo} alt="logo" />
                 </Link>
                 <div className="blurBar"/>
-                <p><a className="version" href="https://github.com/jocoio/joco">v0.9.2</a></p>
-
+                <p><a className="version" href="https://github.com/jocoio/joco">v0.9.3</a></p>
             </Row> 
         );
     }

@@ -1,5 +1,4 @@
 import React from 'react';
-import works from '../../data/works.json';
 import WorkSection from './WorkSection.js';
 import { TweenLite, Expo } from 'gsap';
 import $ from 'jquery';
@@ -64,10 +63,10 @@ class WorkPage extends React.Component {
 
         return (
             <div style={styler}>
-                <WorkSection data={works.design} />
-                <WorkSection data={works.dev} />
-                <WorkSection data={works.photo} />
-                <WorkSection data={works.video} />
+                <WorkSection data={[1,2,3]} name="Design" info="I picked up design about two years ago, creating snapchat geofilters for fun. However I soon realized how important of a problem solving tool it could be."/>
+                <WorkSection data={[4,5,6]} name="Code" info="I started coding in high school, and this year marks 5 years. It's time-consuming, frustrating, and repetitive, but the reward from challenging myself and solving complex problems makes it worth it."/>
+                <WorkSection data={[7,8,9]} name="Photo" info="I got my first camera in 2011. None of these photos are from 2011. Trust me, you don't want to see them. I love capturing the beauty of everyday life, and photography has become the perfect tool to do so."/>
+                <WorkSection data={[10,11,12]} name="Video" info="I started playing around with video in 2014, and quickly discovered a strong passion for filmmaking. I haven't been able to do it as much as I want, but when I do it's one of my favorite outlets for creativity."/>
             </div>
         )
     }

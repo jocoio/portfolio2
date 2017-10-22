@@ -29,6 +29,8 @@ class Feature extends React.Component {
         var photo2 = require(`../../images/projects/${content2.url}`);
         var photo3 = require(`../../images/projects/${content3.url}`);
 
+        var urlString = this.props.data.id;
+
         return (
             <Row style={rowStyles} className="featureRow">
                 <Col lgWidth={4} mdWidth={3} smWidth={4} xsWidth={10}
@@ -41,9 +43,8 @@ class Feature extends React.Component {
                     />
                     <Link className={"actionButton"}
                         to={{
-                            pathname: '/project',
+                            pathname: `/${urlString}`,
                             state: {
-                                data: this.props.data,
                                 back: "/"
                             }
                         }}>See More
