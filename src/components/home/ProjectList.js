@@ -87,12 +87,12 @@ export default class ProjectList extends React.Component {
                     <Col xsWidth={10}
                         xsXOffset={1} smXOffset={1} mdXOffset={0} lgXOffset={0}
                         style={{ margin: "15px 0", position: "relative" }}>
-                        <div onClick={(e) => this.filterProjects("Design", e)} className="categoryOption" id="Design">Design</div>
-                        <div onClick={(e) => this.filterProjects("Development", e)} className="categoryOption" id="Development">Development</div>
-                        <div onClick={(e) => this.filterProjects("Photo", e)} className="categoryOption" id="Photo">Photo</div>
-                        <div onClick={(e) => this.filterProjects("Video", e)} className="categoryOption" id="Video">Video</div>
-                        <div onClick={(e) => this.filterProjects("UI", e)} className="categoryOption" id="UI">UI</div>
-                        <div onClick={(e) => this.filterProjects("UX", e)} className="categoryOption" id="UX">UX</div>
+                        <div onClick={(e) => this.filterProjects("Design", e)} className="categoryFilter" id="Design">Design</div>
+                        <div onClick={(e) => this.filterProjects("Development", e)} className="categoryFilter" id="Development">Development</div>
+                        <div onClick={(e) => this.filterProjects("Photo", e)} className="categoryFilter" id="Photo">Photo</div>
+                        <div onClick={(e) => this.filterProjects("Video", e)} className="categoryFilter" id="Video">Video</div>
+                        <div onClick={(e) => this.filterProjects("UI", e)} className="categoryFilter" id="UI">UI</div>
+                        <div onClick={(e) => this.filterProjects("UX", e)} className="categoryFilter" id="UX">UX</div>
                     </Col>
                 </Row>
                 <Row className="projectList">
