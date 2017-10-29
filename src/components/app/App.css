@@ -24,7 +24,8 @@ html {
 }
 
 html {
-  font-family: 'Source Code Pro', monospace, sans-serif, Helvetica;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-weight: 400;
   color: #303030;
 }
 
@@ -32,21 +33,21 @@ html {
   transition: all, 150ms
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
   margin: 0px;
   color: #303030;
 }
 
 p {
-  font-family: 'Source Code Pro', monospace;
-  font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
   color: #303030;
   margin: 0px;
 }
 
 a {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   text-decoration: none;
   color: #303030;
@@ -59,8 +60,8 @@ a {
 }
 
 .actionButton {
-  font-family: 'Source Code Pro';
   font-size: 14px;
+  font-kerning: 50px;
   text-decoration: none;
   color: #303030;
   border-style: solid;
@@ -88,7 +89,7 @@ a {
 /* lg */
 @media only screen and (min-width: 1440px) {
   .row {
-    max-width: 1020px;
+    max-width: 1050px;
     height: 100vh;
   }
 
@@ -113,7 +114,7 @@ a {
 /* md */
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .row {
-    max-width: 876px;
+    max-width: 930px;
     height: 100vh; 
   }
 
@@ -137,7 +138,7 @@ a {
 /* sm */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .row {
-    width: 768px;
+    max-width: 930px;
     height: 80vh; 
   }
 
@@ -173,7 +174,6 @@ a {
   h1 {
     font-size: 48px;
     line-height: 48px;
-    padding-top: 15px;
     padding-bottom: 10px;
   }
 
@@ -195,7 +195,6 @@ a {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 20px;
   }
 }
 

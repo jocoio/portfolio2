@@ -10,11 +10,13 @@ class Description extends React.Component {
         };
         var text;
 
+        // If the description contains more than one paragraph
         if(Array.isArray(this.props.info)) {
             text=this.props.info.map(function (listValue, idx) {
                     return <div key={idx} ><p>{listValue}</p><br/></div>;
                 });
         }
+        // One paragaraph
         else {
             text= <p>{this.props.info}</p>;
         }

@@ -3,6 +3,7 @@ import Title from '../common/Title.js';
 import Description from '../common/Description.js';
 import { Link } from 'react-router-dom';
 import { Col, Row } from '../grid';
+import Category from "../common/Category";
 import './ProjectPage.css';
 import projects from '../../data/projects.json';
 
@@ -21,7 +22,7 @@ class ProjectPage extends React.Component {
             width: "100%"
         }
 
-        var linkTitle, link, back;
+        var linkTitle, link, back, categor;
         var id = this.props.match.params.projectname; 
         var project = projects.results.find(item => item.id === id);
         
@@ -34,6 +35,9 @@ class ProjectPage extends React.Component {
             back = this.props.location.state.back;
         }
         else back = "/";
+
+        if(project.category.length > 1) categor = "Categories";
+        else categor = "Category";
         
         return (
             <div style={hundo}>
@@ -41,13 +45,16 @@ class ProjectPage extends React.Component {
                     <Col className="projectInfo"
                         lgWidth={4} mdWidth={4} smWidth={4} xsWidth={10} xsXOffset={1}>
                         <Title name={project.name} />
+
                         <Description info={project.info}
                             width={[3, 3, 3, 12]}
                         />
-                        <h3>Category</h3>
+                        <h3>{categor}</h3>
+                        <Col xsWidth={10} lgWidth={3}>
                         {project.category.map(function (listValue, idx) {
-                            return <p key={idx}>{listValue}</p>;
+                            return <Category key={idx} category={listValue} />;
                         })}
+                        </Col>
 
                         <h3>Date</h3>
                         <p>{project.date}</p>

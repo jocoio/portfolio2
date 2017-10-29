@@ -41,14 +41,14 @@
   position: fixed;
   height: 60px;
   background-color: #ffffff;
-  z-index: 1;
+  z-index: 5;
   position: fixed;
   left: 0;
   opacity: .95;
 }
 
 .version {
-  font-size: 12px;
+  font-size: 14px;
   position: fixed;
   right: 70px;
   top: 23px;
