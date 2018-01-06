@@ -1,6 +1,6 @@
 # joco.io (portfolio)
 
-Hi there! This is the repo for my portfolio site. please hire me. pls.
+Hi there! This is the repo for my portfolio site. It's a perpetual WIP but it's a fun side project!
 
 ## Getting Started
 
