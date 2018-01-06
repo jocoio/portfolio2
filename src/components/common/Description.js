@@ -20,16 +20,24 @@ class Description extends React.Component {
         else {
             text= <p>{this.props.info}</p>;
         }
-        return (
-            <Col style={divStyle}
-                lgWidth={this.props.width[0]}
-                mdWidth={this.props.width[1]}
-                smWidth={this.props.width[2]}
-                xsWidth={this.props.width[3]}
-            >
-                {text}
-            </Col>
-        );
+
+        if(this.props.width === undefined) {
+            return (
+                <Col style={divStyle}>{text}</Col>
+            );
+        }
+        else {
+            return (
+                <Col style={divStyle}
+                    lgWidth={this.props.width[0]}
+                    mdWidth={this.props.width[1]}
+                    smWidth={this.props.width[2]}
+                    xsWidth={this.props.width[3]}
+                >
+                    {text}
+                </Col>
+            );
+        }
     }
 }
 

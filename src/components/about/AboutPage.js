@@ -1,7 +1,6 @@
 import React from 'react';
-import Title from '.././common/Title.js';
 import Description from '../common/Description.js';
-import ContentContainer from '../common/ContentContainer.js';
+import PhotoContainer from '../common/PhotoContainer.js';
 import { Col, Row } from '../grid';
 
 import me from '../../images/about/me.jpg';
@@ -33,13 +32,13 @@ class AboutPage extends React.Component {
         return (
             <Row>
                 <div style={styles}>
-                    <Col xsWidth={10} smWidth={5} mdWidth={4} lgWidth={4}
-                        lgXOffset={0} mdXOffset={1} smXOffset={1} xsXOffset={1}
-                        lgYOffset={0} mdYOffset={0} smYOffset={0} xsYOffset={11}
+                    <Col xsWidth={10} smWidth={5} mdWidth={5} lgWidth={4}
+                        lgXOffset={1} mdXOffset={0} smXOffset={0} xsXOffset={1}
+                        lgYOffset={0} mdYOffset={0} smYOffset={0} xsYOffset={17}
                         className="content">
-                        <Title name="Hi There!" />
+                        <h1>Hi There!</h1>
                         <Description info={intro}
-                            width={[4, 4, 4, 12]}
+                            width={[4, 5, 5, 12]}
                         />
                         <h3>Email</h3>
                         <a href="mailto:hello@joco.io?Subject=Hi there!">hello@joco.io</a>
@@ -64,14 +63,15 @@ class AboutPage extends React.Component {
                         <div className="footer" />
                     </Col>
 
-            <ContentContainer x={[7, 7, 6, 0]}
+            <PhotoContainer x={[7, 7, 6, 0]}
                 y={[0, 0, 0, 0]}
                 z={[0, 0, 0, 0]}
-                width={[4, 4, 5, 12]}
-                height={[10, 10, 10, 10]}
+                width={[4, 5, 5, 12]}
+                height={[10, 10, 10, 14]}
                 img={me}
                 size="100%"
                 className="aboutPhoto"
+                absolute
             />
                 </div >
             

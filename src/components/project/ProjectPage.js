@@ -1,128 +1,171 @@
-import React from 'react';
-import Title from '../common/Title.js';
-import Description from '../common/Description.js';
-import { Link } from 'react-router-dom';
-import { Col, Row } from '../grid';
+import React from "react";
+import Description from "../common/Description.js";
+import { Link } from "react-router-dom";
+import { Col, Row } from "../grid";
 import Category from "../common/Category";
-import './ProjectPage.css';
-import projects from '../../data/projects.json';
+import "./ProjectPage.css";
+import projects from "../../data/projects.json";
+import PhotoContainer from "../common/PhotoContainer";
+import TextContainer from "../common/TextContainer";
+import VideoContainer from "../common/VideoContainer";
 
 class ProjectPage extends React.Component {
 
-    componentWillUnmount() {
-        window.scrollTo(0, 0);
+  componentWillUnmount() {
+    window.scrollTo(0, 0);
+  }
+
+  render() {
+    var rowStyles = {
+      height: "min-content"
+    };
+
+    var linkTitle, link, category, photoURL;
+    var id = this.props.match.params.projectname;
+    var project = projects.results.find(item => item.id === id);
+
+    // If there is a project link
+    if (project.link !== undefined) {
+      linkTitle = <h3 className="linkTitle">Link</h3>;
+      link = (
+        <a href={project.link} target="_blank" rel="noopener noreferrer">
+          {project.name}
+        </a>
+      );
     }
 
-    render() {
-        var rowStyles = {
-            paddingTop: "80px",
-            position: "relative"
-        }
-        var hundo = {
-            width: "100%"
-        }
+    // Label change based on number of categories
+    if (project.category.length > 1) category = "Categories";
+    else category = "Category";
 
-        var linkTitle, link, back, categor;
-        var id = this.props.match.params.projectname; 
-        var project = projects.results.find(item => item.id === id);
-        
-        if (project.link !== undefined) {
-            linkTitle = <h3>Link</h3>;
-            link = <a href={project.link} target="_blank" rel="noopener noreferrer">{project.name}</a>;
-        }
+    return (
+      <div className="pageWrapper">
+        <Row style={rowStyles}>
+          <Col
+            className="projectTitle"
+            lgWidth={10}
+            mdWidth={10}
+            smWidth={10}
+            xsWidth={10}
+            lgXOffset={1}
+            mdXOffset={1}
+            smXOffset={1}
+            xsXOffset={1}
+          >
+            <h1>{project.name}</h1>
+          </Col>
+        </Row>
+        <Row style={rowStyles}>
+          <Col
+            className="projectCategories"
+            lgWidth={2}
+            mdWidth={2}
+            smWidth={2}
+            xsWidth={5}
+            lgXOffset={1}
+            mdXOffset={1}
+            smXOffset={1}
+            xsXOffset={1}
+            xsYOffset={0}
+          >
+            <h3>{category}</h3>
 
-        if(this.props.location.state !== undefined) {
-            back = this.props.location.state.back;
-        }
-        else back = "/";
-
-        if(project.category.length > 1) categor = "Categories";
-        else categor = "Category";
-        
-        return (
-            <div style={hundo}>
-                <Row style={rowStyles}>
-                    <Col className="projectInfo"
-                        lgWidth={4} mdWidth={4} smWidth={4} xsWidth={10} xsXOffset={1}>
-                        <Title name={project.name} />
-
-                        <Description info={project.info}
-                            width={[3, 3, 3, 12]}
-                        />
-                        <h3>{categor}</h3>
-                        <Col xsWidth={10} lgWidth={3}>
-                        {project.category.map(function (listValue, idx) {
-                            return <Category key={idx} category={listValue} />;
-                        })}
-                        </Col>
-
-                        <h3>Date</h3>
-                        <p>{project.date}</p>
-                        
-                        {linkTitle}
-                        {link}
-
-                        <Link to={back}>
-                            <div className="backCross">×</div>
-                        </Link>
-
-                    </Col>
-
-                    <Col className="projectContent" lgWidth={7} mdWidth={7} smWidth={7} xsWidth={12}
-                        lgXOffset={5} mdXOffset={5} smXOffset={5} xsXOffset={0}
-                        lgYOffset={0} mdYOffset={0} smYOffset={0} xsYOffset={15}
-                    >
-                        {project.content.map(function (content, idx) {
-                            // Photo + caption
-                            if (content.length === 2) {
-                                var photoUrl = content[0];
-                                var photo = require(`../../images/projects/${photoUrl}`);
-                                return (
-                                    <div key={idx}>
-                                        <img className="projectImage" src={photo} alt="content" />
-                                        <p className="projectImageCaption">{content[1]}</p>
-                                        <br/>
-                                    </div>
-                                );
-                            }
-                            // Video
-                            else if (content.substr(0, 24) === "//www.youtube.com/embed/") {
-                                return (
-                                    <div key={idx} className="videoWrapper">
-                                        <br/>
-                                        <iframe width="1920" height="1080" src={content} title="video" frameBorder="0" allowFullScreen />
-                                        <br/>
-                                    </div>
-                                );
-                            }
-                            // Photo
-                            else if (content.substr(content.length - 3) === "gif" || content.substr(content.length - 3) === "png" || content.substr(content.length - 3) === "jpg") {
-                                photo = require(`../../images/projects/${content}`);
-                                return (
-                                    <div key={idx}>
-                                        <br />
-                                        <img className="projectImage" src={photo} alt="content" />
-                                        <br />
-                                    </div>
-                                );
-                            }
-                            // Title
-                            else if (content.length < 50) {
-                                return <h2 className="projectContentTitle" key={idx}>{content}</h2>;
-                            }
-                            // Text
-                            else return (
-                                <div key={idx}>
-                                    <p >{content}</p>
-                                    <br />
-                                </div>);
-                        })}
-                        <div className="footer" />
-                    </Col>
-                </Row>  
-            </div>
-        )
-    }
+            {project.category.map(function (listValue, idx) {
+              return <Category key={idx} category={listValue} />;
+            })}
+          </Col>
+          <Col
+            className="projectDescription"
+            lgWidth={4}
+            mdWidth={4}
+            smWidth={4}
+            xsWidth={10}
+            lgXOffset={2}
+            mdXOffset={2}
+            smXOffset={2}
+            xsXOffset={1}
+            xsYOffset={6}
+          >
+            <Description info={project.info} />
+          </Col>
+          <Col
+            className="projectInfo"
+            lgWidth={2}
+            mdWidth={2}
+            smWidth={2}
+            xsWidth={5}
+            lgXOffset={3}
+            mdXOffset={3}
+            smXOffset={3}
+            xsXOffset={6}
+            xsYOffset={0}
+          >
+            <h3>Date</h3>
+            <p>{project.date}</p>
+            {linkTitle}
+            {link}
+            <Link to="/">
+              <div className="backCross">×</div>
+            </Link>
+          </Col>
+        </Row>
+        <Row style={rowStyles} className="projectContent">
+            {project.rowContent.map(function (rowContent, idx) {
+              return (
+                <Row style={rowStyles} className="projectRow">
+                  {rowContent.map(function (content, idx) {
+                    if (content[0] === "Photo") {
+                      photoURL = require(`../../images/projects/${content[1]}`);
+                      return <PhotoContainer 
+                              img={photoURL}
+                              width={[content[2][0], content[2][0], content[2][0], 12]} 
+                              height={[content[2][1], content[2][1], content[2][1], content[2][1]]} 
+                              x={[content[2][2], content[2][2], content[2][2], 0]} 
+                              y={[content[2][3], content[2][3], content[2][3], 1]} 
+                              z={[0, 0, 0, 0]} 
+                              absolute={content[3]}
+                              className="projectImage"/>;
+                    }
+                    else if (content[0] === "Text") {
+                      return <TextContainer 
+                              text={content[1]} 
+                              width={[content[2][0], content[2][0], content[2][0], 3]} 
+                              x={[content[2][1], content[2][1], content[2][1], 1]} 
+                              y={[content[2][2], content[2][2], content[2][2], 1]} 
+                              center={content[3]}
+                              />;
+                    }
+                    else if (content[0] === "TitleAndText") {
+                      return <TextContainer 
+                              title={content[1]} 
+                              text={content[2]}
+                              width={[content[3][0], content[3][0], content[3][0], 10]} 
+                              x={[content[3][1], content[3][1], content[3][1], 1]} 
+                              y={[content[3][2], content[3][2], content[3][2], 1]} 
+                              center={content[4]}
+                              />;
+                    }
+                    else if (content[0] === "Video") {
+                      return <VideoContainer 
+                              url={content[1]}
+                              width={[content[2][0], content[2][0], content[2][0], 10]} 
+                              x={[content[2][1], content[2][1], content[2][1], 1]} 
+                              y={[content[2][2], content[2][2], content[2][2], 1]} 
+                              />;
+                    }
+                    else {
+                      return <h1>Error</h1>
+                    }
+                  })}
+                </Row>
+            )})}
+        </Row>
+        <div className="footer" style={{ transform: "translateY(50%)", top: "50%" }}>
+          <p>Coded by hand and made with <span role="img" aria-label="love">💚</span> In Boston, MA</p>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default ProjectPage;

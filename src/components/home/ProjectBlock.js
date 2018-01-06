@@ -1,5 +1,5 @@
 import React from 'react';
-import ContentContainer from '../common/ContentContainer';
+import PhotoContainer from '../common/PhotoContainer';
 
 export default class ProjectBlock extends React.Component {
 
@@ -8,8 +8,8 @@ export default class ProjectBlock extends React.Component {
         var photo = require(`../../images/projects/${content.url}`);
 
         return (
-            <ContentContainer width={[4,3,6,12]} height={[5,4,5,3]} img={photo} size="100%" label={content.label} id={content.id}>
-            </ContentContainer>
+            <PhotoContainer width={[4,6,6,12]} height={[5,4,5,3]} img={photo} size="100%" label={content.label} id={content.id}>
+            </PhotoContainer>
         );
     }
 }

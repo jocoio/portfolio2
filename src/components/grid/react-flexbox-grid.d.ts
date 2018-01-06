@@ -1,7 +1,7 @@
 import {Component} from 'react';
 
 declare namespace __ReactFlexboxGrid {
-  type ViewportSizeType = 'xs' | 'sm' | 'md' | 'lg';
+  type ViewportSizeType = 'xs' | 'md' | 'lg';
   type ColumnSizeType = number | boolean;
 
   export interface GridProps {
@@ -26,15 +26,12 @@ declare namespace __ReactFlexboxGrid {
 
   export interface ColProps {
     readonly xsWidth?: ColumnSizeType,
-    readonly smWidth?: ColumnSizeType,
     readonly mdWidth?: ColumnSizeType,
     readonly lgWidth?: ColumnSizeType,
     readonly xsHeight?: ColumnSizeType,
-    readonly smHeight?: ColumnSizeType,
     readonly mdHeight?: ColumnSizeType,
     readonly lgHeight?: ColumnSizeType,
     readonly xsOffset?: number,
-    readonly smOffset?: number,
     readonly mdOffset?: number,
     readonly lgOffset?: number,
     readonly first?: ViewportSizeType,

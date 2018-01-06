@@ -86,7 +86,7 @@ export default class ProjectList extends React.Component {
                     </Col>
                     <Col xsWidth={10}
                         xsXOffset={1} smXOffset={1} mdXOffset={0} lgXOffset={0}
-                        style={{ margin: "15px 0", position: "relative" }}>
+                        style={{ margin: "15px 0", position: "relative", fontFamily: "Source Sans Pro" }}>
                         <div onClick={(e) => this.filterProjects("Design", e)} className="categoryFilter" id="Design">Design</div>
                         <div onClick={(e) => this.filterProjects("Development", e)} className="categoryFilter" id="Development">Development</div>
                         <div onClick={(e) => this.filterProjects("Photo", e)} className="categoryFilter" id="Photo">Photo</div>

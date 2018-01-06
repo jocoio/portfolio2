@@ -15,7 +15,7 @@
 }
 
 .MenuItem {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-weight: bold;
   color: #303030;
   text-decoration: none;
@@ -39,12 +39,12 @@
 .blurBar {
   width: 100vw;
   position: fixed;
-  height: 60px;
+  height: 50px;
   background-color: #ffffff;
   z-index: 5;
   position: fixed;
   left: 0;
-  opacity: .95;
+  opacity: 0.95;
 }
 
 .version {
@@ -57,7 +57,6 @@
 
 /* lg */
 @media only screen and (min-width: 1440px) {
-
   .MenuItem {
     font-size: 20px;
     text-align: left;
@@ -66,10 +65,8 @@
   }
 }
 
-
 /* md */
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-
   .MenuItem {
     font-size: 20px;
     margin: 25px 10px;
@@ -86,7 +83,6 @@
 
 /* sm */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  
   .MenuExit {
     margin-left: 50px;
     margin-top: 40px;
@@ -103,8 +99,8 @@
 /* xs */
 @media only screen and (max-width: 767px) {
   .logo {
-  max-width: 40px; 
-  right: 15px 
+    max-width: 40px;
+    right: 15px;
   }
 
   .MenuContainer {
@@ -113,7 +109,7 @@
     left: 15px;
     margin: 18px 0px;
     z-index: 2;
-}
+  }
 
   .MenuItem {
     font-size: 20px;

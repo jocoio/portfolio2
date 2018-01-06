@@ -1,5 +1,5 @@
 .landing {
-  height: 50vh;
+  height: 300px;
   width: 100vw !important;
   text-align: center;
   background: #ffffff;
@@ -8,7 +8,7 @@
 .intro {
   position: absolute;
   left: 50vw;
-  top: 25vh;
+  top: 150px;
   transform: translate(-50%, -50%);
   color: #000000 !important;
 }
@@ -114,7 +114,7 @@
 }
 
 /* lg */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
 
   .intro>h1 {
     font-size: 80px;
@@ -146,12 +146,16 @@
   }
 
   .projectList {
-    width: 1050px;
+    width: 960px;
+  }
+
+  .projectBlock {
+    max-width: 310px;
   }
 }
 
 /* md */
-@media only screen and (max-width: 1439px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   .intro>h1 {
     font-size: 80px;
     padding: 15px 0;
@@ -175,10 +179,14 @@
     animation-iteration-count: infinite;
     animation-name: scroll;
   }
+
+  .projectBlock {
+    max-width: 374px;
+  }
 }
 
 /* sm */
-@media only screen and (max-width: 1023px) {
+/* @media only screen and (max-width: 1023px) {
   .row.landing {
     height: 100vh;
     text-align: center;
@@ -203,17 +211,17 @@
     animation-iteration-count: infinite;
     animation-name: scroll;
   }
-}
+} */
 
-/* xs */
-@media only screen and (max-width: 767px) {
+/* sm */
+@media only screen and (max-width: 768px) {
     .intro>h1 {
       font-size: 50px;
       padding: 5px 0;
     }
 
     .landing {
-        height: 50vh !important;
+        height: 250px;
         text-align: center;
     }
 
