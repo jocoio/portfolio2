@@ -153,10 +153,6 @@
     max-width: 310px;
     background-size: cover !important;
   }
-
-  .projectBlock:hover {
-    transform: scale(1.06);
-    }
 }
 
 /* md */
@@ -191,6 +187,7 @@
 
   .projectBlock {
     max-width: 374px;
+    background-size: cover !important;
   }
 }
 
@@ -241,7 +238,7 @@
 
     .projectBlock {
       width: 90vw !important;
-      
+      background-size: cover !important;
     }
 
     .categoryFilter {

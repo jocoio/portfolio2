@@ -30,7 +30,7 @@ export default class Nav extends React.Component {
         </Link>
 
         <a className="version" href="https://github.com/jocoio/joco">
-          v1.1.1
+          v1.1.2
         </a>
       </div>
     );
