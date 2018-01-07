@@ -94,7 +94,6 @@ a {
 @media only screen and (min-width: 1200px) {
   .row {
     max-width: 960px;
-    height: 100vh;
   }
 
   h1 {
@@ -118,7 +117,6 @@ a {
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .row {
     max-width: 768px;
-    height: 100vh;
   }
 
   h1 {

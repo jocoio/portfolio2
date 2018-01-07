@@ -31,8 +31,6 @@ class PhotoContainer extends React.Component {
             boxShadow: "0 1px 3px 0 rgba(0,0,0,0.35)",
             borderRadius: "2px",
             background: "url(" + this.props.img + ") no-repeat center center",
-            backgroundSize: "cover",
-            backgroundClip: "content-box",
             position: "relative",
             margin: "5px",
         }
