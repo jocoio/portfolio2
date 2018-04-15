@@ -8,6 +8,7 @@ import projects from "../../data/projects.json";
 import PhotoContainer from "../common/PhotoContainer";
 import TextContainer from "../common/TextContainer";
 import VideoContainer from "../common/VideoContainer";
+import Footer from '../common/Footer';
 
 class ProjectPage extends React.Component {
 
@@ -160,9 +161,7 @@ class ProjectPage extends React.Component {
                 </Row>
             )})}
         </Row>
-        <div className="footer" style={{ transform: "translateY(50%)", top: "50%" }}>
-          <p>Coded by hand and made with <span role="img" aria-label="love">💚</span> In Boston, MA</p>
-        </div>
+        <Footer/>
       </div>
     );
   }

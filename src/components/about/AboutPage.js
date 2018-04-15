@@ -59,8 +59,6 @@ class AboutPage extends React.Component {
                                 <img id="git" src={github} alt="github" />
 				            </a>
                         </div>
-
-                        <div className="footer" />
                     </Col>
 
             <PhotoContainer x={[7, 7, 6, 0]}

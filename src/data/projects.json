@@ -229,118 +229,80 @@
       ]
     },
     {
-      "name": "Mobile",
-      "id": "mobile",
+      "name": "Portfolio Site (this)",
+      "id": "portfolio",
       "info":
-        "I always have my phone on me, and as a result it's become my primary camera by default. Some of my favorite pictures I've taken have been on my phone; here are of few of them.",
-      "category": ["Photo", "Landscape photography", "Portrait photography"],
-      "date": "Constantly",
-      "url": "photo/mobile/purple.jpg",
-      "label": "Mobile",
-      "x": [10, 10, 6, 1],
-      "y": [0, 0, 10, 16],
+        "After learning about web frameworks at my first co-op, I wanted to rebuild my site from the ground up. I built my first portfolio last summer, with no prior web dev experience. It was functional, but definitely time for an upgrade.",
+      "category": ["Design", "Development", "UI", "UX"],
+      "date": "Summer 2017",
+      "label": "Portfolio",
+      "url": "dev/portfolio/joco.png",
+      "x": [4, 4, 6, 1],
+      "y": [0, 0, 0, 8],
       "z": [0, 0, 0, 0],
-      "width": [2, 2, 6, 10],
-      "height": [10, 10, 4, 3],
+      "width": [8, 8, 6, 10],
+      "height": [3, 3, 4, 3],
       "rowContent": [
         [
           [
-            "Photo", 
-            "photo/mobile/purple.jpg", 
+            "Photo",
+            "dev/portfolio/joco.png",
             [10, 10, 1, 0]
           ]
         ],
         [
           [
-            "Photo", 
-            "photo/mobile/fenway.jpg", 
-            [9, 16, 1, 0]
+            "TitleAndText",
+            "Design",
+            "I started the design process by determining the site layout and the rough navigation of the site. From there I jumped into my sketchbook, brainstorming the look and feel of the new site on paper.",
+            [3, 1, 0]
           ],
           [
             "Photo",
-            "photo/mobile/study.jpg",
-            [2, 4, 9, 1],
-            true
+            "dev/portfolio/sketch.jpg",
+            [6, 7, 2, 0]
+          ]
+        ],
+        [
+          [
+            "Text",
+            "From there, I jumped into Sketch, and created low and high fidelity mockups. With 13 screens and 3 screen sizes to design for about 30 different hi-fi screen mockups were created in total.",
+            [3, 1, 0]
           ],
           [
             "Photo",
-            "photo/mobile/green.jpg",
-            [2, 4, 9, 6],
-            true
-          ],
+            "dev/portfolio/home.png",
+            [6, 7, 2, 0]
+          ]
+        ],
+        [
           [
-            "Photo",
-            "photo/mobile/snow.jpg",
-            [2, 4, 9, 11],
-            true
-          ],
-          [
-            "Photo",
-            "photo/mobile/red.jpg",
-            [2, 4, 6, 11],
+            "TitleAndText",
+            "React",
+            "I chose React because I needed modularity, and React's components was the perfect solution. I got to work with React earlier in the year while on co-op, so luckily I was familiar with the primary concepts. It has its own share of challenges, but having object oriented principles I was fimiliar with made the transition much more manageable.",
+            [6, 3, 0],
             true
           ]
         ],
         [
           [
-            "Photo", 
-            "photo/mobile/cactus.jpg", 
-            [3, 13, 8, 0]
+            "Photo",
+            "dev/portfolio/grid.png",
+            [6, 7, 1, 0]
           ],
           [
-            "Photo",
-            "photo/mobile/desert.jpg",
-            [6, 2, 1, 0],
-            true
-          ],
-          [
-            "Photo",
-            "photo/mobile/true.jpg",
-            [6, 10, 1, 3],
-            true
+            "TitleAndText",
+            "Grid",
+            "My grid is a beefed-up version of React-Flexbox-Grid, with added support for y position, z position, and height. Essentially when creating a column or row component, the height, width, etc. props passed correspond to class names (ex. col-x-sm-6), that are applied to the component. This was a pain to customize, but it allowed me to actualize my more ambitious designs.",
+            [3, 2, 0]
           ]
         ],
         [
           [
-            "Photo", 
-            "photo/mobile/air.jpg", 
-            [9, 16, 2, 0]
-          ],
-          [
-            "Photo",
-            "photo/mobile/up.jpg",
-            [3, 5, 1, 1],
-            true
-          ],
-          [
-            "Photo",
-            "photo/mobile/roca.jpg",
-            [3, 5, 5, 1],
-            true
-          ],
-          [
-            "Photo",
-            "photo/mobile/fountain.jpg",
-            [3, 5, 1, 8],
-            true
-          ]
-        ],
-        [
-          [
-            "Photo", 
-            "photo/mobile/xtina.jpg", 
-            [6, 11, 1, 0]
-          ],
-          [
-            "Photo",
-            "photo/mobile/neon.jpg",
-            [3, 5, 8, 0],
-            true
-          ],
-          [
-            "Photo",
-            "photo/mobile/lights.jpg",
-            [3, 5, 8, 6],
+            "TitleAndText",
+            "PhotoContainer",
+            "One of the primary components I created for this project is the ‘PhotoContainer' component. Essentially, it's a photo frame for images that have different dimensions at different screen sizes. It takes in a JSON object through its props, representing layout information: x, y, z, width, and height for each of the 4 screen sizes. It can also be passed a link, making it a clickable link. I eventually adapted it and created a ‘TextContainer’ for text boxes (including this one).",
+            [6, 3, 0],
             true
           ]
         ]
@@ -441,83 +403,6 @@
             "Photo", 
             "design/scout/team.jpg", 
             [8, 10, 2, 1]
-          ]
-        ]
-      ]
-    },
-    {
-      "name": "50mm",
-      "id": "50mm",
-      "info":
-        "I got my first nifty 50 three years ago, and it's been my go to lens ever since. To this day I'm impressed at the quality you can get from such an inexpensive lens.",
-      "category": ["Photo", "Landscape photography", "Portrait photography"],
-      "date": "Occasionally",
-      "label": "50mm",
-      "url": "photo/50mm/penguin.jpg",
-      "x": [7, 7, 6, 1],
-      "y": [0, 0, 5, 12],
-      "z": [0, 0, 0, 0],
-      "width": [2, 2, 6, 10],
-      "height": [10, 10, 4, 3],
-      "rowContent": [
-        [
-          [
-            "Photo", 
-            "photo/50mm/flowers.jpg", 
-            [10, 10, 1, 0]
-          ]
-        ],
-        [
-          [
-            "Photo", 
-            "photo/50mm/assault.jpg", 
-            [8, 17, 3, 0]
-          ],
-          [
-            "Photo", 
-            "photo/50mm/hawaii.jpg", 
-            [6, 6, 1, 2],
-            true
-          ]
-        ],
-        [
-          [
-            "Photo", 
-            "photo/50mm/rhody.jpg", 
-            [10, 10, 1, 0]
-          ]
-        ],
-        [
-          [
-            "Photo", 
-            "photo/50mm/alex.jpg", 
-            [5, 13, 1, 0]
-          ],
-          [
-            "Photo", 
-            "photo/50mm/block.jpg", 
-            [6, 7, 5, 2],
-            true
-          ]
-        ],
-        [
-          [
-            "Photo", 
-            "photo/50mm/penguin.jpg", 
-            [10, 10, 1, 0]
-          ]
-        ],
-        [
-          [
-            "Photo", 
-            "photo/50mm/garden.jpg", 
-            [6, 15, 5, 0]
-          ],
-          [
-            "Photo", 
-            "photo/50mm/windows.jpg", 
-            [7, 6, 1, 2],
-            true
           ]
         ]
       ]
@@ -895,235 +780,6 @@
             "Photo",
             "design/myHousing/home.png",
             [10, 13, 1, 0]
-          ]
-        ]
-      ]
-    },
-    {
-      "name": "50 Years: Ed and Laureen",
-      "id": "50years",
-      "info":
-        "In 2014 my grandparents, Ed and Laureen, celebrated their 50th wedding anniversary. I had never done a documentary style video before, but was eager to try. It was great getting to learn their story, and this is hands down my favorite piece of content I've created, across all mediums.",
-      "category": ["Video", "Photo"],
-      "date": "Fall 2014",
-      "label": "50 Years",
-      "url": "video/50Years/gramps.png",
-      "x": [4, 4, 6, 1],
-      "y": [0, 0, 0, 8],
-      "z": [0, 0, 0, 0],
-      "width": [8, 8, 6, 10],
-      "height": [3, 3, 4, 3],
-      "rowContent": [
-        [
-          [
-            "Video",
-            "//www.youtube.com/embed/6SgCcd_sWrs?showinfo=0",
-            [10, 1, 0]
-          ]
-        ]
-      ]
-    },
-    {
-      "name": "Portfolio Site (this)",
-      "id": "portfolio",
-      "info":
-        "After learning about web frameworks at my first co-op, I wanted to rebuild my site from the ground up. I built my first portfolio last summer, with no prior web dev experience. It was functional, but definitely time for an upgrade.",
-      "category": ["Design", "Development", "UI", "UX"],
-      "date": "Summer 2017",
-      "label": "Portfolio",
-      "url": "dev/portfolio/joco.png",
-      "x": [4, 4, 6, 1],
-      "y": [0, 0, 0, 8],
-      "z": [0, 0, 0, 0],
-      "width": [8, 8, 6, 10],
-      "height": [3, 3, 4, 3],
-      "rowContent": [
-        [
-          [
-            "Photo",
-            "dev/portfolio/joco.png",
-            [10, 10, 1, 0]
-          ]
-        ],
-        [
-          [
-            "TitleAndText",
-            "Design",
-            "I started the design process by determining the site layout and the rough navigation of the site. From there I jumped into my sketchbook, brainstorming the look and feel of the new site on paper.",
-            [3, 1, 0]
-          ],
-          [
-            "Photo",
-            "dev/portfolio/sketch.jpg",
-            [6, 7, 2, 0]
-          ]
-        ],
-        [
-          [
-            "Text",
-            "From there, I jumped into Sketch, and created low and high fidelity mockups. With 13 screens and 3 screen sizes to design for about 30 different hi-fi screen mockups were created in total.",
-            [3, 1, 0]
-          ],
-          [
-            "Photo",
-            "dev/portfolio/home.png",
-            [6, 7, 2, 0]
-          ]
-        ],
-        [
-          [
-            "TitleAndText",
-            "React",
-            "I chose React because I needed modularity, and React's components was the perfect solution. I got to work with React earlier in the year while on co-op, so luckily I was familiar with the primary concepts. It has its own share of challenges, but having object oriented principles I was fimiliar with made the transition much more manageable.",
-            [6, 3, 0],
-            true
-          ]
-        ],
-        [
-          [
-            "Photo",
-            "dev/portfolio/grid.png",
-            [6, 7, 1, 0]
-          ],
-          [
-            "TitleAndText",
-            "Grid",
-            "My grid is a beefed-up version of React-Flexbox-Grid, with added support for y position, z position, and height. Essentially when creating a column or row component, the height, width, etc. props passed correspond to class names (ex. col-x-sm-6), that are applied to the component. This was a pain to customize, but it allowed me to actualize my more ambitious designs.",
-            [3, 2, 0]
-          ]
-        ],
-        [
-          [
-            "TitleAndText",
-            "PhotoContainer",
-            "One of the primary components I created for this project is the ‘PhotoContainer' component. Essentially, it's a photo frame for images that have different dimensions at different screen sizes. It takes in a JSON object through its props, representing layout information: x, y, z, width, and height for each of the 4 screen sizes. It can also be passed a link, making it a clickable link. I eventually adapted it and created a ‘TextContainer’ for text boxes (including this one).",
-            [6, 3, 0],
-            true
-          ]
-        ]
-      ]
-    },
-    {
-      "name": "This is Boston",
-      "id": "thisisboston",
-      "info":
-        "I started college in Boston in 2014. I immediately fell in love with the city, and wanted to capture it somehow. This one of the first location-based videos I did, and also one of the first higher-production videos I made, in terms of time and effort.",
-      "category": ["Video"],
-      "date": "Fall 2014",
-      "label": "This is Boston",
-      "url": "video/boston/bos.png",
-      "x": [4, 4, 6, 1],
-      "y": [4, 4, 5, 12],
-      "z": [0, 0, 0, 0],
-      "width": [8, 8, 6, 10],
-      "height": [3, 3, 4, 3],
-      "rowContent": [
-        [
-          [
-            "Video",
-            "//www.youtube.com/embed/PYyz4teTzNc?showinfo=0",
-            [10, 1, 0]
-          ]
-        ]
-      ]
-    },
-    {
-      "name": "NYC 2015",
-      "id": "nyc2015",
-      "info":
-        "In the fall of 2015 I visited my friend Zoe in Brooklyn, and we took a day trip to NYC to be typical tourists. For the video I didn't include music, and instead wanted to use the natural sounds of the city to guide the narrative.",
-      "category": ["Video"],
-      "date": "Fall 2015",
-      "label": "NYC 2015",
-      "url": "video/nyc2015/nyc.png",
-      "x": [4, 4, 6, 1],
-      "y": [8, 8, 10, 16],
-      "z": [0, 0, 0, 0],
-      "width": [8, 8, 6, 10],
-      "height": [3, 3, 4, 3],
-      "rowContent": [
-        [
-          [
-            "Video",
-            "//www.youtube.com/embed/QSz_c_rqfzQ?showinfo=0",
-            [10, 1, 0]
-          ]
-        ]
-      ]
-    },
-    {
-      "name": "Film",
-      "id": "film",
-      "info":
-        "I grabbed my first film camera last year from an eBay auction, and fell in love with the medium immediately. It forced me to slow down and analyze every shot, and I think it really helped me improve as a photographer.",
-      "category": ["Photo", "Landscape photography", "Portrait photography"],
-      "date": "Sometimes",
-      "label": "Film",
-      "url": "photo/film/chloe.png",
-      "x": [4, 4, 6, 1],
-      "y": [0, 0, 0, 8],
-      "z": [0, 0, 0, 0],
-      "width": [2, 2, 6, 10],
-      "height": [10, 10, 4, 3],
-      "rowContent": [
-        [
-          [
-            "Photo", 
-            "photo/film/central.jpg", 
-            [10, 10, 1, 0]
-          ]
-        ],
-        [
-          [
-            "Photo", 
-            "photo/film/train.jpg", 
-            [5, 12, 6, 0]
-          ],
-          [
-            "Photo", 
-            "photo/film/point.jpg", 
-            [6, 7, 1, 2],
-            true
-          ]
-        ],
-        [
-          [
-            "Photo", 
-            "photo/film/park.jpg", 
-            [10, 10, 1, 0]
-          ]
-        ],
-        [
-          [
-            "Photo", 
-            "photo/film/boats.jpg", 
-            [5, 12, 1, 0]
-          ],
-          [
-            "Photo", 
-            "photo/film/boy.jpg", 
-            [6, 7, 5, 2],
-            true
-          ]
-        ],
-        [
-          [
-            "Photo", 
-            "photo/film/hike.jpg", 
-            [10, 10, 1, 0]
-          ]
-        ],
-        [
-          [
-            "Photo", 
-            "photo/film/flowers.jpg", 
-            [7, 15, 4, 0]
-          ],
-          [
-            "Photo", 
-            "photo/film/jeff.jpg", 
-            [8, 8, 1, 2],
-            true
           ]
         ]
       ]

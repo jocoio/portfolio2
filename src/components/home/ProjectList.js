@@ -82,17 +82,7 @@ export default class ProjectList extends React.Component {
                         xsXOffset={1} smXOffset={1} mdXOffset={0} lgXOffset={0}
                         style={{ position: "relative" }}>
                         <h1>All projects</h1>
-                        <h5>Select categories below to filter projects!</h5>
-                    </Col>
-                    <Col xsWidth={10}
-                        xsXOffset={1} smXOffset={1} mdXOffset={0} lgXOffset={0}
-                        style={{ margin: "15px 0", position: "relative", fontFamily: "Source Sans Pro" }}>
-                        <div onClick={(e) => this.filterProjects("Design", e)} className="categoryFilter" id="Design">Design</div>
-                        <div onClick={(e) => this.filterProjects("Development", e)} className="categoryFilter" id="Development">Development</div>
-                        <div onClick={(e) => this.filterProjects("Photo", e)} className="categoryFilter" id="Photo">Photo</div>
-                        <div onClick={(e) => this.filterProjects("Video", e)} className="categoryFilter" id="Video">Video</div>
-                        <div onClick={(e) => this.filterProjects("UI", e)} className="categoryFilter" id="UI">UI</div>
-                        <div onClick={(e) => this.filterProjects("UX", e)} className="categoryFilter" id="UX">UX</div>
+                        <br/>
                     </Col>
                 </Row>
                 <Row className="projectList">
