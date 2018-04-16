@@ -28,10 +28,6 @@ export default class Nav extends React.Component {
         <Link to="/">
           <img className="logo" src={logo} alt="logo" />
         </Link>
-
-        <a className="version" href="https://github.com/jocoio/joco">
-          v1.1.3
-        </a>
       </div>
     );
   }
