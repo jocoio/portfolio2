@@ -1,15 +1,27 @@
-import React, { Component } from "react";
+import React from "react";
 import './App.css'
-import Nav from "../nav/Nav.js";
-import Routes from '../utils/routes.js';
+import { matchPath } from 'react-router-dom'
+import { TransitionGroup } from 'react-transition-group'
 
-export default class App extends Component {
-	render() {
-		return (
-			<div className="wrapper">
-				<Nav />
-				<Routes/>
-			</div>
-		);
-	}
+// import routes from '../utils/routes'
+import Nav from '../nav/Nav'
+
+export default class App extends React.Component {
+  matchPath = path =>
+    matchPath(window.location.pathname, path)
+
+  render() {
+    return (
+      <div id="app">
+        <Nav />
+        <TransitionGroup id="content">
+          {this.props.routes
+            .filter(({ path }) => this.matchPath(path))
+            .map(({ Component, key }) => (
+              <Component key={key}/>
+            ))}
+        </TransitionGroup>
+      </div>
+    )
+  }
 }

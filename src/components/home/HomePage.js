@@ -1,16 +1,16 @@
 import React from 'react'
 
-import projects from '../../data/projects.json';
+// import projects from '../../data/projects.json';
 import './HomePage.css';
 import Hero from './Hero';
-import Feature from './Feature';
-import ProjectList from './ProjectList';
+// import Feature from './Feature';
+// import ProjectList from './ProjectList';
 import Footer from '../common/Footer';
 
 import withTransition from '../utils/withTransition'
 import animate from '@jam3/gsap-promise'
 import Expo from '@jam3/gsap-promise'
-import anime from 'animejs'
+// import anime from 'animejs'
 
 import { Link } from 'react-router-dom';
 

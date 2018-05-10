@@ -1,7 +1,7 @@
 import React from 'react';
 import Description from '../common/Description.js';
 import PhotoContainer from '../common/PhotoContainer.js';
-import { Col, Row } from '../grid';
+import { Col } from '../grid';
 
 import me from '../../images/about/me.jpg';
 import resume from '../../images/about/Resume.pdf';
@@ -13,7 +13,7 @@ import './AboutPage.css';
 import withTransition from '../utils/withTransition'
 import animate from '@jam3/gsap-promise'
 import Expo from '@jam3/gsap-promise'
-import anime from 'animejs'
+// import anime from 'animejs'
 
 
 class AboutPage extends React.Component {
