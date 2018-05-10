@@ -3,45 +3,84 @@ import Description from "../common/Description.js";
 import { Link } from "react-router-dom";
 import { Col, Row } from "../grid";
 import Category from "../common/Category";
-import "./ProjectPage.css";
 import projects from "../../data/projects.json";
 import PhotoContainer from "../common/PhotoContainer";
 import TextContainer from "../common/TextContainer";
 import VideoContainer from "../common/VideoContainer";
 import Footer from '../common/Footer';
 
+import withTransition from '../utils/withTransition'
+import animate from '@jam3/gsap-promise'
+import Expo from '@jam3/gsap-promise'
+
+import "./ProjectPage.css";
+
 class ProjectPage extends React.Component {
 
-  componentWillUnmount() {
-    window.scrollTo(0, 0);
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      date: new Date(),
+      linkTitle: "",
+      link: "",
+      category: "",
+      id: window.location.pathname.substring(1)
+    };
   }
 
+  componentWillMount() {
+    this.setState({
+      project: projects.results.find(item => item.id === this.state.id)
+    });
+
+    console.log(this.state.id);
+    console.log(this.state.project);
+  }
+
+  animateIn() {
+    return animate.fromTo(
+      this.el,
+      .25,
+      {
+        autoAlpha: 0,
+        y: 50,
+      },
+      {
+        autoAlpha: 1,
+        y: 0,
+        ease: Expo.easeOut,
+      },
+    )
+  }
+
+  animateOut() {
+    return animate.to(this.el, .25, {
+      autoAlpha: 0,
+      y: 50,
+      ease: Expo.easeOut,
+    })
+  }
+  // componentWillReceiveProps(nextProps) {
+
+  //   // If there is a project link
+  //   if ((this.state.project !== undefined) && (this.state.project.link !== undefined)) {
+  //     this.state.linkTitle = <h3 className="linkTitle">Link</h3>;
+  //     this.state.link = (
+  //       <a href={this.state.project.link} target="_blank" rel="noopener noreferrer">
+  //         {this.state.project.name}
+  //       </a>
+  //     );
+  //   }
+
+  //   // Label change based on number of categories
+  //   if (this.state.project !== undefined && this.state.project.category.length > 1) this.state.category = "Categories";
+  //   else this.state.category = "Category";
+  // }
   render() {
-    var rowStyles = {
-      height: "min-content"
-    };
-
-    var linkTitle, link, category, photoURL;
-    var id = this.props.match.params.projectname;
-    var project = projects.results.find(item => item.id === id);
-
-    // If there is a project link
-    if (project.link !== undefined) {
-      linkTitle = <h3 className="linkTitle">Link</h3>;
-      link = (
-        <a href={project.link} target="_blank" rel="noopener noreferrer">
-          {project.name}
-        </a>
-      );
-    }
-
-    // Label change based on number of categories
-    if (project.category.length > 1) category = "Categories";
-    else category = "Category";
-
     return (
-      <div className="pageWrapper">
-        <Row style={rowStyles}>
+      <div className=" pageWrapper absolute absolute--fill pt5 bg-white">
+        <Row style={{ height: "min-content" }}>
           <Col
             className="projectTitle"
             lgWidth={10}
@@ -53,10 +92,10 @@ class ProjectPage extends React.Component {
             smXOffset={1}
             xsXOffset={1}
           >
-            <h1>{project.name}</h1>
+            <h1>{this.state.project.name}</h1>
           </Col>
         </Row>
-        <Row style={rowStyles}>
+        <Row style={{ height: "min-content" }}>
           <Col
             className="projectCategories"
             lgWidth={2}
@@ -69,9 +108,9 @@ class ProjectPage extends React.Component {
             xsXOffset={1}
             xsYOffset={0}
           >
-            <h3>{category}</h3>
+            <h3>{this.state.category}</h3>
 
-            {project.category.map(function (listValue, idx) {
+            {this.state.project.category.map(function (listValue, idx) {
               return <Category key={idx} category={listValue} />;
             })}
           </Col>
@@ -87,7 +126,7 @@ class ProjectPage extends React.Component {
             xsXOffset={1}
             xsYOffset={6}
           >
-            <Description info={project.info} />
+            <Description info={this.state.project.info} />
           </Col>
           <Col
             className="projectInfo"
@@ -102,69 +141,69 @@ class ProjectPage extends React.Component {
             xsYOffset={0}
           >
             <h3>Date</h3>
-            <p>{project.date}</p>
-            {linkTitle}
-            {link}
+            <p>{this.state.project.date}</p>
+            {this.state.linkTitle}
+            {this.state.link}
             <Link to="/">
               <div className="backCross">×</div>
             </Link>
           </Col>
         </Row>
-        <Row style={rowStyles} className="projectContent">
-            {project.rowContent.map(function (rowContent, idx) {
-              return (
-                <Row style={rowStyles} className="projectRow">
-                  {rowContent.map(function (content, idx) {
-                    if (content[0] === "Photo") {
-                      photoURL = require(`../../images/projects/${content[1]}`);
-                      return <PhotoContainer 
-                              img={photoURL}
-                              width={[content[2][0], content[2][0], content[2][0], 12]} 
-                              height={[content[2][1], content[2][1], content[2][1], content[2][1]]} 
-                              x={[content[2][2], content[2][2], content[2][2], 0]} 
-                              y={[content[2][3], content[2][3], content[2][3], 1]} 
-                              z={[0, 0, 0, 0]} 
-                              absolute={content[3]}
-                              className="projectImage"/>;
-                    }
-                    else if (content[0] === "Text") {
-                      return <TextContainer 
-                              text={content[1]} 
-                              width={[content[2][0], content[2][0], content[2][0], 3]} 
-                              x={[content[2][1], content[2][1], content[2][1], 1]} 
-                              y={[content[2][2], content[2][2], content[2][2], 1]} 
-                              center={content[3]}
-                              />;
-                    }
-                    else if (content[0] === "TitleAndText") {
-                      return <TextContainer 
-                              title={content[1]} 
-                              text={content[2]}
-                              width={[content[3][0], content[3][0], content[3][0], 10]} 
-                              x={[content[3][1], content[3][1], content[3][1], 1]} 
-                              y={[content[3][2], content[3][2], content[3][2], 1]} 
-                              center={content[4]}
-                              />;
-                    }
-                    else if (content[0] === "Video") {
-                      return <VideoContainer 
-                              url={content[1]}
-                              width={[content[2][0], content[2][0], content[2][0], 10]} 
-                              x={[content[2][1], content[2][1], content[2][1], 1]} 
-                              y={[content[2][2], content[2][2], content[2][2], 1]} 
-                              />;
-                    }
-                    else {
-                      return <h1>Error</h1>
-                    }
-                  })}
-                </Row>
-            )})}
+        <Row style={{ height: "min-content" }} className="projectContent">
+          {this.state.project.rowContent.map(function (rowContent, idx) {
+            return (
+              <Row style={{ height: "min-content" }} className="projectRow">
+                {rowContent.map(function (content, idx) {
+                  if (content[0] === "Photo") {
+                    return <PhotoContainer
+                      img={require(`../../images/projects/${content[1]}`)}
+                      width={[content[2][0], content[2][0], content[2][0], 12]}
+                      height={[content[2][1], content[2][1], content[2][1], content[2][1]]}
+                      x={[content[2][2], content[2][2], content[2][2], 0]}
+                      y={[content[2][3], content[2][3], content[2][3], 1]}
+                      z={[0, 0, 0, 0]}
+                      absolute={content[3]}
+                      className="projectImage" />;
+                  }
+                  else if (content[0] === "Text") {
+                    return <TextContainer
+                      text={content[1]}
+                      width={[content[2][0], content[2][0], content[2][0], 3]}
+                      x={[content[2][1], content[2][1], content[2][1], 1]}
+                      y={[content[2][2], content[2][2], content[2][2], 1]}
+                      center={content[3]}
+                    />;
+                  }
+                  else if (content[0] === "TitleAndText") {
+                    return <TextContainer
+                      title={content[1]}
+                      text={content[2]}
+                      width={[content[3][0], content[3][0], content[3][0], 10]}
+                      x={[content[3][1], content[3][1], content[3][1], 1]}
+                      y={[content[3][2], content[3][2], content[3][2], 1]}
+                      center={content[4]}
+                    />;
+                  }
+                  else if (content[0] === "Video") {
+                    return <VideoContainer
+                      url={content[1]}
+                      width={[content[2][0], content[2][0], content[2][0], 10]}
+                      x={[content[2][1], content[2][1], content[2][1], 1]}
+                      y={[content[2][2], content[2][2], content[2][2], 1]}
+                    />;
+                  }
+                  else {
+                    return <h1>Error</h1>
+                  }
+                })}
+              </Row>
+            )
+          })}
         </Row>
-        <Footer/>
+        <Footer />
       </div>
     );
   }
 }
 
-export default ProjectPage;
+export default withTransition(ProjectPage);

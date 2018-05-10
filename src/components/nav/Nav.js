@@ -1,12 +1,12 @@
 import React from "react";
 import logo from "../../images/nav/logo.svg";
 import { NavLink as Link } from "react-router-dom";
-import "./Nav.css";
+// import "./Nav.css";
 
 export default class Nav extends React.Component {
   render() {
     return (
-      <div className="blurBar">
+      <div className="blurBar sans-serif b white flex items-baseline justify-between fixed top-0 left-0 right-0 z-9999">
         <div className="MenuContainer">
           <Link
             className="MenuItem"
@@ -25,9 +25,9 @@ export default class Nav extends React.Component {
           </Link>
         </div>
 
-        <Link to="/">
+        {/* <Link to="/">
           <img className="logo" src={logo} alt="logo" />
-        </Link>
+        </Link> */}
       </div>
     );
   }

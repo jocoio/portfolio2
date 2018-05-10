@@ -10,11 +10,36 @@ import youtube from '../../images/about/youtube.svg';
 import github from '../../images/about/github.svg';
 
 import './AboutPage.css';
+import withTransition from '../utils/withTransition'
+import animate from '@jam3/gsap-promise'
+import Expo from '@jam3/gsap-promise'
+import anime from 'animejs'
 
 
 class AboutPage extends React.Component {
-    componentWillUnmount() {
-        window.scrollTo(0, 0);
+
+    animateIn() {
+        return animate.fromTo(
+            this.el,
+            .25,
+            {
+                autoAlpha: 0,
+                y: 50,
+            },
+            {
+                autoAlpha: 1,
+                y: 0,
+                ease: Expo.easeOut,
+            },
+        )
+    }
+
+    animateOut() {
+        return animate.to(this.el, .25, {
+            autoAlpha: 0,
+            y: 50,
+            ease: Expo.easeOut,
+        })
     }
 
     render() {
@@ -30,7 +55,7 @@ class AboutPage extends React.Component {
         ]
 
         return (
-            <Row>
+            <div className="absolute absolute--fill pt5 bg-white" ref={e => (this.el = e)}>
                 <div style={styles}>
                     <Col xsWidth={10} smWidth={5} mdWidth={5} lgWidth={4}
                         lgXOffset={1} mdXOffset={0} smXOffset={0} xsXOffset={1}
@@ -45,7 +70,7 @@ class AboutPage extends React.Component {
                         <h3>Resume</h3>
                         <a href={resume} target="_blank" rel="noopener noreferrer">View Resume</a>
 
-                        
+
                         <div className="socialMedia">
                             <a className="social" href="http://www.instagram.com/joco.io" target="_blank" rel="noopener noreferrer">
                                 <img id="insta" src={instagram} alt="instagram" />
@@ -53,29 +78,29 @@ class AboutPage extends React.Component {
 
                             <a className="social" href="http://www.youtube.com/corbeasta" target="_blank" rel="noopener noreferrer">
                                 <img id="youtube" src={youtube} alt="youtube" />
-				            </a>
+                            </a>
 
                             <a className="social" href="http://www.github.com/jocoio" target="_blank" rel="noopener noreferrer">
                                 <img id="git" src={github} alt="github" />
-				            </a>
+                            </a>
                         </div>
                     </Col>
 
-            <PhotoContainer x={[7, 7, 6, 0]}
-                y={[0, 0, 0, 0]}
-                z={[0, 0, 0, 0]}
-                width={[4, 5, 5, 12]}
-                height={[10, 10, 10, 14]}
-                img={me}
-                size="100%"
-                className="aboutPhoto"
-                absolute
-            />
+                    <PhotoContainer x={[7, 7, 6, 0]}
+                        y={[0, 0, 0, 0]}
+                        z={[0, 0, 0, 0]}
+                        width={[4, 5, 5, 12]}
+                        height={[10, 10, 10, 14]}
+                        img={me}
+                        size="100%"
+                        className="aboutPhoto"
+                        absolute
+                    />
                 </div >
-            
-            </Row >
+            </div>
         )
     }
 }
 
-export default AboutPage;
+
+export default withTransition(AboutPage)

@@ -1,34 +1,53 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import { CSSTransitionGroup } from 'react-transition-group';
+// import React from 'react';
+// import { Switch, Route } from 'react-router-dom';
 import HomePage from '../home/HomePage.js';
 import AboutPage from '../about/AboutPage.js';
 import ProjectPage from '../project/ProjectPage.js';
-import Missed from '../utils/404.js';
+// import Missed from '../utils/404.js';
 
-export default class Routes extends React.Component {
+// export default class Routes extends React.Component {
 
-	render() {
-		return (
+// 	render() {
+// 		return (
 
-			<div>
-				<Route render={({ location }) => (
-					<CSSTransitionGroup
-						transitionName='example'
-						transitionEnterTimeout={500}
-						transitionLeaveTimeout={250}>
+// 			<div>
+// 				<Route render={({ location }) => (
+// 						<Switch location={location} key={location.key}>
+// 							<Route exact path="/" component={HomePage} />
+// 							<Route path="/about" component={AboutPage} />
+// 							<Route path="/project" component={ProjectPage} />
+// 							<Route path="/:projectname" component={ProjectPage} />
+// 							<Route component={Missed} />
+// 						</Switch>
+// 				)}
+// 				/>
+// 			</div>
+// 		)
+// 	}
+// }
 
-						<Switch location={location} key={location.key}>
-							<Route exact path="/" component={HomePage} />
-							<Route path="/about" component={AboutPage} />
-							<Route path="/project" component={ProjectPage} />
-							<Route path="/:projectname" component={ProjectPage} />
-							<Route component={Missed} />
-						</Switch>
-					</CSSTransitionGroup>
-				)}
-				/>
-			</div>
-		)
-	}
-}
+export default [
+  {
+    key: 'home',
+    Component: HomePage,
+    path: {
+      path: '/',
+      exact: true,
+    },
+  },
+  {
+    key: 'about',
+    Component: AboutPage,
+    path: {
+      path: `/about`,
+    },
+	},
+	{
+    key: 'hellola',
+    Component: ProjectPage,
+    path: {
+			path: `/hellola`,
+			exact: true
+    },
+	},
+]
