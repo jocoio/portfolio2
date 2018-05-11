@@ -1,7 +1,7 @@
 import React from "react";
-// import logo from "../../images/nav/logo.svg";
+import logo from "../../images/nav/logo.svg";
 import { NavLink as Link } from "react-router-dom";
-// import "./Nav.css";
+import "./Nav.css";
 
 export default class Nav extends React.Component {
   render() {
@@ -25,9 +25,9 @@ export default class Nav extends React.Component {
           </Link>
         </div>
 
-        {/* <Link to="/">
+        <Link to="/">
           <img className="logo" src={logo} alt="logo" />
-        </Link> */}
+        </Link>
       </div>
     );
   }

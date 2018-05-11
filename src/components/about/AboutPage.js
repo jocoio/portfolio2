@@ -21,7 +21,7 @@ class AboutPage extends React.Component {
     animateIn() {
         return animate.fromTo(
             this.el,
-            .25,
+            .5,
             {
                 autoAlpha: 0,
                 y: 50,
@@ -35,7 +35,7 @@ class AboutPage extends React.Component {
     }
 
     animateOut() {
-        return animate.to(this.el, .25, {
+        return animate.to(this.el, .5, {
             autoAlpha: 0,
             y: 50,
             ease: Expo.easeOut,

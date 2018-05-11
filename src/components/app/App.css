@@ -3,25 +3,7 @@ html {
   overflow-y: scroll;
 }
 
-.example-enter {
-  opacity: 0;
-}
 
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 250ms ease-in;
-  -webkit-transition: opacity 250ms ease-in;
-}
-
-.example-leave {
-  opacity: 1;
-}
-
-.example-leave.example-leave-active {
-  opacity: 0;
-  transition: opacity 250ms ease-out;
-  -webkit-transition: opacity 250ms ease-out;
-}
 
 html {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -29,9 +11,9 @@ html {
   color: #303030;
 }
 
-* {
+/* * {
   transition: all, 150ms;
-}
+} */
 
 h1,
 h2,

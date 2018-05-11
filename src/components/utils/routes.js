@@ -47,7 +47,13 @@ export default [
     Component: ProjectPage,
     path: {
 			path: `/hellola`,
-			exact: true
+    },
+	},
+	{
+    key: 'scout',
+    Component: ProjectPage,
+    path: {
+			path: `/scout`,
     },
 	},
 ]
