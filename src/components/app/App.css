@@ -11,9 +11,10 @@ html {
   color: #303030;
 }
 
-/* * {
-  transition: all, 150ms;
-} */
+#content {
+  padding-top: 60px;
+  min-height: 100vh;
+}
 
 h1,
 h2,
@@ -65,6 +66,7 @@ a {
 .container {
   margin: 0;
   width: 100vw;
+
 }
 
 .footer {

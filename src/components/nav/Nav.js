@@ -6,7 +6,7 @@ import "./Nav.css";
 export default class Nav extends React.Component {
   render() {
     return (
-      <div className="blurBar sans-serif b white flex items-baseline justify-between fixed top-0 left-0 right-0 z-9999">
+      <div className="blurBar">
         <div className="MenuContainer">
           <Link
             className="MenuItem"

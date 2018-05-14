@@ -5,10 +5,14 @@ export default function withTransition(WrappedComponent) {
   return class extends React.Component {
     handleAnimateIn(done) {
       if (
+        // if the wrappedcommonents 'animateIn' object is a function
         typeof this.wrappedComponent.animateIn ===
         'function'
       ) {
+        
+        // Assign the animateIn() function to a promise object
         const promise = this.wrappedComponent.animateIn()
+        // If promise is true and 
         if (promise && typeof promise.then === 'function') {
           promise.then(done)
         } else {
@@ -39,7 +43,9 @@ export default function withTransition(WrappedComponent) {
     render() {
       return (
         <Transition
+          //Taking in all props from before
           {...this.props}
+          // Add a custom listener
           addEndListener={(node, done) => {
             if (this.props.in) {
               this.handleAnimateIn(done)

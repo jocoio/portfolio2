@@ -1,30 +1,6 @@
-// import React from 'react';
-// import { Switch, Route } from 'react-router-dom';
 import HomePage from '../home/HomePage.js';
 import AboutPage from '../about/AboutPage.js';
 import ProjectPage from '../project/ProjectPage.js';
-// import Missed from '../utils/404.js';
-
-// export default class Routes extends React.Component {
-
-// 	render() {
-// 		return (
-
-// 			<div>
-// 				<Route render={({ location }) => (
-// 						<Switch location={location} key={location.key}>
-// 							<Route exact path="/" component={HomePage} />
-// 							<Route path="/about" component={AboutPage} />
-// 							<Route path="/project" component={ProjectPage} />
-// 							<Route path="/:projectname" component={ProjectPage} />
-// 							<Route component={Missed} />
-// 						</Switch>
-// 				)}
-// 				/>
-// 			</div>
-// 		)
-// 	}
-// }
 
 export default [
   {
@@ -41,6 +17,13 @@ export default [
     path: {
       path: `/about`,
     },
+  },
+  {
+    key: 'scout',
+    Component: ProjectPage,
+    path: {
+			path: `/scout`,
+    },
 	},
 	{
     key: 'hellola',
@@ -48,12 +31,41 @@ export default [
     path: {
 			path: `/hellola`,
     },
-	},
-	{
-    key: 'scout',
+  },
+  {
+    key: 'portfolio',
     Component: ProjectPage,
     path: {
-			path: `/scout`,
+			path: `/portfolio`,
     },
-	},
+  },
+  {
+    key: 'scoutsite',
+    Component: ProjectPage,
+    path: {
+			path: `/scoutsite`,
+    },
+  },
+
+  {
+    key: 'unsize',
+    Component: ProjectPage,
+    path: {
+			path: `/unsize`,
+    },
+  },
+  {
+    key: 'thisgirlcodes',
+    Component: ProjectPage,
+    path: {
+			path: `/thisgirlcodes`,
+    },
+  },
+  {
+    key: 'myhousing',
+    Component: ProjectPage,
+    path: {
+			path: `/myhousing`,
+    },
+  },
 ]
