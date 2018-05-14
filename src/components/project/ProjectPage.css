@@ -55,7 +55,7 @@
   font-size: 44px;
   line-height: 21px;
   position: fixed;
-  top: 90%;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
 }
