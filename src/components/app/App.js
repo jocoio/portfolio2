@@ -19,6 +19,7 @@ export default class App extends React.Component {
       // Back off, browser, I got this...
       window.history.scrollRestoration = 'manual';
     }
+    setTimeout(() => {  document.getElementById("loadingBuffer").remove() }, 1000);
   }
 
   render() {

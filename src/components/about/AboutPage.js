@@ -79,12 +79,12 @@ class AboutPage extends React.Component {
         return (
             <div ref={e => (this.el = e)}>
                 <PageContainer>
-                    <Row style={styles}>
+                    <Row style={styles} className="containerRow">
                         <Col xsWidth={10} smWidth={5} mdWidth={5} lgWidth={4}
                             lgXOffset={1} mdXOffset={0} smXOffset={0} xsXOffset={1}
                             lgYOffset={0} mdYOffset={0} smYOffset={0} xsYOffset={17}
                             className="content">
-                            <h1>Hi There!</h1>
+                            <h1>Hello!</h1>
                             <Description info={intro}
                                 width={[4, 5, 5, 12]}
                             />

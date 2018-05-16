@@ -117,6 +117,10 @@
 /* xs */
 @media only screen and (max-width: 768px) {
 
+  .titleRow {
+    height: min-content;
+  }
+
   .projectContent {
     width: 100%;
   }

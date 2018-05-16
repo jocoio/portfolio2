@@ -41,6 +41,9 @@ class ProjectPage extends React.Component {
       project: projects.results.find(item => item.id === this.state.id)
     });
 
+
+    // this.props.curtainColor("red");
+
     // Mainly for resfreshing the page, might be redundant
     this.props.toggleCurtainVisibility(true);
   }
@@ -51,6 +54,7 @@ class ProjectPage extends React.Component {
   }
 
   componentWillUnmount() {
+
     // Throw the curtain up
     this.props.toggleCurtainVisibility(true);
   }
@@ -108,9 +112,9 @@ class ProjectPage extends React.Component {
   render() {
     if (this.state.project !== null) {
       return (
-        <div style={{minHeight: "100%"}} ref={e => (this.el = e)}>
-          <PageContainer >
-            <Row>
+        <div style={{ minHeight: "100%" }} ref={e => (this.el = e)}>
+          <PageContainer>
+            <Row className="titleRow">
               <Col
                 className="projectTitle"
                 lgWidth={10}
@@ -154,7 +158,7 @@ class ProjectPage extends React.Component {
                 mdXOffset={2}
                 smXOffset={2}
                 xsXOffset={1}
-                xsYOffset={6}
+                xsYOffset={5}
               >
                 <Description info={this.state.project.info} />
               </Col>

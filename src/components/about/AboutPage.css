@@ -1,9 +1,17 @@
+.containerRow {
+    height: min-content;
+    padding-bottom: 50px;
+}
+
 .aboutPhoto {
     box-shadow: none !important;
     border-radius: 0px !important;
 }
 .content {
     position: relative;
+}
+.content>h1 {
+    padding-bottom: 20px;
 }
 .content>h3 {
     margin-top: 15px;
@@ -37,4 +45,11 @@ a:hover {
 }
 #youtube:hover {
 	fill: #bb0000
+}
+
+/* xs */
+@media only screen and (max-width: 768px) {
+    .aboutPhoto {
+        padding-top: 0;
+    }
 }

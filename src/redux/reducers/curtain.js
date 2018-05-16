@@ -1,7 +1,8 @@
-import { TOGGLE_CURTAIN_VISIBILITY } from '../actions/types'
+import { TOGGLE_CURTAIN_VISIBILITY, CURTAIN_COLOR } from '../actions/types'
 
 const initialState = {
-  visibility: false
+  visibility: false,
+  color: "#32b67a"
 };
 
 export default (state = initialState, action) => {
@@ -11,6 +12,11 @@ export default (state = initialState, action) => {
         ...state,
         visibility: action.payload
       };
+    case CURTAIN_COLOR:
+      return {
+        ...state,
+        color: action.payload
+      }
     default:
       return state;
   }

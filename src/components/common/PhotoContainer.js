@@ -26,7 +26,6 @@ class PhotoContainer extends React.Component {
             }
         }
 
-
         var blockStyles = {
             boxShadow: "0 1px 3px 0 rgba(0,0,0,0.35)",
             borderRadius: "2px",
@@ -34,15 +33,8 @@ class PhotoContainer extends React.Component {
             position: "relative",
             margin: "5px",
         }
-        var label;
 
-        if (this.props.label === undefined) {
-            label = <div />;
-        }
-        else {
-            label = <h3 className="contentLabel">{this.props.label}</h3>;
-            var urlString = this.props.id;
-        }
+        var urlString = this.props.id;
 
         if (this.props.height === undefined) {
             return (
@@ -52,8 +44,6 @@ class PhotoContainer extends React.Component {
                     xsYOffset={this.props.y[3]} smYOffset={this.props.y[2]} mdYOffset={this.props.y[1]} lgYOffset={this.props.y[0]}
                     xsZ={this.props.z[3]} smZ={this.props.z[2]} mdZ={this.props.z[1]} lgZ={this.props.z[0]}
                     style={styles} className={this.props.className} >
-
-                    {label}
                 </Col>
             );
         }
@@ -69,7 +59,6 @@ class PhotoContainer extends React.Component {
                     <Col xsWidth={this.props.width[3]} smWidth={this.props.width[2]} mdWidth={this.props.width[1]} lgWidth={this.props.width[0]}
                         xsHeight={this.props.height[3]} smHeight={this.props.height[2]} mdHeight={this.props.height[1]} lgHeight={this.props.height[0]}
                         style={blockStyles} className="projectBlock" >
-                        {label}
                     </Col>
                 </Link>
             );
@@ -82,8 +71,6 @@ class PhotoContainer extends React.Component {
                     xsYOffset={this.props.y[3]} smYOffset={this.props.y[2]} mdYOffset={this.props.y[1]} lgYOffset={this.props.y[0]}
                     xsZ={this.props.z[3]} smZ={this.props.z[2]} mdZ={this.props.z[1]} lgZ={this.props.z[0]}
                     style={styles} className={this.props.className} >
-
-                    {label}
                 </Col>
             );
         }
@@ -101,8 +88,6 @@ class PhotoContainer extends React.Component {
                         xsYOffset={this.props.y[3]} smYOffset={this.props.y[2]} mdYOffset={this.props.y[1]} lgYOffset={this.props.y[0]}
                         xsZ={this.props.z[3]} smZ={this.props.z[2]} mdZ={this.props.z[1]} lgZ={this.props.z[0]}
                         style={styles} className={this.props.className} >
-
-                        {label}
                     </Col>
                 </Link>
             );

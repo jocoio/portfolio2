@@ -10,13 +10,15 @@ class Curtain extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            show: false
+            show: false,
+            color: "#32b67a"
         };
     }
 
     componentWillReceiveProps(nextProps) {
         this.setState({
-            show: nextProps.visibility
+            show: nextProps.visibility,
+            color: nextProps.color
         })
     }
 
@@ -27,7 +29,7 @@ class Curtain extends React.Component {
     }
 
     render() {
-        const { show } = this.state;
+        const { show, color } = this.state;
         return (
             <div >
                 <CSSTransition
@@ -40,7 +42,7 @@ class Curtain extends React.Component {
                     <div style={{
                         width: "100vw",
                         height: "100vh",
-                        backgroundColor: "#32b67a",
+                        backgroundColor: color,
                         position: "fixed",
                         zIndex: 6,
                     }}
@@ -53,12 +55,14 @@ class Curtain extends React.Component {
 }
 
 Curtain.propTypes = {
-    visibility: PropTypes.bool.isRequired
+    visibility: PropTypes.bool.isRequired,
+    color: PropTypes.string.isRequired
 };
 
 // This is important, get the global state and assigns to a prop called visibility
 const mapStateToProps = state => ({
-    visibility: state.curtain.visibility
+    visibility: state.curtain.visibility,
+    color: state.curtain.color
 })
 
 export default connect(mapStateToProps)(Curtain);

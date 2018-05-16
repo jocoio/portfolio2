@@ -5,12 +5,17 @@ import Description from '../common/Description';
 import { Link } from 'react-router-dom';
 import { Row, Col } from '../grid';
 
+// React Redux
+import { connect } from 'react-redux';
+import { curtainColor } from '../../redux/actions/curtain';
+import PropTypes from 'prop-types';
+
 class Feature extends React.Component {
 
     render() {
         var rowStyles = {
             position: "relative",
-            maxHeight: "600px"
+            maxHeight: "650px"
         }
 
         var colStyles = {
@@ -39,7 +44,7 @@ class Feature extends React.Component {
                       style={colStyles}>
                     
                     <h5 style={{paddingTop: "15px"}}>Featured Project</h5>
-                    <h1>{this.props.data.name}</h1>
+                    <h1 style={{paddingBottom: "10px"}}>{this.props.data.name}</h1>
                     
                     <Col xsWidth={10} lgWidth={3}>
                         {this.props.data.category.map(function (listValue, idx) {
@@ -48,13 +53,14 @@ class Feature extends React.Component {
                     </Col>
 
                     <Description style={infoStyles} info={this.props.data.info} width={[3, 3, 4, 12]} />
-                    <Link className={"actionButton"}
+                    <Link className={"actionButton"} 
                         to={{
                             pathname: `/${urlString}`,
                             state: {
                                 back: "/"
                             }
-                        }}>See More
+                        }} onClick={() => this.props.curtainColor("#00a4b7")}>
+                        See More   
                     </Link>
                 </Col>
 
@@ -66,4 +72,8 @@ class Feature extends React.Component {
     }
 }
 
-export default Feature;
+Feature.propTypes = {
+    curtainColor: PropTypes.func.isRequired
+};
+
+export default connect(null, { curtainColor })(Feature);

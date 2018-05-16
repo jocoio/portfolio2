@@ -1,34 +1,48 @@
 import React from "react";
 import logo from "../../images/nav/logo.svg";
-import { NavLink as Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
-export default class Nav extends React.Component {
+// React Redux
+import { connect } from 'react-redux';
+import { curtainColor } from '../../redux/actions/curtain';
+import PropTypes from 'prop-types';
+
+class Nav extends React.Component {
+
   render() {
     return (
       <div className="blurBar">
+        <NavLink to="/" onClick={() => this.props.curtainColor("#32B67A")}>
+          <img className="logo" src={logo} alt="logo" />
+        </NavLink>
         <div className="MenuContainer">
-          <Link
+          <NavLink
             className="MenuItem"
             exact
-            activeClassName="activeMenuItem"
             to="/"
+            onClick={() => this.props.curtainColor("#32B67A")}
           >
             Work
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             className="MenuItem"
-            activeClassName="activeMenuItem"
             to="/about"
+            onClick={() => this.props.curtainColor("#32B67A")}
           >
             About
-          </Link>
+          </NavLink>
         </div>
 
-        <Link to="/">
-          <img className="logo" src={logo} alt="logo" />
-        </Link>
+
       </div>
     );
   }
 }
+
+Nav.propTypes = {
+  curtainColor: PropTypes.func.isRequired
+};
+
+export default connect(null, { curtainColor })(Nav);
+
