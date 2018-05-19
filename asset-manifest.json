@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.a8ec8925.css",
   "main.css.map": "static/css/main.a8ec8925.css.map",
-  "main.js": "static/js/main.887984cf.js",
-  "main.js.map": "static/js/main.887984cf.js.map",
+  "main.js": "static/js/main.4a2489da.js",
+  "main.js.map": "static/js/main.4a2489da.js.map",
   "static/media/Resume.pdf": "static/media/Resume.b2e291d8.pdf",
   "static/media/Sticker.png": "static/media/Sticker.8fdffb60.png",
   "static/media/Tote.png": "static/media/Tote.774f0d1a.png",
@@ -64,6 +64,5 @@
   "static/media/user1.png": "static/media/user1.17403236.png",
   "static/media/user2.png": "static/media/user2.99a8da3e.png",
   "static/media/user3.png": "static/media/user3.8149f45a.png",
-  "static/media/wireframe.png": "static/media/wireframe.38a8da15.png",
-  "static/media/youtube.svg": "static/media/youtube.d27c5f46.svg"
+  "static/media/wireframe.png": "static/media/wireframe.38a8da15.png"
 }
