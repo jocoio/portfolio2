@@ -6,7 +6,6 @@ import { Col, Row } from '../grid';
 import me from '../../images/about/me.jpg';
 import resume from '../../images/about/Resume.pdf';
 import instagram from '../../images/about/instagram.svg';
-import youtube from '../../images/about/youtube.svg';
 import github from '../../images/about/github.svg';
 
 import withTransition from '../utils/withTransition'
@@ -97,10 +96,6 @@ class AboutPage extends React.Component {
                             <div className="socialMedia">
                                 <a className="social" href="http://www.instagram.com/joco.io" target="_blank" rel="noopener noreferrer">
                                     <img id="insta" src={instagram} alt="instagram" />
-                                </a>
-
-                                <a className="social" href="http://www.youtube.com/corbeasta" target="_blank" rel="noopener noreferrer">
-                                    <img id="youtube" src={youtube} alt="youtube" />
                                 </a>
 
                                 <a className="social" href="http://www.github.com/jocoio" target="_blank" rel="noopener noreferrer">
