@@ -1,9 +1,13 @@
 import React from 'react';
+
+// Routing
+import { Link } from 'react-router-dom';
+import { Row, Col } from '../grid';
+
+// Components
 import Category from '../common/Category';
 import PhotoContainer from '../common/PhotoContainer';
 import Description from '../common/Description';
-import { Link } from 'react-router-dom';
-import { Row, Col } from '../grid';
 
 // React Redux
 import { connect } from 'react-redux';
@@ -39,13 +43,13 @@ class Feature extends React.Component {
         return (
             <Row style={rowStyles} className="featureRow">
                 <Col lgWidth={4} mdWidth={3} smWidth={4} xsWidth={10}
-                     lgXOffset={0} mdXOffset={0} smXOffset={1} xsXOffset={1}
-                      xsYOffset={10}
-                      style={colStyles}>
-                    
-                    <h5 style={{paddingTop: "15px"}}>Featured Project</h5>
-                    <h1 style={{paddingBottom: "10px"}}>{this.props.data.name}</h1>
-                    
+                    lgXOffset={0} mdXOffset={0} smXOffset={1} xsXOffset={1}
+                    xsYOffset={10}
+                    style={colStyles}>
+
+                    <h5 style={{ paddingTop: "15px" }}>Featured Project</h5>
+                    <h1 style={{ paddingBottom: "10px" }}>{this.props.data.name}</h1>
+
                     <Col xsWidth={10} lgWidth={3}>
                         {this.props.data.category.map(function (listValue, idx) {
                             return <Category key={idx} category={listValue} />;
@@ -53,14 +57,14 @@ class Feature extends React.Component {
                     </Col>
 
                     <Description style={infoStyles} info={this.props.data.info} width={[3, 3, 4, 12]} />
-                    <Link className={"actionButton"} 
+                    <Link className={"actionButton"}
                         to={{
                             pathname: `/${urlString}`,
                             state: {
                                 back: "/"
                             }
-                        }} onClick={() => this.props.curtainColor("#00a4b7")}>
-                        See More   
+                        }} onClick={() => this.props.curtainColor(["#00a4b7", "#00a4b7", "#00a4b7"])}>
+                        See More
                     </Link>
                 </Col>
 

@@ -1,24 +1,39 @@
-import React from 'react';
-import './Curtain.css';
+import React, { Fragment } from 'react';
+
+// Transitions
 import { CSSTransition } from 'react-transition-group';
 
+// Redux
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
+// Styling
+import './Curtain.css';
+import styled from 'styled-components';
+
+
+const CurtainScreen = styled.div`
+    width: 100vw;
+    height: 100vh;
+    background-color: ${props => props.color || "#32b67a"};
+    position: fixed;
+    z-index: 6;
+`;
+
 class Curtain extends React.Component {
-    
+
     constructor(props) {
         super(props)
         this.state = {
             show: false,
-            color: "#32b67a"
+            color: ["#32b67a", "#fa8072", "#fcd12A"],
         };
     }
 
     componentWillReceiveProps(nextProps) {
         this.setState({
-            show: nextProps.visibility,
-            color: nextProps.color
+            show: nextProps.visibility
+            ,color: nextProps.color
         })
     }
 
@@ -28,35 +43,53 @@ class Curtain extends React.Component {
         })
     }
 
+    // Each nested transition will only acitivate when the previous one has entered
     render() {
         const { show, color } = this.state;
         return (
-            <div >
+            <Fragment>
                 <CSSTransition
                     in={show}
-                    timeout={300}
+                    timeout={333}
                     unmountOnExit
                     classNames="curtain"
                 >
-                {state => (
-                    <div style={{
-                        width: "100vw",
-                        height: "100vh",
-                        backgroundColor: color,
-                        position: "fixed",
-                        zIndex: 6,
-                    }}
-                    />
-                )}
+                    {state => (
+                        <Fragment>
+                            <CurtainScreen color={color[0]} />
+                            <CSSTransition
+                                in={state === 'entered'}
+                                timeout={333}
+                                unmountOnExit
+                                classNames="curtain"
+                            >
+                                {state => (
+                                    <Fragment>
+                                        <CurtainScreen color={color[1]} />
+                                        <CSSTransition
+                                            in={state === 'entered'}
+                                            timeout={333}
+                                            unmountOnExit
+                                            classNames="curtain"
+                                        >
+                                            {state => (
+                                                <CurtainScreen color={color[2]} />
+                                            )}
+                                        </CSSTransition>
+                                    </Fragment>
+                                )}
+                            </CSSTransition>
+                        </Fragment>
+                    )}
                 </CSSTransition>
-            </div>
+            </Fragment>
         );
     }
 }
 
 Curtain.propTypes = {
     visibility: PropTypes.bool.isRequired,
-    color: PropTypes.string.isRequired
+    color: PropTypes.array.isRequired
 };
 
 // This is important, get the global state and assigns to a prop called visibility

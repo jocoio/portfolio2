@@ -13,7 +13,7 @@ class Nav extends React.Component {
   render() {
     return (
       <div className="blurBar">
-        <NavLink to="/" onClick={() => this.props.curtainColor("#32B67A")}>
+        <NavLink to="/" onClick={() => this.props.curtainColor(["#32b67a", "#fa8072", "#fcd12A"])}>
           <img className="logo" src={logo} alt="logo" />
         </NavLink>
         <div className="MenuContainer">
@@ -21,14 +21,14 @@ class Nav extends React.Component {
             className="MenuItem"
             exact
             to="/"
-            onClick={() => this.props.curtainColor("#32B67A")}
+            onClick={() => this.props.curtainColor(["#32b67a", "#fa8072", "#fcd12A"])}
           >
             Work
           </NavLink>
           <NavLink
             className="MenuItem"
             to="/about"
-            onClick={() => this.props.curtainColor("#32B67A")}
+            onClick={() => this.props.curtainColor(["#32b67a", "#fa8072", "#fcd12A"])}
           >
             About
           </NavLink>

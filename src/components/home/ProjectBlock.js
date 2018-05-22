@@ -12,21 +12,21 @@ class ProjectBlock extends React.Component {
     idToHex(id) {
         switch (id) {
             case "hellola":
-                return "#DE5A16";
+                return ["#c75f29", "#db91a3", "#8fafcd"];
             case "portfolio":
-                return "#222222";
+                return ["#32b67a", "#fa8072", "#fcd12A"];
             case "scoutsite":
-                return "#00A4B7";
+                return ["#00A4B7", "#f8971d", "#cf2326"];
             case "scout":
-                return "#00A4B7";
+                return ["#00A4B7", "#f8971d", "#cf2326"];
             case "unsize":
-                return "#0B37F5";
+                return ["#40e4c4", "#e6006c", "#0B37F5"];
             case "thisgirlcodes":
-                return "#FDE568"
+                return ["#f44b48", "#5d9bcf", "#FDE568"];
             case "myhousing":
-                return "#FF3333";
+                return ["#32b67a", "#fa8072", "#fcd12A"];
             default:
-                return "#32B67A";
+                return ["#32b67a", "#fa8072", "#fcd12A"];
         }
     }
 
