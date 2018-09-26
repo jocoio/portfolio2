@@ -7,7 +7,7 @@ export default [
     key: 'home',
     Component: HomePage,
     path: {
-      path: '/',
+      path: 'portfolio2.0/',
       exact: true,
     },
   },
@@ -15,35 +15,35 @@ export default [
     key: 'about',
     Component: AboutPage,
     path: {
-      path: `/about`,
+      path: `portfolio2.0/about`,
     },
   },
   {
     key: 'scout',
     Component: ProjectPage,
     path: {
-			path: `/scout`,
+			path: `portfolio2.0/scout`,
     },
 	},
 	{
     key: 'hellola',
     Component: ProjectPage,
     path: {
-			path: `/hellola`,
+			path: `portfolio2.0/hellola`,
     },
   },
   {
     key: 'portfolio',
     Component: ProjectPage,
     path: {
-			path: `/portfolio`,
+			path: `portfolio2.0/portfolio`,
     },
   },
   {
     key: 'scoutsite',
     Component: ProjectPage,
     path: {
-			path: `/scoutsite`,
+			path: `portfolio2.0/scoutsite`,
     },
   },
 
@@ -51,21 +51,21 @@ export default [
     key: 'unsize',
     Component: ProjectPage,
     path: {
-			path: `/unsize`,
+			path: `portfolio2.0/unsize`,
     },
   },
   {
     key: 'thisgirlcodes',
     Component: ProjectPage,
     path: {
-			path: `/thisgirlcodes`,
+			path: `portfolio2.0/thisgirlcodes`,
     },
   },
   {
     key: 'myhousing',
     Component: ProjectPage,
     path: {
-			path: `/myhousing`,
+			path: `portfolio2.0/myhousing`,
     },
   },
 ]

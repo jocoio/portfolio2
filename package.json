@@ -1,8 +1,7 @@
 {
   "name": "joco",
   "version": "1.1.2",
-  "private": true,
-  "homepage": "http://joco.io",
+  "homepage": "https://jocoio.github.io/portfolio2.0/",
   "dependencies": {
     "@jam3/gsap-promise": "4.0.1",
     "ajv": "^6.5.0",
