@@ -53,9 +53,6 @@ class ProjectPage extends React.Component {
       project: projects.results.find(item => item.id === this.state.id)
     });
 
-
-    // this.props.curtainColor("red");
-
     // Mainly for resfreshing the page, might be redundant
     this.props.toggleCurtainVisibility(true);
   }
@@ -67,7 +64,6 @@ class ProjectPage extends React.Component {
   }
 
   componentWillUnmount() {
-
     // Throw the curtain up
     this.props.toggleCurtainVisibility(true);
   }

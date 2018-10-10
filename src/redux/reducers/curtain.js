@@ -2,7 +2,7 @@ import { TOGGLE_CURTAIN_VISIBILITY, CURTAIN_COLOR } from '../actions/types'
 
 const initialState = {
   visibility: false,
-  color: "#32b67a"
+  color: ["#32b67a", "#fa8072", "#fcd12A"]
 };
 
 export default (state = initialState, action) => {

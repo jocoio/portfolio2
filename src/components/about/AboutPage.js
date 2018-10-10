@@ -4,7 +4,7 @@ import PhotoContainer from '../common/PhotoContainer.js';
 import { Col, Row } from '../grid';
 
 import me from '../../images/about/me.jpg';
-import resume from '../../images/about/Resume.pdf';
+import resume from '../../images/about/resume.pdf';
 import instagram from '../../images/about/instagram.svg';
 import github from '../../images/about/github.svg';
 
