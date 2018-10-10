@@ -7,7 +7,7 @@ export default [
     key: 'home',
     Component: HomePage,
     path: {
-      path: '/',
+      path: process.env.PUBLIC_URL + '/',
       exact: true,
     },
   },
@@ -15,35 +15,35 @@ export default [
     key: 'about',
     Component: AboutPage,
     path: {
-      path: `/about`,
+      path: process.env.PUBLIC_URL + `/about`,
     },
   },
   {
     key: 'scout',
     Component: ProjectPage,
     path: {
-			path: `/scout`,
+			path: process.env.PUBLIC_URL + `/scout`,
     },
 	},
 	{
     key: 'hellola',
     Component: ProjectPage,
     path: {
-			path: `/hellola`,
+			path: process.env.PUBLIC_URL + `/hellola`,
     },
   },
   {
     key: 'portfolio',
     Component: ProjectPage,
     path: {
-			path: `/portfolio`,
+			path: process.env.PUBLIC_URL + `/portfolio`,
     },
   },
   {
     key: 'scoutsite',
     Component: ProjectPage,
     path: {
-			path: `/scoutsite`,
+			path: process.env.PUBLIC_URL + `/scoutsite`,
     },
   },
 
@@ -51,21 +51,21 @@ export default [
     key: 'unsize',
     Component: ProjectPage,
     path: {
-			path: `/unsize`,
+			path: process.env.PUBLIC_URL + `/unsize`,
     },
   },
   {
     key: 'thisgirlcodes',
     Component: ProjectPage,
     path: {
-			path: `/thisgirlcodes`,
+			path: process.env.PUBLIC_URL + `/thisgirlcodes`,
     },
   },
   {
     key: 'myhousing',
     Component: ProjectPage,
     path: {
-			path: `/myhousing`,
+			path: process.env.PUBLIC_URL + `/myhousing`,
     },
   },
 ]

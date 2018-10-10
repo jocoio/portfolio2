@@ -45,7 +45,7 @@ class ProjectBlock extends React.Component {
         return (
             <Link onClick={() => this.props.curtainColor(this.idToHex(content.id))}
                 to={{
-                    pathname: `/${content.id}`,
+                    pathname: process.env.PUBLIC_URL + `/${content.id}`,
                     state: {
                         back: "/"
                     }

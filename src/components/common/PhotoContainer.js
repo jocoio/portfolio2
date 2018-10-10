@@ -51,7 +51,7 @@ class PhotoContainer extends React.Component {
         else if (this.props.x === undefined) {
             return (
                 <Link to={{
-                    pathname: `/${urlString}`,
+                    pathname: process.env.PUBLIC_URL + `${urlString}`,
                     state: {
                         back: "/"
                     }
@@ -77,7 +77,7 @@ class PhotoContainer extends React.Component {
         else {
             return (
                 <Link to={{
-                    pathname: `/${urlString}`,
+                    pathname: process.env.PUBLIC_URL + `${urlString}`,
                     state: {
                         back: "/"
                     }

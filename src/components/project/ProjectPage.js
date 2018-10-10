@@ -30,9 +30,21 @@ class ProjectPage extends React.Component {
       linkTitle: "",
       link: "",
       category: "",
-      id: window.location.pathname.substring(1),
+      id: this.pathnameToId(window.location.pathname),
       project: null
     };
+  }
+
+  pathnameToId(pathname) {
+    var accumulator = "";
+
+    for (var x = pathname.length - 1; x >= 0; x--) {
+      if (pathname.charAt(x) === "/") {
+        console.log(accumulator);
+        return accumulator;
+      }
+      else accumulator = pathname.charAt(x) + accumulator;
+    }
   }
 
   componentWillMount() {
@@ -51,6 +63,7 @@ class ProjectPage extends React.Component {
   componentDidMount() {
     // Wait one second then remove the curtain
     setTimeout(() => { this.props.toggleCurtainVisibility(false) }, 1000);
+    console.log(this.state.id);
   }
 
   componentWillUnmount() {

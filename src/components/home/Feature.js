@@ -55,7 +55,7 @@ class Feature extends React.Component {
                     <Description style={infoStyles} info={this.props.data.info} width={[3, 3, 4, 12]} />
                     <Link className={"actionButton"} 
                         to={{
-                            pathname: `/${urlString}`,
+                            pathname: process.env.PUBLIC_URL + `/${urlString}`,
                             state: {
                                 back: "/"
                             }
