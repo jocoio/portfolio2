@@ -13,7 +13,7 @@ import ScrollToTop from './components/utils/ScrollToTop'
 document.title = 'Jon Corbett Portfolio'
 
 render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <ScrollToTop>
       <Route>
         {props => <App {...props} routes={routes} />}
